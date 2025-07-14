@@ -128,6 +128,8 @@ RUN cd /tmp && \
     make install && \
     cd / && rm -rf /tmp/grass-8.4.0*
 
+RUN echo "GNU General Public License" > /opt/grass/etc/license
+
 # Download and compile SAGA GIS 9.3 from source
 RUN cd /tmp && \
     wget -q https://sourceforge.net/projects/saga-gis/files/SAGA%20-%209/SAGA%20-%209.3.2/saga-9.3.2.tar.gz && \
