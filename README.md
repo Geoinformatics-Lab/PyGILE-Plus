@@ -28,6 +28,10 @@ A comprehensive, headless Docker environment for geospatial research with **1700
 ## Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git
+cd PyGILE-Plus/docker
+
 # Build the image
 docker build -t pygile-plus .
 
@@ -52,3 +56,6 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 - Network access for initial build
 
 For detailed algorithm listings and capabilities, see the comprehensive PDF guide.
+
+### Docker (Recommended)
+- Go to [docker/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/docker) → Follow README.md
