@@ -6,24 +6,28 @@
 ```bash
 # Build from Dockerfile
 docker build -t pygile-plus .
-
-# Run the container
-docker run -it -p 8888:8888 -v $(pwd):/workspace pygile-plus
 ```
 
-### Step 2: Environment Setup
+### Step 2: Run the Container
 ```bash
-# Inside container, run once:
+# Run the container with a specific name (Jupyter starts automatically)
+docker run -it --name pygile-plus-container -p 8888:8888 -v $(pwd):/workspace pygile-plus
+```
+
+**Jupyter Lab will start automatically and be available at `http://localhost:8888`**
+
+### Step 3: Setup Environment (Required for Full Functionality)
+**In a NEW terminal window**, connect to the running container and run the environment script:
+
+```bash
+# Connect to the running container
+docker exec -it pygile-plus-container bash
+
+# Run the environment setup script
 source /workspace/pygile_working_env.sh
 ```
 
-### Step 3: Launch Jupyter
-```bash
-# Start Jupyter Lab
-jupyter lab --allow-root --ip=0.0.0.0 --port=8888 --no-browser
-```
-
-### Step 4: Initialize Environment in Jupyter
+### Step 4: Initialize QGIS in Jupyter
 **Run this cell first in any new notebook:**
 ```python
 import os
@@ -52,6 +56,13 @@ Processing.initialize()
 print(" PyGILE-Plus initialized with 1,773+ algorithms!")
 ```
 
+## Why Both Steps Are Needed
+
+- **Shell script** (`pygile_working_env.sh`) = Sets up PATH and system environment for command-line tools (SAGA, GRASS, OTB, WhiteboxTools)
+- **Python initialization code** = Initializes QGIS and processing framework within Jupyter
+
+Both are required for full access to all 1,773+ algorithms.
+
 ## Available Tools
 
 - **QGIS Native**: 289 algorithms
@@ -73,5 +84,12 @@ print("External CLI: 1,069 algorithms")
 print(f"Grand Total: {total + 1069} algorithms")
 ```
 
+## Complete Setup Flow
+
+1. **Container starts** → Jupyter auto-launches at `http://localhost:8888`
+2. **Run shell script** in separate terminal → System tools become available  
+3. **Run Python code** in Jupyter → QGIS integration works
+4. **All 1,773+ algorithms** are now available!
+
 ## Ready to use!
-Your PyGILE-Plus environment is now configured with all major GIS analysis tools.
+Your PyGILE-Plus environment is now fully configured with all major GIS analysis tools.
