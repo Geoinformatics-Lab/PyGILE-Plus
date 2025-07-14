@@ -41,6 +41,10 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 # Access Jupyter Lab at http://localhost:8888
 ```
 
+### Docker (Recommended)
+- Go to [docker/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/docker) → Follow README.md
+
+
 ## Use Cases
 
 - Remote sensing analysis and classification
@@ -57,5 +61,3 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 
 For detailed algorithm listings and capabilities, see the comprehensive PDF guide.
 
-### Docker (Recommended)
-- Go to [docker/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/docker) → Follow README.md
