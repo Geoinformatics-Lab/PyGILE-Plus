@@ -62,10 +62,17 @@ For detailed algorithm listings and capabilities, see the comprehensive PDF guid
 All the software and packages present in this container are made available under their respective licenses. Please refer to the original documentations.
 
 https://github.com/OSGeo/grass
+
 https://saga-gis.sourceforge.io/
+
 https://github.com/qgis/QGIS
+
 https://github.com/jblindsay/whitebox-tools
+
 https://github.com/pytorch/pytorch
+
 https://github.com/tensorflow
+
 https://github.com/keras-team/keras
+
 https://github.com/conda-forge/miniforge
