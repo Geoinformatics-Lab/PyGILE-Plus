@@ -1,5 +1,4 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
-**Version 1.2.0**
 
 A comprehensive, headless Docker environment for geospatial research with **1700+ algorithms** across multiple platforms.
 
