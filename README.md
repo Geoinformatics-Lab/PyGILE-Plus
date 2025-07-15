@@ -1,5 +1,4 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
-**Version 1.2.0**
 
 A comprehensive, headless Docker environment for geospatial research with **1700+ algorithms** across multiple platforms.
 
@@ -58,21 +57,15 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 
 For detailed algorithm listings and capabilities, see the comprehensive PDF guide.
 
-## Licese for Packages
+## License for Packages
 All the software and packages present in this container are made available under their respective licenses. Please refer to the original documentations.
 
-https://github.com/OSGeo/grass
-
-https://saga-gis.sourceforge.io/
-
-https://github.com/qgis/QGIS
-
-https://github.com/jblindsay/whitebox-tools
-
-https://github.com/pytorch/pytorch
-
-https://github.com/tensorflow
-
-https://github.com/keras-team/keras
-
-https://github.com/conda-forge/miniforge
+- https://github.com/Geoinformatics-Lab/PyGILE
+- https://github.com/OSGeo/grass
+- https://saga-gis.sourceforge.io/
+- https://github.com/qgis/QGIS
+- https://github.com/jblindsay/whitebox-tools
+- https://github.com/pytorch/pytorch
+- https://github.com/tensorflow
+- https://github.com/keras-team/keras
+- https://github.com/conda-forge/miniforge

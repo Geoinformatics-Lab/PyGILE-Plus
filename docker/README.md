@@ -98,5 +98,5 @@ print(f"Grand Total: {total + 1069} algorithms")
 4. **All 1,773+ algorithms** are now available!
 
 ## Ready to use!
-Your PyGILE-Plus environment is now fully configured with all major GIS analysis tools.
+Your PyGILE-Plus environment is now fully configured with all major Free and Open Source GIS analysis tools.
 
