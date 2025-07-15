@@ -94,14 +94,3 @@ print(f"Grand Total: {total + 1069} algorithms")
 ## Ready to use!
 Your PyGILE-Plus environment is now fully configured with all major GIS analysis tools.
 
-## Licese for Packages
-All the software and packages present in this container are subjected to their own respective license. Please refer to the original documentations.
-
-https://github.com/OSGeo/grass
-https://saga-gis.sourceforge.io/
-https://github.com/qgis/QGIS
-https://github.com/jblindsay/whitebox-tools
-https://github.com/pytorch/pytorch
-https://github.com/tensorflow
-https://github.com/keras-team/keras
-https://github.com/conda-forge/miniforge
