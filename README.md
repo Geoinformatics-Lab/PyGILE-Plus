@@ -20,10 +20,7 @@ A comprehensive, headless Docker environment for geospatial research with **1700
 
 **Key Features:**
 - Headless operation (no GUI required)
-- 5-year stability guarantee
-- Pre-configured conda environment
-- Ready-to-use workspace structure
-- Jupyter Lab interface on port 8888
+
 
 ## Quick Start
 
