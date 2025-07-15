@@ -15,6 +15,7 @@ OR
 # Build from Dockerfile
 docker build -t pygile-plus .
 ```
+AND CONTINUE
 
 ### Step 2: Run the Container
 ```bash
