@@ -30,6 +30,7 @@ cd PyGILE-Plus/docker
 
 # Build the image
 docker build -t pygile-plus .
+
 OR
 
 # Pull the image
