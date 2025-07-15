@@ -30,6 +30,10 @@ cd PyGILE-Plus/docker
 
 # Build the image
 docker build -t pygile-plus .
+OR
+
+# Pull the image
+docker pull dockagile/pygile-plus
 
 # Run with Jupyter Lab
 docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
