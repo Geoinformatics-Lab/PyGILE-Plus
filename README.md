@@ -28,6 +28,11 @@ A comprehensive, headless Docker environment for geospatial research with **1700
 git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git
 cd PyGILE-Plus/docker
 
+# Pull the image
+docker pull dockagile/pygile-plus
+
+OR
+
 # Build the image
 docker build -t pygile-plus .
 
