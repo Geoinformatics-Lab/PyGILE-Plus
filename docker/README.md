@@ -2,6 +2,12 @@
 
 ## Quick Setup (5 minutes)
 
+
+## Pull the existing image
+```bash
+# Pull the image
+docker pull dockagile/pygile-plus
+```
 ### Step 1: Build the Container
 ```bash
 # Build from Dockerfile
