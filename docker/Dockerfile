@@ -104,7 +104,7 @@ RUN mamba run -n pygile pip install --no-cache-dir \
     sklearn-xarray whitebox \
     PySAGA-cmd
 
-# Download and compile GRASS GIS 8.4 from source
+# Download and compile GRASS GIS 8.4 from source - FIXED WITH PYTHON SUPPORT
 RUN cd /tmp && \
     wget -q https://grass.osgeo.org/grass84/source/grass-8.4.0.tar.gz && \
     tar -xzf grass-8.4.0.tar.gz && \
@@ -119,6 +119,7 @@ RUN cd /tmp && \
         --with-cairo \
         --with-freetype=yes \
         --with-fftw \
+        --with-python=/opt/conda/envs/pygile/bin/python \
         --without-postgres \
         --without-mysql \
         --without-odbc \
@@ -126,9 +127,9 @@ RUN cd /tmp && \
         --without-openmp && \
     make -j$(nproc) && \
     make install && \
+    ldconfig && \
+    echo "GNU General Public License" > /opt/grass/etc/license && \
     cd / && rm -rf /tmp/grass-8.4.0*
-
-RUN echo "GNU General Public License" > /opt/grass/etc/license
 
 # Download and compile SAGA GIS 9.3 from source
 RUN cd /tmp && \
