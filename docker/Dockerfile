@@ -6,7 +6,7 @@ LABEL description="5-year stable headless geospatial research environment with S
 LABEL version="1.2.0"
 LABEL maintainer="research-team"
 
-ARG PYTHON_VERSION=3.11
+ARG PYTHON_VERSION=3.10
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Headless environment variables
@@ -152,16 +152,20 @@ RUN mamba install -n pygile -c conda-forge -y \
     whitebox_tools \
     && mamba clean -all -y
 
-# Download and install OTB latest stable
+# Download and install OTB with Python bindings setup
 RUN cd /tmp && \
     wget -q https://www.orfeo-toolbox.org/packages/OTB-9.1.1-Linux.tar.gz && \
     tar xf OTB-9.1.1-Linux.tar.gz --one-top-level=/opt/otb && \
-    rm -f OTB-9.1.1-Linux.tar.gz
+    rm -f OTB-9.1.1-Linux.tar.gz && \
+    mkdir -p /opt/conda/envs/pygile/etc/conda/activate.d/ && \
+    echo '#!/bin/bash' > /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh && \
+    echo 'export PYTHONPATH="/opt/otb/lib/python:$PYTHONPATH"' >> /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh && \
+    echo 'export OTB_APPLICATION_PATH="/opt/otb/lib/otb/applications"' >> /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh && \
+    chmod +x /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh
 
 # Environment variables for tools
 ENV PATH="/opt/grass/bin:/opt/saga/bin:/opt/otb/bin:$PATH"
 ENV LD_LIBRARY_PATH="/opt/grass/lib:/opt/saga/lib:/opt/otb/lib"
-ENV OTB_APPLICATION_PATH="/opt/otb/lib/otb/applications"
 ENV SAGA_CMD="/opt/saga/bin/saga_cmd"
 ENV GISBASE="/opt/grass"
 
