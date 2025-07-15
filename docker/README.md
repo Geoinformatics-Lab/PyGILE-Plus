@@ -8,6 +8,8 @@
 # Pull the image
 docker pull dockagile/pygile-plus
 ```
+OR
+
 ### Step 1: Build the Container
 ```bash
 # Build from Dockerfile
