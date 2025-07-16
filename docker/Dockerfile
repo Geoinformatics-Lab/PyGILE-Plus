@@ -2,7 +2,7 @@ FROM condaforge/mambaforge:24.9.0-0
 
 # PyGILE-Plus: Stable headless geospatial research environment
 LABEL name="PyGILE-Plus"
-LABEL description="Enhanced stable headless geospatial research environment with SAGA 9.x + GRASS 8.4 + latest QGIS + modern ML stack + NumPy 2.0 compatibility"
+LABEL description="Stable headless geospatial research environment with SAGA 9.x + GRASS 8.4 + latest QGIS + modern ML stack + NumPy 2.0 compatibility"
 LABEL maintainer="research-team"
 
 ARG PYTHON_VERSION=3.10
