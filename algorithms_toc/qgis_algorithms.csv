@@ -1,399 +1,398 @@
-tool,provider,algorithm_id,display_name,group,detection_method
-QGIS,3d,3d:tessellate	Tessellate,tessellate	Tessellate,3D General,cli_list
-QGIS,gdal,gdal:aspect	Aspect,aspect	Aspect,GDAL General,cli_list
-QGIS,gdal,gdal:assignprojection	Assign projection,assignprojection	Assign projection,GDAL Transform,cli_list
-QGIS,gdal,gdal:buffervectors	Buffer vectors,buffervectors	Buffer vectors,GDAL Vector,cli_list
-QGIS,gdal,gdal:buildvirtualraster	Build virtual raster,buildvirtualraster	Build virtual raster,GDAL Raster,cli_list
-QGIS,gdal,gdal:buildvirtualvector	Build virtual vector,buildvirtualvector	Build virtual vector,GDAL Vector,cli_list
-QGIS,gdal,gdal:cliprasterbyextent	Clip raster by extent,cliprasterbyextent	Clip raster by extent,GDAL Raster,cli_list
-QGIS,gdal,gdal:cliprasterbymasklayer	Clip raster by mask layer,cliprasterbymasklayer	Clip raster by mask layer,GDAL Raster,cli_list
-QGIS,gdal,gdal:clipvectorbyextent	Clip vector by extent,clipvectorbyextent	Clip vector by extent,GDAL Vector,cli_list
-QGIS,gdal,gdal:clipvectorbypolygon	Clip vector by mask layer,clipvectorbypolygon	Clip vector by mask layer,GDAL Vector,cli_list
-QGIS,gdal,gdal:colorrelief	Color relief,colorrelief	Color relief,GDAL General,cli_list
-QGIS,gdal,gdal:contour	Contour,contour	Contour,GDAL General,cli_list
-QGIS,gdal,gdal:contour_polygon	Contour Polygons,contour_polygon	Contour Polygons,GDAL General,cli_list
-QGIS,gdal,gdal:convertformat	Convert format,convertformat	Convert format,GDAL General,cli_list
-QGIS,gdal,gdal:dissolve	Dissolve,dissolve	Dissolve,GDAL General,cli_list
-QGIS,gdal,gdal:executesql	Execute SQL,executesql	Execute SQL,GDAL General,cli_list
-QGIS,gdal,gdal:extractprojection	Extract projection,extractprojection	Extract projection,GDAL Transform,cli_list
-QGIS,gdal,gdal:fillnodata	Fill NoData,fillnodata	Fill NoData,GDAL General,cli_list
-QGIS,gdal,gdal:gdal2tiles	gdal2tiles,gdal2tiles	gdal2tiles,GDAL General,cli_list
-QGIS,gdal,gdal:gdal2xyz	gdal2xyz,gdal2xyz	gdal2xyz,GDAL General,cli_list
-QGIS,gdal,gdal:gdalinfo	Raster information,gdalinfo	Raster information,GDAL Raster,cli_list
-QGIS,gdal,gdal:gridaverage	Grid (Moving average),gridaverage	Grid (Moving average),GDAL Raster,cli_list
-QGIS,gdal,gdal:griddatametrics	Grid (Data metrics),griddatametrics	Grid (Data metrics),GDAL Raster,cli_list
-QGIS,gdal,gdal:gridinversedistance	Grid (Inverse distance to a power),gridinversedistance	Grid (Inverse distance to a power),GDAL Raster,cli_list
-QGIS,gdal,gdal:gridinversedistancenearestneighbor	Grid (IDW with nearest neighbor searching),gridinversedistancenearestneighbor	Grid (IDW with nearest neighbor searching),GDAL Raster,cli_list
-QGIS,gdal,gdal:gridlinear	Grid (Linear),gridlinear	Grid (Linear),GDAL Raster,cli_list
-QGIS,gdal,gdal:gridnearestneighbor	Grid (Nearest neighbor),gridnearestneighbor	Grid (Nearest neighbor),GDAL Raster,cli_list
-QGIS,gdal,gdal:hillshade	Hillshade,hillshade	Hillshade,GDAL General,cli_list
-QGIS,gdal,gdal:importvectorintopostgisdatabaseavailableconnections	Export to PostgreSQL (available connections),importvectorintopostgisdatabaseavailableconnections	Export to PostgreSQL (available connections),GDAL Vector,cli_list
-QGIS,gdal,gdal:importvectorintopostgisdatabasenewconnection	Export to PostgreSQL (new connection),importvectorintopostgisdatabasenewconnection	Export to PostgreSQL (new connection),GDAL Vector,cli_list
-QGIS,gdal,gdal:merge	Merge,merge	Merge,GDAL General,cli_list
-QGIS,gdal,gdal:nearblack	Near black,nearblack	Near black,GDAL General,cli_list
-QGIS,gdal,gdal:offsetcurve	Offset curve,offsetcurve	Offset curve,GDAL General,cli_list
-QGIS,gdal,gdal:ogrinfo	Vector information,ogrinfo	Vector information,GDAL Vector,cli_list
-QGIS,gdal,gdal:ogrinfojson	Vector information (JSON),ogrinfojson	Vector information (JSON),GDAL Vector,cli_list
-QGIS,gdal,gdal:onesidebuffer	One side buffer,onesidebuffer	One side buffer,GDAL General,cli_list
-QGIS,gdal,gdal:overviews	Build overviews (pyramids),overviews	Build overviews (pyramids),GDAL General,cli_list
-QGIS,gdal,gdal:pansharp	Pansharpening,pansharp	Pansharpening,GDAL General,cli_list
-QGIS,gdal,gdal:pcttorgb	PCT to RGB,pcttorgb	PCT to RGB,GDAL General,cli_list
-QGIS,gdal,gdal:pointsalonglines	Points along lines,pointsalonglines	Points along lines,GDAL General,cli_list
-QGIS,gdal,gdal:polygonize	Polygonize (raster to vector),polygonize	Polygonize (raster to vector),GDAL Raster,cli_list
-QGIS,gdal,gdal:proximity	Proximity (raster distance),proximity	Proximity (raster distance),GDAL Raster,cli_list
-QGIS,gdal,gdal:rastercalculator	Raster calculator,rastercalculator	Raster calculator,GDAL Raster,cli_list
-QGIS,gdal,gdal:rasterize	Rasterize (vector to raster),rasterize	Rasterize (vector to raster),GDAL Raster,cli_list
-QGIS,gdal,gdal:rasterize_over	Rasterize (overwrite with attribute),rasterize_over	Rasterize (overwrite with attribute),GDAL Raster,cli_list
-QGIS,gdal,gdal:rasterize_over_fixed_value	Rasterize (overwrite with fixed value),rasterize_over_fixed_value	Rasterize (overwrite with fixed value),GDAL Raster,cli_list
-QGIS,gdal,gdal:rearrange_bands	Rearrange bands,rearrange_bands	Rearrange bands,GDAL General,cli_list
-QGIS,gdal,gdal:retile	Retile,retile	Retile,GDAL General,cli_list
-QGIS,gdal,gdal:rgbtopct	RGB to PCT,rgbtopct	RGB to PCT,GDAL General,cli_list
-QGIS,gdal,gdal:roughness	Roughness,roughness	Roughness,GDAL General,cli_list
-QGIS,gdal,gdal:sieve	Sieve,sieve	Sieve,GDAL General,cli_list
-QGIS,gdal,gdal:slope	Slope,slope	Slope,GDAL General,cli_list
-QGIS,gdal,gdal:tileindex	Tile index,tileindex	Tile index,GDAL General,cli_list
-QGIS,gdal,gdal:tpitopographicpositionindex	Topographic Position Index (TPI),tpitopographicpositionindex	Topographic Position Index (TPI),GDAL Vector,cli_list
-QGIS,gdal,gdal:translate	Translate (convert format),translate	Translate (convert format),GDAL General,cli_list
-QGIS,gdal,gdal:triterrainruggednessindex	Terrain Ruggedness Index (TRI),triterrainruggednessindex	Terrain Ruggedness Index (TRI),GDAL General,cli_list
-QGIS,gdal,gdal:viewshed	Viewshed,viewshed	Viewshed,GDAL General,cli_list
-QGIS,gdal,gdal:warpreproject	Warp (reproject),warpreproject	Warp (reproject),GDAL Transform,cli_list
-QGIS,native,native:addautoincrementalfield	Add autoincremental field,addautoincrementalfield	Add autoincremental field,QGIS General,cli_list
-QGIS,native,native:addfieldtoattributestable	Add field to attributes table,addfieldtoattributestable	Add field to attributes table,QGIS General,cli_list
-QGIS,native,native:addhistorymetadata	Add history metadata,addhistorymetadata	Add history metadata,QGIS General,cli_list
-QGIS,native,native:adduniquevalueindexfield	Add unique value index field,adduniquevalueindexfield	Add unique value index field,QGIS General,cli_list
-QGIS,native,native:addxyfields	Add X/Y fields to layer,addxyfields	Add X/Y fields to layer,QGIS General,cli_list
-QGIS,native,native:affinetransform	Affine transform,affinetransform	Affine transform,QGIS General,cli_list
-QGIS,native,native:aggregate	Aggregate,aggregate	Aggregate,QGIS General,cli_list
-QGIS,native,native:angletonearest	Align points to features,angletonearest	Align points to features,QGIS General,cli_list
-QGIS,native,native:antimeridiansplit	Geodesic line split at antimeridian,antimeridiansplit	Geodesic line split at antimeridian,QGIS General,cli_list
-QGIS,native,native:arrayoffsetlines	Array of offset (parallel) lines,arrayoffsetlines	Array of offset (parallel) lines,QGIS General,cli_list
-QGIS,native,native:arraytranslatedfeatures	Array of translated features,arraytranslatedfeatures	Array of translated features,QGIS General,cli_list
-QGIS,native,native:aspect	Aspect,aspect	Aspect,QGIS General,cli_list
-QGIS,native,native:assignprojection	Assign projection,assignprojection	Assign projection,QGIS General,cli_list
-QGIS,native,native:atlaslayouttoimage	Export atlas layout as image,atlaslayouttoimage	Export atlas layout as image,QGIS General,cli_list
-QGIS,native,native:atlaslayouttomultiplepdf	Export atlas layout as PDF (multiple files),atlaslayouttomultiplepdf	Export atlas layout as PDF (multiple files),QGIS General,cli_list
-QGIS,native,native:atlaslayouttopdf	Export atlas layout as PDF (single file),atlaslayouttopdf	Export atlas layout as PDF (single file),QGIS General,cli_list
-QGIS,native,native:b3dmtogltf	Convert B3DM to GLTF,b3dmtogltf	Convert B3DM to GLTF,QGIS General,cli_list
-QGIS,native,native:basicstatisticsforfields	Basic statistics for fields,basicstatisticsforfields	Basic statistics for fields,QGIS General,cli_list
-QGIS,native,native:batchnominatimgeocoder	Batch Nominatim geocoder,batchnominatimgeocoder	Batch Nominatim geocoder,QGIS General,cli_list
-QGIS,native,native:bookmarkstolayer	Convert spatial bookmarks to layer,bookmarkstolayer	Convert spatial bookmarks to layer,QGIS General,cli_list
-QGIS,native,native:boundary	Boundary,boundary	Boundary,QGIS General,cli_list
-QGIS,native,native:boundingboxes	Bounding boxes,boundingboxes	Bounding boxes,QGIS General,cli_list
-QGIS,native,native:buffer	Buffer,buffer	Buffer,QGIS General,cli_list
-QGIS,native,native:bufferbym	Variable width buffer (by M value),bufferbym	Variable width buffer (by M value),QGIS General,cli_list
-QGIS,native,native:calculatevectoroverlaps	Overlap analysis,calculatevectoroverlaps	Overlap analysis,QGIS General,cli_list
-QGIS,native,native:cellstackpercentile	Cell stack percentile,cellstackpercentile	Cell stack percentile,QGIS General,cli_list
-QGIS,native,native:cellstackpercentrankfromrasterlayer	Cell stack percentrank from raster layer,cellstackpercentrankfromrasterlayer	Cell stack percentrank from raster layer,QGIS General,cli_list
-QGIS,native,native:cellstackpercentrankfromvalue	Cell stack percent rank from value,cellstackpercentrankfromvalue	Cell stack percent rank from value,QGIS General,cli_list
-QGIS,native,native:cellstatistics	Cell statistics,cellstatistics	Cell statistics,QGIS General,cli_list
-QGIS,native,native:centroids	Centroids,centroids	Centroids,QGIS General,cli_list
-QGIS,native,native:checkgeometryangle	Check geometry (Angle),checkgeometryangle	Check geometry (Angle),QGIS General,cli_list
-QGIS,native,native:checkgeometryarea	Check geometry (Area),checkgeometryarea	Check geometry (Area),QGIS General,cli_list
-QGIS,native,native:checkgeometryhole	Check geometry (Hole),checkgeometryhole	Check geometry (Hole),QGIS General,cli_list
-QGIS,native,native:checkgeometrymissingvertex	Check geometry (Missing Vertex),checkgeometrymissingvertex	Check geometry (Missing Vertex),QGIS General,cli_list
-QGIS,native,native:clip	Clip,clip	Clip,QGIS General,cli_list
-QGIS,native,native:collect	Collect geometries,collect	Collect geometries,QGIS General,cli_list
-QGIS,native,native:combinestyles	Combine style databases,combinestyles	Combine style databases,QGIS General,cli_list
-QGIS,native,native:concavehull	Concave hull,concavehull	Concave hull,QGIS General,cli_list
-QGIS,native,native:convertgpsdata	Convert GPS data,convertgpsdata	Convert GPS data,QGIS General,cli_list
-QGIS,native,native:convertgpxfeaturetype	Convert GPX feature type,convertgpxfeaturetype	Convert GPX feature type,QGIS General,cli_list
-QGIS,native,native:converttocurves	Convert to curved geometries,converttocurves	Convert to curved geometries,QGIS General,cli_list
-QGIS,native,native:convexhull	Convex hull,convexhull	Convex hull,QGIS General,cli_list
-QGIS,native,native:copylayermetadata	Copy layer metadata,copylayermetadata	Copy layer metadata,QGIS General,cli_list
-QGIS,native,native:countpointsinpolygon	Count points in polygon,countpointsinpolygon	Count points in polygon,QGIS General,cli_list
-QGIS,native,native:coveragesimplify	Simplify coverage,coveragesimplify	Simplify coverage,QGIS General,cli_list
-QGIS,native,native:coverageunion	Dissolve coverage,coverageunion	Dissolve coverage,QGIS General,cli_list
-QGIS,native,native:coveragevalidate	Validate coverage,coveragevalidate	Validate coverage,QGIS General,cli_list
-QGIS,native,native:createattributeindex	Create attribute index,createattributeindex	Create attribute index,QGIS General,cli_list
-QGIS,native,native:createconstantrasterlayer	Create constant raster layer,createconstantrasterlayer	Create constant raster layer,QGIS General,cli_list
-QGIS,native,native:creategrid	Create grid,creategrid	Create grid,QGIS General,cli_list
-QGIS,native,native:createpointslayerfromtable	Create points layer from table,createpointslayerfromtable	Create points layer from table,QGIS General,cli_list
-QGIS,native,native:createrandombinomialrasterlayer	Create random raster layer (binomial distribution),createrandombinomialrasterlayer	Create random raster layer (binomial distribution),QGIS General,cli_list
-QGIS,native,native:createrandomexponentialrasterlayer	Create random raster layer (exponential distribution),createrandomexponentialrasterlayer	Create random raster layer (exponential distribution),QGIS General,cli_list
-QGIS,native,native:createrandomgammarasterlayer	Create random raster layer (gamma distribution),createrandomgammarasterlayer	Create random raster layer (gamma distribution),QGIS General,cli_list
-QGIS,native,native:createrandomgeometricrasterlayer	Create random raster layer (geometric distribution),createrandomgeometricrasterlayer	Create random raster layer (geometric distribution),QGIS General,cli_list
-QGIS,native,native:createrandomnegativebinomialrasterlayer	Create random raster layer (negative binomial distribution),createrandomnegativebinomialrasterlayer	Create random raster layer (negative binomial distribution),QGIS General,cli_list
-QGIS,native,native:createrandomnormalrasterlayer	Create random raster layer (normal distribution),createrandomnormalrasterlayer	Create random raster layer (normal distribution),QGIS General,cli_list
-QGIS,native,native:createrandompoissonrasterlayer	Create random raster layer (poisson distribution),createrandompoissonrasterlayer	Create random raster layer (poisson distribution),QGIS General,cli_list
-QGIS,native,native:createrandomuniformrasterlayer	Create random raster layer (uniform distribution),createrandomuniformrasterlayer	Create random raster layer (uniform distribution),QGIS General,cli_list
-QGIS,native,native:createspatialindex	Create spatial index,createspatialindex	Create spatial index,QGIS General,cli_list
-QGIS,native,native:dbscanclustering	DBSCAN clustering,dbscanclustering	DBSCAN clustering,QGIS General,cli_list
-QGIS,native,native:delaunaytriangulation	Delaunay triangulation,delaunaytriangulation	Delaunay triangulation,QGIS General,cli_list
-QGIS,native,native:deletecolumn	Drop field(s),deletecolumn	Drop field(s),QGIS General,cli_list
-QGIS,native,native:deleteduplicategeometries	Delete duplicate geometries,deleteduplicategeometries	Delete duplicate geometries,QGIS General,cli_list
-QGIS,native,native:deleteholes	Delete holes,deleteholes	Delete holes,QGIS General,cli_list
-QGIS,native,native:densifygeometries	Densify by count,densifygeometries	Densify by count,QGIS General,cli_list
-QGIS,native,native:densifygeometriesgivenaninterval	Densify by interval,densifygeometriesgivenaninterval	Densify by interval,QGIS General,cli_list
-QGIS,native,native:detectvectorchanges	Detect dataset changes,detectvectorchanges	Detect dataset changes,QGIS General,cli_list
-QGIS,native,native:difference	Difference,difference	Difference,QGIS General,cli_list
-QGIS,native,native:dissolve	Dissolve,dissolve	Dissolve,QGIS General,cli_list
-QGIS,native,native:downloadgpsdata	Download GPS data from device,downloadgpsdata	Download GPS data from device,QGIS General,cli_list
-QGIS,native,native:downloadvectortiles	Download vector tiles,downloadvectortiles	Download vector tiles,QGIS General,cli_list
-QGIS,native,native:dropgeometries	Drop geometries,dropgeometries	Drop geometries,QGIS General,cli_list
-QGIS,native,native:dropmzvalues	Drop M/Z values,dropmzvalues	Drop M/Z values,QGIS General,cli_list
-QGIS,native,native:dtmslopebasedfilter	DTM filter (slope-based),dtmslopebasedfilter	DTM filter (slope-based),QGIS General,cli_list
-QGIS,native,native:dxfexport	Export layers to DXF,dxfexport	Export layers to DXF,QGIS General,cli_list
-QGIS,native,native:equaltofrequency	Equal to frequency,equaltofrequency	Equal to frequency,QGIS General,cli_list
-QGIS,native,native:explodehstorefield	Explode HStore Field,explodehstorefield	Explode HStore Field,QGIS General,cli_list
-QGIS,native,native:explodelines	Explode lines,explodelines	Explode lines,QGIS General,cli_list
-QGIS,native,native:exportlayermetadata	Export layer metadata,exportlayermetadata	Export layer metadata,QGIS General,cli_list
-QGIS,native,native:exportlayersinformation	Export layer(s) information,exportlayersinformation	Export layer(s) information,QGIS General,cli_list
-QGIS,native,native:exportmeshedges	Export mesh edges,exportmeshedges	Export mesh edges,QGIS General,cli_list
-QGIS,native,native:exportmeshfaces	Export mesh faces,exportmeshfaces	Export mesh faces,QGIS General,cli_list
-QGIS,native,native:exportmeshongrid	Export mesh on grid,exportmeshongrid	Export mesh on grid,QGIS General,cli_list
-QGIS,native,native:exportmeshvertices	Export mesh vertices,exportmeshvertices	Export mesh vertices,QGIS General,cli_list
-QGIS,native,native:exporttospreadsheet	Export to spreadsheet,exporttospreadsheet	Export to spreadsheet,QGIS General,cli_list
-QGIS,native,native:extendlines	Extend lines,extendlines	Extend lines,QGIS General,cli_list
-QGIS,native,native:extenttolayer	Create layer from extent,extenttolayer	Create layer from extent,QGIS General,cli_list
-QGIS,native,native:extractbinary	Extract binary field,extractbinary	Extract binary field,QGIS General,cli_list
-QGIS,native,native:extractbyattribute	Extract by attribute,extractbyattribute	Extract by attribute,QGIS General,cli_list
-QGIS,native,native:extractbyexpression	Extract by expression,extractbyexpression	Extract by expression,QGIS General,cli_list
-QGIS,native,native:extractbyextent	Extract/clip by extent,extractbyextent	Extract/clip by extent,QGIS General,cli_list
-QGIS,native,native:extractbylocation	Extract by location,extractbylocation	Extract by location,QGIS General,cli_list
-QGIS,native,native:extractlabels	Extract labels,extractlabels	Extract labels,QGIS General,cli_list
-QGIS,native,native:extractmvalues	Extract M values,extractmvalues	Extract M values,QGIS General,cli_list
-QGIS,native,native:extractspecificvertices	Extract specific vertices,extractspecificvertices	Extract specific vertices,QGIS General,cli_list
-QGIS,native,native:extractvertices	Extract vertices,extractvertices	Extract vertices,QGIS General,cli_list
-QGIS,native,native:extractwithindistance	Extract within distance,extractwithindistance	Extract within distance,QGIS General,cli_list
-QGIS,native,native:extractzvalues	Extract Z values,extractzvalues	Extract Z values,QGIS General,cli_list
-QGIS,native,native:fieldcalculator	Field calculator,fieldcalculator	Field calculator,QGIS General,cli_list
-QGIS,native,native:filedownloader	Download file via HTTP(S),filedownloader	Download file via HTTP(S),QGIS General,cli_list
-QGIS,native,native:fillnodata	Fill NoData cells,fillnodata	Fill NoData cells,QGIS General,cli_list
-QGIS,native,native:filterbygeometry	Filter by geometry type,filterbygeometry	Filter by geometry type,QGIS General,cli_list
-QGIS,native,native:filterverticesbym	Filter vertices by M value,filterverticesbym	Filter vertices by M value,QGIS General,cli_list
-QGIS,native,native:filterverticesbyz	Filter vertices by Z value,filterverticesbyz	Filter vertices by Z value,QGIS General,cli_list
-QGIS,native,native:fixgeometries	Fix geometries,fixgeometries	Fix geometries,QGIS General,cli_list
-QGIS,native,native:fixgeometryangle	Fix geometry (Angle),fixgeometryangle	Fix geometry (Angle),QGIS General,cli_list
-QGIS,native,native:fixgeometryarea	Fix geometry (Area),fixgeometryarea	Fix geometry (Area),QGIS General,cli_list
-QGIS,native,native:fixgeometryhole	Fix geometry (Hole),fixgeometryhole	Fix geometry (Hole),QGIS General,cli_list
-QGIS,native,native:fixgeometrymissingvertex	Fix geometry (Missing Vertex),fixgeometrymissingvertex	Fix geometry (Missing Vertex),QGIS General,cli_list
-QGIS,native,native:flattenrelationships	Flatten relationship,flattenrelationships	Flatten relationship,QGIS General,cli_list
-QGIS,native,native:forcerhr	Force right-hand-rule,forcerhr	Force right-hand-rule,QGIS General,cli_list
-QGIS,native,native:fuzzifyrastergaussianmembership	Fuzzify raster (gaussian membership),fuzzifyrastergaussianmembership	Fuzzify raster (gaussian membership),QGIS General,cli_list
-QGIS,native,native:fuzzifyrasterlargemembership	Fuzzify raster (large membership),fuzzifyrasterlargemembership	Fuzzify raster (large membership),QGIS General,cli_list
-QGIS,native,native:fuzzifyrasterlinearmembership	Fuzzify raster (linear membership),fuzzifyrasterlinearmembership	Fuzzify raster (linear membership),QGIS General,cli_list
-QGIS,native,native:fuzzifyrasternearmembership	Fuzzify raster (near membership),fuzzifyrasternearmembership	Fuzzify raster (near membership),QGIS General,cli_list
-QGIS,native,native:fuzzifyrasterpowermembership	Fuzzify raster (power membership),fuzzifyrasterpowermembership	Fuzzify raster (power membership),QGIS General,cli_list
-QGIS,native,native:fuzzifyrastersmallmembership	Fuzzify raster (small membership),fuzzifyrastersmallmembership	Fuzzify raster (small membership),QGIS General,cli_list
-QGIS,native,native:generateelevationprofileimage	Generate elevation profile image,generateelevationprofileimage	Generate elevation profile image,QGIS General,cli_list
-QGIS,native,native:generatepointspixelcentroidsinsidepolygons	Generate points (pixel centroids) inside polygons,generatepointspixelcentroidsinsidepolygons	Generate points (pixel centroids) inside polygons,QGIS General,cli_list
-QGIS,native,native:geometrybyexpression	Geometry by expression,geometrybyexpression	Geometry by expression,QGIS General,cli_list
-QGIS,native,native:gltftovector	Convert GLTF to vector features,gltftovector	Convert GLTF to vector features,QGIS General,cli_list
-QGIS,native,native:greaterthanfrequency	Greater than frequency,greaterthanfrequency	Greater than frequency,QGIS General,cli_list
-QGIS,native,native:highestpositioninrasterstack	Highest position in raster stack,highestpositioninrasterstack	Highest position in raster stack,QGIS General,cli_list
-QGIS,native,native:hillshade	Hillshade,hillshade	Hillshade,QGIS General,cli_list
-QGIS,native,native:httprequest	HTTP(S) POST/GET request,httprequest	HTTP(S) POST/GET request,QGIS General,cli_list
-QGIS,native,native:hublines	Join by lines (hub lines),hublines	Join by lines (hub lines),QGIS General,cli_list
-QGIS,native,native:importintopostgis	Export to PostgreSQL,importintopostgis	Export to PostgreSQL,QGIS General,cli_list
-QGIS,native,native:importphotos	Import geotagged photos,importphotos	Import geotagged photos,QGIS General,cli_list
-QGIS,native,native:interpolatepoint	Interpolate point on line,interpolatepoint	Interpolate point on line,QGIS General,cli_list
-QGIS,native,native:intersection	Intersection,intersection	Intersection,QGIS General,cli_list
-QGIS,native,native:joinattributesbylocation	Join attributes by location,joinattributesbylocation	Join attributes by location,QGIS General,cli_list
-QGIS,native,native:joinattributestable	Join attributes by field value,joinattributestable	Join attributes by field value,QGIS General,cli_list
-QGIS,native,native:joinbylocationsummary	Join attributes by location (summary),joinbylocationsummary	Join attributes by location (summary),QGIS General,cli_list
-QGIS,native,native:joinbynearest	Join attributes by nearest,joinbynearest	Join attributes by nearest,QGIS General,cli_list
-QGIS,native,native:keepnbiggestparts	Keep N biggest parts,keepnbiggestparts	Keep N biggest parts,QGIS General,cli_list
-QGIS,native,native:kmeansclustering	K-means clustering,kmeansclustering	K-means clustering,QGIS General,cli_list
-QGIS,native,native:layertobookmarks	Convert layer to spatial bookmarks,layertobookmarks	Convert layer to spatial bookmarks,QGIS General,cli_list
-QGIS,native,native:lessthanfrequency	Less than frequency,lessthanfrequency	Less than frequency,QGIS General,cli_list
-QGIS,native,native:linedensity	Line density,linedensity	Line density,QGIS General,cli_list
-QGIS,native,native:lineintersections	Line intersections,lineintersections	Line intersections,QGIS General,cli_list
-QGIS,native,native:linesubstring	Line substring,linesubstring	Line substring,QGIS General,cli_list
-QGIS,native,native:lowestpositioninrasterstack	Lowest position in raster stack,lowestpositioninrasterstack	Lowest position in raster stack,QGIS General,cli_list
-QGIS,native,native:meancoordinates	Mean coordinate(s),meancoordinates	Mean coordinate(s),QGIS General,cli_list
-QGIS,native,native:mergelines	Merge lines,mergelines	Merge lines,QGIS General,cli_list
-QGIS,native,native:mergevectorlayers	Merge vector layers,mergevectorlayers	Merge vector layers,QGIS General,cli_list
-QGIS,native,native:meshcontours	Export contours,meshcontours	Export contours,QGIS General,cli_list
-QGIS,native,native:meshexportcrosssection	Export cross section dataset values on lines from mesh,meshexportcrosssection	Export cross section dataset values on lines from mesh,QGIS General,cli_list
-QGIS,native,native:meshexporttimeseries	Export time series values from points of a mesh dataset,meshexporttimeseries	Export time series values from points of a mesh dataset,QGIS General,cli_list
-QGIS,native,native:meshrasterize	Rasterize mesh dataset,meshrasterize	Rasterize mesh dataset,QGIS General,cli_list
-QGIS,native,native:minimumenclosingcircle	Minimum enclosing circles,minimumenclosingcircle	Minimum enclosing circles,QGIS General,cli_list
-QGIS,native,native:multidifference	Difference (multiple),multidifference	Difference (multiple),QGIS General,cli_list
-QGIS,native,native:multiintersection	Intersection (multiple),multiintersection	Intersection (multiple),QGIS General,cli_list
-QGIS,native,native:multiparttosingleparts	Multipart to singleparts,multiparttosingleparts	Multipart to singleparts,QGIS General,cli_list
-QGIS,native,native:multiringconstantbuffer	Multi-ring buffer (constant distance),multiringconstantbuffer	Multi-ring buffer (constant distance),QGIS General,cli_list
-QGIS,native,native:multiunion	Union (multiple),multiunion	Union (multiple),QGIS General,cli_list
-QGIS,native,native:nearestneighbouranalysis	Nearest neighbour analysis,nearestneighbouranalysis	Nearest neighbour analysis,QGIS General,cli_list
-QGIS,native,native:offsetline	Offset lines,offsetline	Offset lines,QGIS General,cli_list
-QGIS,native,native:openurl	Open file or URL,openurl	Open file or URL,QGIS General,cli_list
-QGIS,native,native:orderbyexpression	Order by expression,orderbyexpression	Order by expression,QGIS General,cli_list
-QGIS,native,native:orientedminimumboundingbox	Oriented minimum bounding box,orientedminimumboundingbox	Oriented minimum bounding box,QGIS General,cli_list
-QGIS,native,native:orthogonalize	Orthogonalize,orthogonalize	Orthogonalize,QGIS General,cli_list
-QGIS,native,native:package	Package layers,package	Package layers,QGIS General,cli_list
-QGIS,native,native:pixelstopoints	Raster pixels to points,pixelstopoints	Raster pixels to points,QGIS General,cli_list
-QGIS,native,native:pixelstopolygons	Raster pixels to polygons,pixelstopolygons	Raster pixels to polygons,QGIS General,cli_list
-QGIS,native,native:pointonsurface	Point on surface,pointonsurface	Point on surface,QGIS General,cli_list
-QGIS,native,native:pointsalonglines	Points along geometry,pointsalonglines	Points along geometry,QGIS General,cli_list
-QGIS,native,native:pointstopath	Points to path,pointstopath	Points to path,QGIS General,cli_list
-QGIS,native,native:pointtolayer	Create layer from point,pointtolayer	Create layer from point,QGIS General,cli_list
-QGIS,native,native:poleofinaccessibility	Pole of inaccessibility,poleofinaccessibility	Pole of inaccessibility,QGIS General,cli_list
-QGIS,native,native:polygonfromlayerextent	Extract layer extent,polygonfromlayerextent	Extract layer extent,QGIS General,cli_list
-QGIS,native,native:polygonize	Polygonize,polygonize	Polygonize,QGIS General,cli_list
-QGIS,native,native:polygonstolines	Polygons to lines,polygonstolines	Polygons to lines,QGIS General,cli_list
-QGIS,native,native:postgisexecutesql	PostgreSQL execute SQL,postgisexecutesql	PostgreSQL execute SQL,QGIS General,cli_list
-QGIS,native,native:printlayoutmapextenttolayer	Print layout map extent to layer,printlayoutmapextenttolayer	Print layout map extent to layer,QGIS General,cli_list
-QGIS,native,native:printlayouttoimage	Export print layout as image,printlayouttoimage	Export print layout as image,QGIS General,cli_list
-QGIS,native,native:printlayouttopdf	Export print layout as PDF,printlayouttopdf	Export print layout as PDF,QGIS General,cli_list
-QGIS,native,native:projectpointcartesian	Project points (Cartesian),projectpointcartesian	Project points (Cartesian),QGIS General,cli_list
-QGIS,native,native:promotetomulti	Promote to multipart,promotetomulti	Promote to multipart,QGIS General,cli_list
-QGIS,native,native:randomextract	Random extract,randomextract	Random extract,QGIS General,cli_list
-QGIS,native,native:randompointsinextent	Random points in extent,randompointsinextent	Random points in extent,QGIS General,cli_list
-QGIS,native,native:randompointsinpolygons	Random points in polygons,randompointsinpolygons	Random points in polygons,QGIS General,cli_list
-QGIS,native,native:randompointsonlines	Random points on lines,randompointsonlines	Random points on lines,QGIS General,cli_list
-QGIS,native,native:rasterbooleanand	Raster boolean AND,rasterbooleanand	Raster boolean AND,QGIS General,cli_list
-QGIS,native,native:rasterize	Convert map to raster,rasterize	Convert map to raster,QGIS General,cli_list
-QGIS,native,native:rasterlayerproperties	Raster layer properties,rasterlayerproperties	Raster layer properties,QGIS General,cli_list
-QGIS,native,native:rasterlayerstatistics	Raster layer statistics,rasterlayerstatistics	Raster layer statistics,QGIS General,cli_list
-QGIS,native,native:rasterlayeruniquevaluesreport	Raster layer unique values report,rasterlayeruniquevaluesreport	Raster layer unique values report,QGIS General,cli_list
-QGIS,native,native:rasterlayerzonalstats	Raster layer zonal statistics,rasterlayerzonalstats	Raster layer zonal statistics,QGIS General,cli_list
-QGIS,native,native:rasterlogicalor	Raster boolean OR,rasterlogicalor	Raster boolean OR,QGIS General,cli_list
-QGIS,native,native:rasterminmax	Raster minimum/maximum,rasterminmax	Raster minimum/maximum,QGIS General,cli_list
-QGIS,native,native:rastersampling	Sample raster values,rastersampling	Sample raster values,QGIS General,cli_list
-QGIS,native,native:rastersurfacevolume	Raster surface volume,rastersurfacevolume	Raster surface volume,QGIS General,cli_list
-QGIS,native,native:reclassifybylayer	Reclassify by layer,reclassifybylayer	Reclassify by layer,QGIS General,cli_list
-QGIS,native,native:reclassifybytable	Reclassify by table,reclassifybytable	Reclassify by table,QGIS General,cli_list
-QGIS,native,"native:rectanglesovalsdiamonds	Rectangles, ovals, diamonds","rectanglesovalsdiamonds	Rectangles, ovals, diamonds",QGIS General,cli_list
-QGIS,native,native:refactorfields	Refactor fields,refactorfields	Refactor fields,QGIS General,cli_list
-QGIS,native,native:removeduplicatesbyattribute	Delete duplicates by attribute,removeduplicatesbyattribute	Delete duplicates by attribute,QGIS General,cli_list
-QGIS,native,native:removeduplicatevertices	Remove duplicate vertices,removeduplicatevertices	Remove duplicate vertices,QGIS General,cli_list
-QGIS,native,native:removenullgeometries	Remove null geometries,removenullgeometries	Remove null geometries,QGIS General,cli_list
-QGIS,native,native:renametablefield	Rename field,renametablefield	Rename field,QGIS General,cli_list
-QGIS,native,native:repairshapefile	Repair Shapefile,repairshapefile	Repair Shapefile,QGIS General,cli_list
-QGIS,native,native:reprojectlayer	Reproject layer,reprojectlayer	Reproject layer,QGIS General,cli_list
-QGIS,native,native:rescaleraster	Rescale raster,rescaleraster	Rescale raster,QGIS General,cli_list
-QGIS,native,native:retainfields	Retain fields,retainfields	Retain fields,QGIS General,cli_list
-QGIS,native,native:reverselinedirection	Reverse line direction,reverselinedirection	Reverse line direction,QGIS General,cli_list
-QGIS,native,native:rotatefeatures	Rotate,rotatefeatures	Rotate,QGIS General,cli_list
-QGIS,native,native:roundness	Roundness,roundness	Roundness,QGIS General,cli_list
-QGIS,native,native:roundrastervalues	Round raster,roundrastervalues	Round raster,QGIS General,cli_list
-QGIS,native,native:ruggednessindex	Ruggedness index,ruggednessindex	Ruggedness index,QGIS General,cli_list
-QGIS,native,native:savefeatures	Save vector features to file,savefeatures	Save vector features to file,QGIS General,cli_list
-QGIS,native,native:saveselectedfeatures	Extract selected features,saveselectedfeatures	Extract selected features,QGIS General,cli_list
-QGIS,native,native:segmentizebymaxangle	Segmentize by maximum angle,segmentizebymaxangle	Segmentize by maximum angle,QGIS General,cli_list
-QGIS,native,native:segmentizebymaxdistance	Segmentize by maximum distance,segmentizebymaxdistance	Segmentize by maximum distance,QGIS General,cli_list
-QGIS,native,native:serviceareafromlayer	Service area (from layer),serviceareafromlayer	Service area (from layer),QGIS General,cli_list
-QGIS,native,native:serviceareafrompoint	Service area (from point),serviceareafrompoint	Service area (from point),QGIS General,cli_list
-QGIS,native,native:setlayerencoding	Set layer encoding,setlayerencoding	Set layer encoding,QGIS General,cli_list
-QGIS,native,native:setlayermetadata	Set layer metadata,setlayermetadata	Set layer metadata,QGIS General,cli_list
-QGIS,native,native:setlayerstyle	Set layer style,setlayerstyle	Set layer style,QGIS General,cli_list
-QGIS,native,native:setmetadatafields	Set metadata fields,setmetadatafields	Set metadata fields,QGIS General,cli_list
-QGIS,native,native:setmfromraster	Set M value from raster,setmfromraster	Set M value from raster,QGIS General,cli_list
-QGIS,native,native:setmvalue	Set M value,setmvalue	Set M value,QGIS General,cli_list
-QGIS,native,native:setzfromraster	Drape (set Z value from raster),setzfromraster	Drape (set Z value from raster),QGIS General,cli_list
-QGIS,native,native:setzvalue	Set Z value,setzvalue	Set Z value,QGIS General,cli_list
-QGIS,native,native:shortestline	Shortest line between features,shortestline	Shortest line between features,QGIS General,cli_list
-QGIS,native,native:shortestpathlayertopoint	Shortest path (layer to point),shortestpathlayertopoint	Shortest path (layer to point),QGIS General,cli_list
-QGIS,native,native:shortestpathpointtolayer	Shortest path (point to layer),shortestpathpointtolayer	Shortest path (point to layer),QGIS General,cli_list
-QGIS,native,native:shortestpathpointtopoint	Shortest path (point to point),shortestpathpointtopoint	Shortest path (point to point),QGIS General,cli_list
-QGIS,native,native:shpencodinginfo	Extract Shapefile encoding,shpencodinginfo	Extract Shapefile encoding,QGIS General,cli_list
-QGIS,native,native:simplifygeometries	Simplify,simplifygeometries	Simplify,QGIS General,cli_list
-QGIS,native,native:singlesidedbuffer	Single sided buffer,singlesidedbuffer	Single sided buffer,QGIS General,cli_list
-QGIS,native,native:slope	Slope,slope	Slope,QGIS General,cli_list
-QGIS,native,native:smoothgeometry	Smooth,smoothgeometry	Smooth,QGIS General,cli_list
-QGIS,native,native:snapgeometries	Snap geometries to layer,snapgeometries	Snap geometries to layer,QGIS General,cli_list
-QGIS,native,native:snappointstogrid	Snap points to grid,snappointstogrid	Snap points to grid,QGIS General,cli_list
-QGIS,native,native:spatialiteexecutesql	SpatiaLite execute SQL,spatialiteexecutesql	SpatiaLite execute SQL,QGIS General,cli_list
-QGIS,native,native:spatialiteexecutesqlregistered	SpatiaLite execute SQL (registered DB),spatialiteexecutesqlregistered	SpatiaLite execute SQL (registered DB),QGIS General,cli_list
-QGIS,native,native:splitfeaturesbycharacter	Split features by character,splitfeaturesbycharacter	Split features by character,QGIS General,cli_list
-QGIS,native,native:splitlinesbylength	Split lines by maximum length,splitlinesbylength	Split lines by maximum length,QGIS General,cli_list
-QGIS,native,native:splitvectorlayer	Split vector layer,splitvectorlayer	Split vector layer,QGIS General,cli_list
-QGIS,native,native:splitwithlines	Split with lines,splitwithlines	Split with lines,QGIS General,cli_list
-QGIS,native,native:stdbscanclustering	ST-DBSCAN clustering,stdbscanclustering	ST-DBSCAN clustering,QGIS General,cli_list
-QGIS,native,native:stylefromproject	Create style database from project,stylefromproject	Create style database from project,QGIS General,cli_list
-QGIS,native,native:subdivide	Subdivide,subdivide	Subdivide,QGIS General,cli_list
-QGIS,native,native:sumlinelengths	Sum line lengths,sumlinelengths	Sum line lengths,QGIS General,cli_list
-QGIS,native,native:surfacetopolygon	Surface to polygon,surfacetopolygon	Surface to polygon,QGIS General,cli_list
-QGIS,native,native:swapxy	Swap X and Y coordinates,swapxy	Swap X and Y coordinates,QGIS General,cli_list
-QGIS,native,native:symmetricaldifference	Symmetrical difference,symmetricaldifference	Symmetrical difference,QGIS General,cli_list
-QGIS,native,native:taperedbuffer	Tapered buffers,taperedbuffer	Tapered buffers,QGIS General,cli_list
-QGIS,native,native:tilesxyzdirectory	Generate XYZ tiles (Directory),tilesxyzdirectory	Generate XYZ tiles (Directory),QGIS General,cli_list
-QGIS,native,native:tilesxyzmbtiles	Generate XYZ tiles (MBTiles),tilesxyzmbtiles	Generate XYZ tiles (MBTiles),QGIS General,cli_list
-QGIS,native,native:tinmeshcreation	TIN Mesh Creation,tinmeshcreation	TIN Mesh Creation,QGIS General,cli_list
-QGIS,native,native:transect	Transect,transect	Transect,QGIS General,cli_list
-QGIS,native,native:transferannotationsfrommain	Transfer annotations from main layer,transferannotationsfrommain	Transfer annotations from main layer,QGIS General,cli_list
-QGIS,native,native:translategeometry	Translate,translategeometry	Translate,QGIS General,cli_list
-QGIS,native,native:truncatetable	Truncate table,truncatetable	Truncate table,QGIS General,cli_list
-QGIS,native,native:union	Union,union	Union,QGIS General,cli_list
-QGIS,native,native:updatelayermetadata	Update layer metadata,updatelayermetadata	Update layer metadata,QGIS General,cli_list
-QGIS,native,native:uploadgpsdata	Upload GPS data to device,uploadgpsdata	Upload GPS data to device,QGIS General,cli_list
-QGIS,native,native:voronoipolygons	Voronoi polygons,voronoipolygons	Voronoi polygons,QGIS General,cli_list
-QGIS,native,native:wedgebuffers	Create wedge buffers,wedgebuffers	Create wedge buffers,QGIS General,cli_list
-QGIS,native,native:writevectortiles_mbtiles	Write Vector Tiles (MBTiles),writevectortiles_mbtiles	Write Vector Tiles (MBTiles),QGIS General,cli_list
-QGIS,native,native:writevectortiles_xyz	Write Vector Tiles (XYZ),writevectortiles_xyz	Write Vector Tiles (XYZ),QGIS General,cli_list
-QGIS,native,native:zonalhistogram	Zonal histogram,zonalhistogram	Zonal histogram,QGIS General,cli_list
-QGIS,native,native:zonalminmaxpoint	Zonal minimum/maximum point,zonalminmaxpoint	Zonal minimum/maximum point,QGIS General,cli_list
-QGIS,native,native:zonalstatisticsfb	Zonal statistics,zonalstatisticsfb	Zonal statistics,QGIS General,cli_list
-QGIS,pdal,pdal:assignprojection	Assign projection,assignprojection	Assign projection,Pdal General,cli_list
-QGIS,pdal,pdal:boundary	Boundary,boundary	Boundary,Pdal General,cli_list
-QGIS,pdal,pdal:clip	Clip,clip	Clip,Geoprocessing,cli_list
-QGIS,pdal,pdal:convertformat	Convert format,convertformat	Convert format,Data Conversion,cli_list
-QGIS,pdal,pdal:createcopc	Create COPC,createcopc	Create COPC,Pdal General,cli_list
-QGIS,pdal,pdal:density	Density,density	Density,Pdal General,cli_list
-QGIS,pdal,pdal:exportraster	Export to raster,exportraster	Export to raster,Data Conversion,cli_list
-QGIS,pdal,pdal:exportrastertin	Export to raster (using triangulation),exportrastertin	Export to raster (using triangulation),Data Conversion,cli_list
-QGIS,pdal,pdal:exportvector	Export to vector,exportvector	Export to vector,Data Conversion,cli_list
-QGIS,pdal,pdal:filter	Filter,filter	Filter,Pdal General,cli_list
-QGIS,pdal,pdal:info	Information,info	Information,Pdal General,cli_list
-QGIS,pdal,pdal:merge	Merge,merge	Merge,Data Management,cli_list
-QGIS,pdal,pdal:reproject	Reproject,reproject	Reproject,Pdal General,cli_list
-QGIS,pdal,pdal:thinbydecimate	Thin (by skipping points),thinbydecimate	Thin (by skipping points),Pdal General,cli_list
-QGIS,pdal,pdal:thinbyradius	Thin (by sampling radius),thinbyradius	Thin (by sampling radius),Pdal General,cli_list
-QGIS,pdal,pdal:tile	Tile,tile	Tile,Pdal General,cli_list
-QGIS,pdal,pdal:virtualpointcloud	Build virtual point cloud (VPC),virtualpointcloud	Build virtual point cloud (VPC),Pdal General,cli_list
-QGIS,qgis,qgis:advancedpythonfieldcalculator	Advanced Python field calculator,advancedpythonfieldcalculator	Advanced Python field calculator,QGIS General,cli_list
-QGIS,qgis,qgis:barplot	Bar plot,barplot	Bar plot,QGIS General,cli_list
-QGIS,qgis,qgis:boxplot	Box plot,boxplot	Box plot,QGIS General,cli_list
-QGIS,qgis,qgis:checkvalidity	Check validity,checkvalidity	Check validity,QGIS General,cli_list
-QGIS,qgis,qgis:climbalongline	Climb along line,climbalongline	Climb along line,QGIS General,cli_list
-QGIS,qgis,qgis:convertgeometrytype	Convert geometry type,convertgeometrytype	Convert geometry type,QGIS General,cli_list
-QGIS,qgis,qgis:definecurrentprojection	Define Shapefile projection,definecurrentprojection	Define Shapefile projection,QGIS General,cli_list
-QGIS,qgis,qgis:distancematrix	Distance matrix,distancematrix	Distance matrix,QGIS General,cli_list
-QGIS,qgis,qgis:distancetonearesthublinetohub	Distance to nearest hub (line to hub),distancetonearesthublinetohub	Distance to nearest hub (line to hub),QGIS General,cli_list
-QGIS,qgis,qgis:distancetonearesthubpoints	Distance to nearest hub (points),distancetonearesthubpoints	Distance to nearest hub (points),QGIS General,cli_list
-QGIS,qgis,qgis:executesql	Execute SQL,executesql	Execute SQL,QGIS General,cli_list
-QGIS,qgis,qgis:exportaddgeometrycolumns	Add geometry attributes,exportaddgeometrycolumns	Add geometry attributes,QGIS General,cli_list
-QGIS,qgis,qgis:findprojection	Find projection,findprojection	Find projection,QGIS General,cli_list
-QGIS,qgis,qgis:generatepointspixelcentroidsalongline	Generate points (pixel centroids) along line,generatepointspixelcentroidsalongline	Generate points (pixel centroids) along line,QGIS General,cli_list
-QGIS,qgis,qgis:heatmapkerneldensityestimation	Heatmap (Kernel Density Estimation),heatmapkerneldensityestimation	Heatmap (Kernel Density Estimation),QGIS General,cli_list
-QGIS,qgis,qgis:hypsometriccurves	Hypsometric curves,hypsometriccurves	Hypsometric curves,QGIS General,cli_list
-QGIS,qgis,qgis:idwinterpolation	IDW interpolation,idwinterpolation	IDW interpolation,QGIS General,cli_list
-QGIS,qgis,qgis:importintospatialite	Export to SpatiaLite,importintospatialite	Export to SpatiaLite,QGIS General,cli_list
-QGIS,qgis,qgis:linestopolygons	Lines to polygons,linestopolygons	Lines to polygons,QGIS General,cli_list
-QGIS,qgis,qgis:listuniquevalues	List unique values,listuniquevalues	List unique values,QGIS General,cli_list
-QGIS,qgis,qgis:meanandstandarddeviationplot	Mean and standard deviation plot,meanandstandarddeviationplot	Mean and standard deviation plot,QGIS General,cli_list
-QGIS,qgis,qgis:minimumboundinggeometry	Minimum bounding geometry,minimumboundinggeometry	Minimum bounding geometry,QGIS General,cli_list
-QGIS,qgis,qgis:pointsdisplacement	Points displacement,pointsdisplacement	Points displacement,QGIS General,cli_list
-QGIS,qgis,qgis:polarplot	Polar plot,polarplot	Polar plot,QGIS General,cli_list
-QGIS,qgis,qgis:randomextractwithinsubsets	Random extract within subsets,randomextractwithinsubsets	Random extract within subsets,QGIS General,cli_list
-QGIS,qgis,qgis:randompointsalongline	Random points along line,randompointsalongline	Random points along line,QGIS General,cli_list
-QGIS,qgis,qgis:randompointsinlayerbounds	Random points in layer bounds,randompointsinlayerbounds	Random points in layer bounds,QGIS General,cli_list
-QGIS,qgis,qgis:randompointsinsidepolygons	Random points inside polygons,randompointsinsidepolygons	Random points inside polygons,QGIS General,cli_list
-QGIS,qgis,qgis:rasterlayerhistogram	Raster layer histogram,rasterlayerhistogram	Raster layer histogram,QGIS General,cli_list
-QGIS,qgis,qgis:regularpoints	Regular points,regularpoints	Regular points,QGIS General,cli_list
-QGIS,qgis,qgis:relief	Relief,relief	Relief,QGIS General,cli_list
-QGIS,qgis,qgis:scatter3dplot	Vector layer scatterplot 3D,scatter3dplot	Vector layer scatterplot 3D,QGIS General,cli_list
-QGIS,qgis,qgis:statisticsbycategories	Statistics by categories,statisticsbycategories	Statistics by categories,QGIS General,cli_list
-QGIS,qgis,qgis:texttofloat	Text to float,texttofloat	Text to float,QGIS General,cli_list
-QGIS,qgis,qgis:tininterpolation	TIN interpolation,tininterpolation	TIN interpolation,QGIS General,cli_list
-QGIS,qgis,qgis:topologicalcoloring	Topological coloring,topologicalcoloring	Topological coloring,QGIS General,cli_list
-QGIS,qgis,qgis:vectorlayerhistogram	Vector layer histogram,vectorlayerhistogram	Vector layer histogram,QGIS General,cli_list
-QGIS,qgis,qgis:vectorlayerscatterplot	Vector layer scatterplot,vectorlayerscatterplot	Vector layer scatterplot,QGIS General,cli_list
-QGIS,plugin_grassprovider,grassprovider:GrassAlgorithm,GrassAlgorithm,Plugin Algorithms,config_files
-QGIS,plugin_grassprovider,grassprovider:Grass,Grass,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestGrass,TestGrass,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:Generic,Generic,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestGdal,TestGdal,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestQgis,TestQgis,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestAlg,TestAlg,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestGdalRaster,TestGdalRaster,Plugin Algorithms,config_files
-QGIS,plugin_tests,tests:TestGdalVector,TestGdalVector,Plugin Algorithms,config_files
-QGIS,plugin_gdal,gdal:Gdal,Gdal,Plugin Algorithms,config_files
-QGIS,plugin_gdal,gdal:GdalAlgorithm,GdalAlgorithm,Plugin Algorithms,config_files
-QGIS,plugin_qgis,qgis:QgisAlgorithm,QgisAlgorithm,Plugin Algorithms,config_files
-QGIS,plugin_qgis,qgis:Qgis,Qgis,Plugin Algorithms,config_files
-QGIS,plugin_qgis,qgis:QgisFeatureBased,QgisFeatureBased,Plugin Algorithms,config_files
-QGIS,plugin_gui,gui:AlgorithmDialog,AlgorithmDialog,Plugin Algorithms,config_files
-QGIS,plugin_gui,gui:InPlace,InPlace,Plugin Algorithms,config_files
-QGIS,plugin_gui,gui:Batch,Batch,Plugin Algorithms,config_files
-QGIS,plugin_script,script:Script,Script,Plugin Algorithms,config_files
-QGIS,plugin_modeler,modeler:Modeler,Modeler,Plugin Algorithms,config_files
+Tool,Provider,Algorithm_ID,Display_Name,Group
+QGIS,3d,3d:tessellate,Tessellate,Vector geometry
+QGIS,gdal,gdal:aspect,Aspect,Raster analysis
+QGIS,gdal,gdal:assignprojection,Assign projection,Raster projections
+QGIS,gdal,gdal:buffervectors,Buffer vectors,Vector geoprocessing
+QGIS,gdal,gdal:buildvirtualraster,Build virtual raster,Raster miscellaneous
+QGIS,gdal,gdal:buildvirtualvector,Build virtual vector,Vector miscellaneous
+QGIS,gdal,gdal:cliprasterbyextent,Clip raster by extent,Raster extraction
+QGIS,gdal,gdal:cliprasterbymasklayer,Clip raster by mask layer,Raster extraction
+QGIS,gdal,gdal:clipvectorbyextent,Clip vector by extent,Vector geoprocessing
+QGIS,gdal,gdal:clipvectorbypolygon,Clip vector by mask layer,Vector geoprocessing
+QGIS,gdal,gdal:colorrelief,Color relief,Raster analysis
+QGIS,gdal,gdal:contour,Contour,Raster extraction
+QGIS,gdal,gdal:contour_polygon,Contour Polygons,Raster extraction
+QGIS,gdal,gdal:convertformat,Convert format,Vector conversion
+QGIS,gdal,gdal:dissolve,Dissolve,Vector geoprocessing
+QGIS,gdal,gdal:executesql,Execute SQL,Vector miscellaneous
+QGIS,gdal,gdal:extractprojection,Extract projection,Raster projections
+QGIS,gdal,gdal:fillnodata,Fill NoData,Raster analysis
+QGIS,gdal,gdal:gdal2tiles,gdal2tiles,Raster miscellaneous
+QGIS,gdal,gdal:gdal2xyz,gdal2xyz,Raster conversion
+QGIS,gdal,gdal:gdalinfo,Raster information,Raster miscellaneous
+QGIS,gdal,gdal:gridaverage,Grid (Moving average),Raster analysis
+QGIS,gdal,gdal:griddatametrics,Grid (Data metrics),Raster analysis
+QGIS,gdal,gdal:gridinversedistance,Grid (Inverse distance to a power),Raster analysis
+QGIS,gdal,gdal:gridinversedistancenearestneighbor,Grid (IDW with nearest neighbor searching),Raster analysis
+QGIS,gdal,gdal:gridlinear,Grid (Linear),Raster analysis
+QGIS,gdal,gdal:gridnearestneighbor,Grid (Nearest neighbor),Raster analysis
+QGIS,gdal,gdal:hillshade,Hillshade,Raster analysis
+QGIS,gdal,gdal:importvectorintopostgisdatabaseavailableconnections,Export to PostgreSQL (available connections),Vector miscellaneous
+QGIS,gdal,gdal:importvectorintopostgisdatabasenewconnection,Export to PostgreSQL (new connection),Vector miscellaneous
+QGIS,gdal,gdal:merge,Merge,Raster miscellaneous
+QGIS,gdal,gdal:nearblack,Near black,Raster analysis
+QGIS,gdal,gdal:offsetcurve,Offset curve,Vector geoprocessing
+QGIS,gdal,gdal:ogrinfo,Vector information,Vector miscellaneous
+QGIS,gdal,gdal:ogrinfojson,Vector information (JSON),Vector miscellaneous
+QGIS,gdal,gdal:onesidebuffer,One side buffer,Vector geoprocessing
+QGIS,gdal,gdal:overviews,Build overviews (pyramids),Raster miscellaneous
+QGIS,gdal,gdal:pansharp,Pansharpening,Raster miscellaneous
+QGIS,gdal,gdal:pcttorgb,PCT to RGB,Raster conversion
+QGIS,gdal,gdal:pointsalonglines,Points along lines,Vector geoprocessing
+QGIS,gdal,gdal:polygonize,Polygonize (raster to vector),Raster conversion
+QGIS,gdal,gdal:proximity,Proximity (raster distance),Raster analysis
+QGIS,gdal,gdal:rastercalculator,Raster calculator,Raster miscellaneous
+QGIS,gdal,gdal:rasterize,Rasterize (vector to raster),Vector conversion
+QGIS,gdal,gdal:rasterize_over,Rasterize (overwrite with attribute),Vector conversion
+QGIS,gdal,gdal:rasterize_over_fixed_value,Rasterize (overwrite with fixed value),Vector conversion
+QGIS,gdal,gdal:rearrange_bands,Rearrange bands,Raster conversion
+QGIS,gdal,gdal:retile,Retile,Raster miscellaneous
+QGIS,gdal,gdal:rgbtopct,RGB to PCT,Raster conversion
+QGIS,gdal,gdal:roughness,Roughness,Raster analysis
+QGIS,gdal,gdal:sieve,Sieve,Raster analysis
+QGIS,gdal,gdal:slope,Slope,Raster analysis
+QGIS,gdal,gdal:tileindex,Tile index,Raster miscellaneous
+QGIS,gdal,gdal:tpitopographicpositionindex,Topographic Position Index (TPI),Raster analysis
+QGIS,gdal,gdal:translate,Translate (convert format),Raster conversion
+QGIS,gdal,gdal:triterrainruggednessindex,Terrain Ruggedness Index (TRI),Raster analysis
+QGIS,gdal,gdal:viewshed,Viewshed,Raster miscellaneous
+QGIS,gdal,gdal:warpreproject,Warp (reproject),Raster projections
+QGIS,native,native:addautoincrementalfield,Add autoincremental field,Vector table
+QGIS,native,native:addfieldtoattributestable,Add field to attributes table,Vector table
+QGIS,native,native:addhistorymetadata,Add history metadata,Metadata tools
+QGIS,native,native:adduniquevalueindexfield,Add unique value index field,Vector table
+QGIS,native,native:addxyfields,Add X/Y fields to layer,Vector table
+QGIS,native,native:affinetransform,Affine transform,Vector geometry
+QGIS,native,native:aggregate,Aggregate,Vector geometry
+QGIS,native,native:alignrasters,Align rasters,Raster tools
+QGIS,native,native:alignsingleraster,Align raster,Raster tools
+QGIS,native,native:angletonearest,Align points to features,Cartography
+QGIS,native,native:antimeridiansplit,Geodesic line split at antimeridian,Vector geometry
+QGIS,native,native:arrayoffsetlines,Array of offset (parallel) lines,Vector creation
+QGIS,native,native:arraytranslatedfeatures,Array of translated features,Vector creation
+QGIS,native,native:aspect,Aspect,Raster terrain analysis
+QGIS,native,native:assignprojection,Assign projection,Vector general
+QGIS,native,native:atlaslayouttoimage,Export atlas layout as image,Cartography
+QGIS,native,native:atlaslayouttomultiplepdf,Export atlas layout as PDF (multiple files),Cartography
+QGIS,native,native:atlaslayouttopdf,Export atlas layout as PDF (single file),Cartography
+QGIS,native,native:b3dmtogltf,Convert B3DM to GLTF,3D Tiles
+QGIS,native,native:basicstatisticsforfields,Basic statistics for fields,Vector analysis
+QGIS,native,native:batchnominatimgeocoder,Batch Nominatim geocoder,Vector general
+QGIS,native,native:bookmarkstolayer,Convert spatial bookmarks to layer,Vector general
+QGIS,native,native:boundary,Boundary,Vector geometry
+QGIS,native,native:boundingboxes,Bounding boxes,Vector geometry
+QGIS,native,native:buffer,Buffer,Vector geometry
+QGIS,native,native:bufferbym,Variable width buffer (by M value),Vector geometry
+QGIS,native,native:calculateexpression,Calculate expression,Modeler tools
+QGIS,native,native:calculatevectoroverlaps,Overlap analysis,Vector analysis
+QGIS,native,native:categorizeusingstyle,Create categorized renderer from styles,Cartography
+QGIS,native,native:cellstackpercentile,Cell stack percentile,Raster analysis
+QGIS,native,native:cellstackpercentrankfromrasterlayer,Cell stack percentrank from raster layer,Raster analysis
+QGIS,native,native:cellstackpercentrankfromvalue,Cell stack percent rank from value,Raster analysis
+QGIS,native,native:cellstatistics,Cell statistics,Raster analysis
+QGIS,native,native:centroids,Centroids,Vector geometry
+QGIS,native,native:checkgeometryangle,Check geometry (Angle),Check geometry
+QGIS,native,native:checkgeometryarea,Check geometry (Area),Check geometry
+QGIS,native,native:checkgeometryhole,Check geometry (Hole),Check geometry
+QGIS,native,native:checkgeometrymissingvertex,Check geometry (Missing Vertex),Check geometry
+QGIS,native,native:clip,Clip,Vector overlay
+QGIS,native,native:collect,Collect geometries,Vector geometry
+QGIS,native,native:combinestyles,Combine style databases,Cartography
+QGIS,native,native:concavehull,Concave hull,Vector geometry
+QGIS,native,native:condition,Conditional branch,Modeler tools
+QGIS,native,native:convertgpsdata,Convert GPS data,GPS
+QGIS,native,native:convertgpxfeaturetype,Convert GPX feature type,GPS
+QGIS,native,native:converttocurves,Convert to curved geometries,Vector geometry
+QGIS,native,native:convexhull,Convex hull,Vector geometry
+QGIS,native,native:copylayermetadata,Copy layer metadata,Metadata tools
+QGIS,native,native:countpointsinpolygon,Count points in polygon,Vector analysis
+QGIS,native,native:coveragesimplify,Simplify coverage,Vector coverage
+QGIS,native,native:coverageunion,Dissolve coverage,Vector coverage
+QGIS,native,native:coveragevalidate,Validate coverage,Vector coverage
+QGIS,native,native:createattributeindex,Create attribute index,Vector general
+QGIS,native,native:createconstantrasterlayer,Create constant raster layer,Raster creation
+QGIS,native,native:createdirectory,Create directory,Modeler tools
+QGIS,native,native:creategrid,Create grid,Vector creation
+QGIS,native,native:createpointslayerfromtable,Create points layer from table,Vector creation
+QGIS,native,native:createrandombinomialrasterlayer,Create random raster layer (binomial distribution),Raster creation
+QGIS,native,native:createrandomexponentialrasterlayer,Create random raster layer (exponential distribution),Raster creation
+QGIS,native,native:createrandomgammarasterlayer,Create random raster layer (gamma distribution),Raster creation
+QGIS,native,native:createrandomgeometricrasterlayer,Create random raster layer (geometric distribution),Raster creation
+QGIS,native,native:createrandomnegativebinomialrasterlayer,Create random raster layer (negative binomial distribution),Raster creation
+QGIS,native,native:createrandomnormalrasterlayer,Create random raster layer (normal distribution),Raster creation
+QGIS,native,native:createrandompoissonrasterlayer,Create random raster layer (poisson distribution),Raster creation
+QGIS,native,native:createrandomuniformrasterlayer,Create random raster layer (uniform distribution),Raster creation
+QGIS,native,native:createspatialindex,Create spatial index,Vector general
+QGIS,native,native:dbscanclustering,DBSCAN clustering,Vector analysis
+QGIS,native,native:delaunaytriangulation,Delaunay triangulation,Vector geometry
+QGIS,native,native:deletecolumn,Drop field(s),Vector table
+QGIS,native,native:deleteduplicategeometries,Delete duplicate geometries,Vector general
+QGIS,native,native:deleteholes,Delete holes,Vector geometry
+QGIS,native,native:densifygeometries,Densify by count,Vector geometry
+QGIS,native,native:densifygeometriesgivenaninterval,Densify by interval,Vector geometry
+QGIS,native,native:detectvectorchanges,Detect dataset changes,Vector general
+QGIS,native,native:difference,Difference,Vector overlay
+QGIS,native,native:dissolve,Dissolve,Vector geometry
+QGIS,native,native:downloadgpsdata,Download GPS data from device,GPS
+QGIS,native,native:downloadvectortiles,Download vector tiles,Vector tiles
+QGIS,native,native:dropgeometries,Drop geometries,Vector general
+QGIS,native,native:dropmzvalues,Drop M/Z values,Vector geometry
+QGIS,native,native:dtmslopebasedfilter,DTM filter (slope-based),Raster terrain analysis
+QGIS,native,native:dxfexport,Export layers to DXF,Vector general
+QGIS,native,native:equaltofrequency,Equal to frequency,Raster analysis
+QGIS,native,native:explodehstorefield,Explode HStore Field,Vector table
+QGIS,native,native:explodelines,Explode lines,Vector geometry
+QGIS,native,native:exportlayermetadata,Export layer metadata,Metadata tools
+QGIS,native,native:exportlayersinformation,Export layer(s) information,Layer tools
+QGIS,native,native:exportmeshedges,Export mesh edges,Mesh
+QGIS,native,native:exportmeshfaces,Export mesh faces,Mesh
+QGIS,native,native:exportmeshongrid,Export mesh on grid,Mesh
+QGIS,native,native:exportmeshvertices,Export mesh vertices,Mesh
+QGIS,native,native:exporttospreadsheet,Export to spreadsheet,Layer tools
+QGIS,native,native:extendlines,Extend lines,Vector geometry
+QGIS,native,native:extenttolayer,Create layer from extent,Vector geometry
+QGIS,native,native:extractbinary,Extract binary field,Vector table
+QGIS,native,native:extractbyattribute,Extract by attribute,Vector selection
+QGIS,native,native:extractbyexpression,Extract by expression,Vector selection
+QGIS,native,native:extractbyextent,Extract/clip by extent,Vector overlay
+QGIS,native,native:extractbylocation,Extract by location,Vector selection
+QGIS,native,native:extractlabels,Extract labels,Cartography
+QGIS,native,native:extractmvalues,Extract M values,Vector geometry
+QGIS,native,native:extractspecificvertices,Extract specific vertices,Vector geometry
+QGIS,native,native:extractvertices,Extract vertices,Vector geometry
+QGIS,native,native:extractwithindistance,Extract within distance,Vector selection
+QGIS,native,native:extractzvalues,Extract Z values,Vector geometry
+QGIS,native,native:fieldcalculator,Field calculator,Vector table
+QGIS,native,native:filedownloader,Download file via HTTP(S),File tools
+QGIS,native,native:fillnodata,Fill NoData cells,Raster tools
+QGIS,native,native:filter,Feature filter,Modeler tools
+QGIS,native,native:filterbygeometry,Filter by geometry type,Vector selection
+QGIS,native,native:filterlayersbytype,Filter layers by type,Modeler tools
+QGIS,native,native:filterverticesbym,Filter vertices by M value,Vector geometry
+QGIS,native,native:filterverticesbyz,Filter vertices by Z value,Vector geometry
+QGIS,native,native:fixgeometries,Fix geometries,Vector geometry
+QGIS,native,native:fixgeometryangle,Fix geometry (Angle),Fix geometry
+QGIS,native,native:fixgeometryarea,Fix geometry (Area),Fix geometry
+QGIS,native,native:fixgeometryhole,Fix geometry (Hole),Fix geometry
+QGIS,native,native:fixgeometrymissingvertex,Fix geometry (Missing Vertex),Fix geometry
+QGIS,native,native:flattenrelationships,Flatten relationship,Vector general
+QGIS,native,native:forcerhr,Force right-hand-rule,Vector geometry
+QGIS,native,native:fuzzifyrastergaussianmembership,Fuzzify raster (gaussian membership),Raster analysis
+QGIS,native,native:fuzzifyrasterlargemembership,Fuzzify raster (large membership),Raster analysis
+QGIS,native,native:fuzzifyrasterlinearmembership,Fuzzify raster (linear membership),Raster analysis
+QGIS,native,native:fuzzifyrasternearmembership,Fuzzify raster (near membership),Raster analysis
+QGIS,native,native:fuzzifyrasterpowermembership,Fuzzify raster (power membership),Raster analysis
+QGIS,native,native:fuzzifyrastersmallmembership,Fuzzify raster (small membership),Raster analysis
+QGIS,native,native:generateelevationprofileimage,Generate elevation profile image,Plots
+QGIS,native,native:generatepointspixelcentroidsinsidepolygons,Generate points (pixel centroids) inside polygons,Vector creation
+QGIS,native,native:geometrybyexpression,Geometry by expression,Vector geometry
+QGIS,native,native:gltftovector,Convert GLTF to vector features,3D Tiles
+QGIS,native,native:greaterthanfrequency,Greater than frequency,Raster analysis
+QGIS,native,native:highestpositioninrasterstack,Highest position in raster stack,Raster analysis
+QGIS,native,native:hillshade,Hillshade,Raster terrain analysis
+QGIS,native,native:httprequest,HTTP(S) POST/GET request,File tools
+QGIS,native,native:hublines,Join by lines (hub lines),Vector analysis
+QGIS,native,native:importintopostgis,Export to PostgreSQL,Database
+QGIS,native,native:importphotos,Import geotagged photos,Vector creation
+QGIS,native,native:interpolatepoint,Interpolate point on line,Vector geometry
+QGIS,native,native:intersection,Intersection,Vector overlay
+QGIS,native,native:joinattributesbylocation,Join attributes by location,Vector general
+QGIS,native,native:joinattributestable,Join attributes by field value,Vector general
+QGIS,native,native:joinbylocationsummary,Join attributes by location (summary),Vector general
+QGIS,native,native:joinbynearest,Join attributes by nearest,Vector general
+QGIS,native,native:keepnbiggestparts,Keep N biggest parts,Vector geometry
+QGIS,native,native:kmeansclustering,K-means clustering,Vector analysis
+QGIS,native,native:layertobookmarks,Convert layer to spatial bookmarks,Vector general
+QGIS,native,native:lessthanfrequency,Less than frequency,Raster analysis
+QGIS,native,native:linedensity,Line density,Interpolation
+QGIS,native,native:lineintersections,Line intersections,Vector overlay
+QGIS,native,native:linesubstring,Line substring,Vector geometry
+QGIS,native,native:loadlayer,Load layer into project,Modeler tools
+QGIS,native,native:lowestpositioninrasterstack,Lowest position in raster stack,Raster analysis
+QGIS,native,native:meancoordinates,Mean coordinate(s),Vector analysis
+QGIS,native,native:mergelines,Merge lines,Vector geometry
+QGIS,native,native:mergevectorlayers,Merge vector layers,Vector general
+QGIS,native,native:meshcontours,Export contours,Mesh
+QGIS,native,native:meshexportcrosssection,Export cross section dataset values on lines from mesh,Mesh
+QGIS,native,native:meshexporttimeseries,Export time series values from points of a mesh dataset,Mesh
+QGIS,native,native:meshrasterize,Rasterize mesh dataset,Mesh
+QGIS,native,native:minimumenclosingcircle,Minimum enclosing circles,Vector geometry
+QGIS,native,native:modelerrastercalc,Raster calculator,Raster analysis
+QGIS,native,native:modelervirtualrastercalc,Raster calculator (virtual),Raster analysis
+QGIS,native,native:multidifference,Difference (multiple),Vector overlay
+QGIS,native,native:multiintersection,Intersection (multiple),Vector overlay
+QGIS,native,native:multiparttosingleparts,Multipart to singleparts,Vector geometry
+QGIS,native,native:multiringconstantbuffer,Multi-ring buffer (constant distance),Vector geometry
+QGIS,native,native:multiunion,Union (multiple),Vector overlay
+QGIS,native,native:nearestneighbouranalysis,Nearest neighbour analysis,Vector analysis
+QGIS,native,native:offsetline,Offset lines,Vector geometry
+QGIS,native,native:openurl,Open file or URL,File tools
+QGIS,native,native:orderbyexpression,Order by expression,Vector general
+QGIS,native,native:orientedminimumboundingbox,Oriented minimum bounding box,Vector geometry
+QGIS,native,native:orthogonalize,Orthogonalize,Vector geometry
+QGIS,native,native:package,Package layers,Database
+QGIS,native,native:pixelstopoints,Raster pixels to points,Vector creation
+QGIS,native,native:pixelstopolygons,Raster pixels to polygons,Vector creation
+QGIS,native,native:pointonsurface,Point on surface,Vector geometry
+QGIS,native,native:pointsalonglines,Points along geometry,Vector geometry
+QGIS,native,native:pointstopath,Points to path,Vector creation
+QGIS,native,native:pointtolayer,Create layer from point,Vector geometry
+QGIS,native,native:poleofinaccessibility,Pole of inaccessibility,Vector geometry
+QGIS,native,native:polygonfromlayerextent,Extract layer extent,Layer tools
+QGIS,native,native:polygonize,Polygonize,Vector geometry
+QGIS,native,native:polygonstolines,Polygons to lines,Vector geometry
+QGIS,native,native:postgisexecutesql,PostgreSQL execute SQL,Database
+QGIS,native,native:printlayoutmapextenttolayer,Print layout map extent to layer,Cartography
+QGIS,native,native:printlayouttoimage,Export print layout as image,Cartography
+QGIS,native,native:printlayouttopdf,Export print layout as PDF,Cartography
+QGIS,native,native:projectpointcartesian,Project points (Cartesian),Vector geometry
+QGIS,native,native:promotetomulti,Promote to multipart,Vector geometry
+QGIS,native,native:raiseexception,Raise exception,Modeler tools
+QGIS,native,native:raisemessage,Raise message,Modeler tools
+QGIS,native,native:raisewarning,Raise warning,Modeler tools
+QGIS,native,native:randomextract,Random extract,Vector selection
+QGIS,native,native:randompointsinextent,Random points in extent,Vector creation
+QGIS,native,native:randompointsinpolygons,Random points in polygons,Vector creation
+QGIS,native,native:randompointsonlines,Random points on lines,Vector creation
+QGIS,native,native:rasterbooleanand,Raster boolean AND,Raster analysis
+QGIS,native,native:rastercalc,Raster calculator,Raster analysis
+QGIS,native,native:rasterize,Convert map to raster,Raster tools
+QGIS,native,native:rasterlayerproperties,Raster layer properties,Raster analysis
+QGIS,native,native:rasterlayerstatistics,Raster layer statistics,Raster analysis
+QGIS,native,native:rasterlayeruniquevaluesreport,Raster layer unique values report,Raster analysis
+QGIS,native,native:rasterlayerzonalstats,Raster layer zonal statistics,Raster analysis
+QGIS,native,native:rasterlogicalor,Raster boolean OR,Raster analysis
+QGIS,native,native:rasterminmax,Raster minimum/maximum,Raster analysis
+QGIS,native,native:rastersampling,Sample raster values,Raster analysis
+QGIS,native,native:rastersurfacevolume,Raster surface volume,Raster analysis
+QGIS,native,native:reclassifybylayer,Reclassify by layer,Raster analysis
+QGIS,native,native:reclassifybytable,Reclassify by table,Raster analysis
+QGIS,native,native:rectanglesovalsdiamonds,"Rectangles, ovals, diamonds",Vector geometry
+QGIS,native,native:refactorfields,Refactor fields,Vector table
+QGIS,native,native:removeduplicatesbyattribute,Delete duplicates by attribute,Vector general
+QGIS,native,native:removeduplicatevertices,Remove duplicate vertices,Vector geometry
+QGIS,native,native:removenullgeometries,Remove null geometries,Vector geometry
+QGIS,native,native:renamelayer,Rename layer,Modeler tools
+QGIS,native,native:renametablefield,Rename field,Vector table
+QGIS,native,native:repairshapefile,Repair Shapefile,Vector general
+QGIS,native,native:reprojectlayer,Reproject layer,Vector general
+QGIS,native,native:rescaleraster,Rescale raster,Raster analysis
+QGIS,native,native:retainfields,Retain fields,Vector table
+QGIS,native,native:reverselinedirection,Reverse line direction,Vector geometry
+QGIS,native,native:rotatefeatures,Rotate,Vector geometry
+QGIS,native,native:roundness,Roundness,Vector geometry
+QGIS,native,native:roundrastervalues,Round raster,Raster analysis
+QGIS,native,native:ruggednessindex,Ruggedness index,Raster terrain analysis
+QGIS,native,native:savefeatures,Save vector features to file,Vector general
+QGIS,native,native:savelog,Save log to file,Modeler tools
+QGIS,native,native:saveselectedfeatures,Extract selected features,Vector general
+QGIS,native,native:segmentizebymaxangle,Segmentize by maximum angle,Vector geometry
+QGIS,native,native:segmentizebymaxdistance,Segmentize by maximum distance,Vector geometry
+QGIS,native,native:selectbylocation,Select by location,Vector selection
+QGIS,native,native:selectwithindistance,Select within distance,Vector selection
+QGIS,native,native:serviceareafromlayer,Service area (from layer),Network analysis
+QGIS,native,native:serviceareafrompoint,Service area (from point),Network analysis
+QGIS,native,native:setlayerencoding,Set layer encoding,Vector general
+QGIS,native,native:setlayermetadata,Set layer metadata,Metadata tools
+QGIS,native,native:setlayerstyle,Set layer style,Cartography
+QGIS,native,native:setmetadatafields,Set metadata fields,Metadata tools
+QGIS,native,native:setmfromraster,Set M value from raster,Vector geometry
+QGIS,native,native:setmvalue,Set M value,Vector geometry
+QGIS,native,native:setprojectvariable,Set project variable,Modeler tools
+QGIS,native,native:setzfromraster,Drape (set Z value from raster),Vector geometry
+QGIS,native,native:setzvalue,Set Z value,Vector geometry
+QGIS,native,native:shortestline,Shortest line between features,Vector analysis
+QGIS,native,native:shortestpathlayertopoint,Shortest path (layer to point),Network analysis
+QGIS,native,native:shortestpathpointtolayer,Shortest path (point to layer),Network analysis
+QGIS,native,native:shortestpathpointtopoint,Shortest path (point to point),Network analysis
+QGIS,native,native:shpencodinginfo,Extract Shapefile encoding,Vector general
+QGIS,native,native:simplifygeometries,Simplify,Vector geometry
+QGIS,native,native:singlesidedbuffer,Single sided buffer,Vector geometry
+QGIS,native,native:slope,Slope,Raster terrain analysis
+QGIS,native,native:smoothgeometry,Smooth,Vector geometry
+QGIS,native,native:snapgeometries,Snap geometries to layer,Vector geometry
+QGIS,native,native:snappointstogrid,Snap points to grid,Vector geometry
+QGIS,native,native:spatialiteexecutesql,SpatiaLite execute SQL,Database
+QGIS,native,native:spatialiteexecutesqlregistered,SpatiaLite execute SQL (registered DB),Database
+QGIS,native,native:splitfeaturesbycharacter,Split features by character,Vector general
+QGIS,native,native:splitlinesbylength,Split lines by maximum length,Vector geometry
+QGIS,native,native:splitvectorlayer,Split vector layer,Vector general
+QGIS,native,native:splitwithlines,Split with lines,Vector overlay
+QGIS,native,native:stdbscanclustering,ST-DBSCAN clustering,Vector analysis
+QGIS,native,native:stringconcatenation,String concatenation,Modeler tools
+QGIS,native,native:stylefromproject,Create style database from project,Cartography
+QGIS,native,native:subdivide,Subdivide,Vector geometry
+QGIS,native,native:sumlinelengths,Sum line lengths,Vector analysis
+QGIS,native,native:surfacetopolygon,Surface to polygon,Mesh
+QGIS,native,native:swapxy,Swap X and Y coordinates,Vector geometry
+QGIS,native,native:symmetricaldifference,Symmetrical difference,Vector overlay
+QGIS,native,native:taperedbuffer,Tapered buffers,Vector geometry
+QGIS,native,native:tilesxyzdirectory,Generate XYZ tiles (Directory),Raster tools
+QGIS,native,native:tilesxyzmbtiles,Generate XYZ tiles (MBTiles),Raster tools
+QGIS,native,native:tinmeshcreation,TIN Mesh Creation,Mesh
+QGIS,native,native:transect,Transect,Vector geometry
+QGIS,native,native:transferannotationsfrommain,Transfer annotations from main layer,Cartography
+QGIS,native,native:translategeometry,Translate,Vector geometry
+QGIS,native,native:truncatetable,Truncate table,Vector general
+QGIS,native,native:union,Union,Vector overlay
+QGIS,native,native:updatelayermetadata,Update layer metadata,Metadata tools
+QGIS,native,native:uploadgpsdata,Upload GPS data to device,GPS
+QGIS,native,native:virtualrastercalc,Raster calculator (virtual),Raster analysis
+QGIS,native,native:voronoipolygons,Voronoi polygons,Vector geometry
+QGIS,native,native:wedgebuffers,Create wedge buffers,Vector geometry
+QGIS,native,native:writevectortiles_mbtiles,Write Vector Tiles (MBTiles),Vector tiles
+QGIS,native,native:writevectortiles_xyz,Write Vector Tiles (XYZ),Vector tiles
+QGIS,native,native:zonalhistogram,Zonal histogram,Raster analysis
+QGIS,native,native:zonalminmaxpoint,Zonal minimum/maximum point,Raster analysis
+QGIS,native,native:zonalstatistics,Zonal statistics (in place),Raster analysis
+QGIS,native,native:zonalstatisticsfb,Zonal statistics,Raster analysis
+QGIS,qgis,qgis:advancedpythonfieldcalculator,Advanced Python field calculator,Vector table
+QGIS,qgis,qgis:barplot,Bar plot,Plots
+QGIS,qgis,qgis:boxplot,Box plot,Plots
+QGIS,qgis,qgis:checkvalidity,Check validity,Vector geometry
+QGIS,qgis,qgis:climbalongline,Climb along line,Vector analysis
+QGIS,qgis,qgis:convertgeometrytype,Convert geometry type,Vector geometry
+QGIS,qgis,qgis:definecurrentprojection,Define Shapefile projection,Vector general
+QGIS,qgis,qgis:distancematrix,Distance matrix,Vector analysis
+QGIS,qgis,qgis:distancetonearesthublinetohub,Distance to nearest hub (line to hub),Vector analysis
+QGIS,qgis,qgis:distancetonearesthubpoints,Distance to nearest hub (points),Vector analysis
+QGIS,qgis,qgis:eliminateselectedpolygons,Eliminate selected polygons,Vector geometry
+QGIS,qgis,qgis:executesql,Execute SQL,Vector general
+QGIS,qgis,qgis:exportaddgeometrycolumns,Add geometry attributes,Vector geometry
+QGIS,qgis,qgis:findprojection,Find projection,Vector general
+QGIS,qgis,qgis:generatepointspixelcentroidsalongline,Generate points (pixel centroids) along line,Vector creation
+QGIS,qgis,qgis:heatmapkerneldensityestimation,Heatmap (Kernel Density Estimation),Interpolation
+QGIS,qgis,qgis:hypsometriccurves,Hypsometric curves,Raster terrain analysis
+QGIS,qgis,qgis:idwinterpolation,IDW interpolation,Interpolation
+QGIS,qgis,qgis:importintospatialite,Export to SpatiaLite,Database
+QGIS,qgis,qgis:knearestconcavehull,Concave hull (k-nearest neighbor),Vector geometry
+QGIS,qgis,qgis:linestopolygons,Lines to polygons,Vector geometry
+QGIS,qgis,qgis:listuniquevalues,List unique values,Vector analysis
+QGIS,qgis,qgis:meanandstandarddeviationplot,Mean and standard deviation plot,Plots
+QGIS,qgis,qgis:minimumboundinggeometry,Minimum bounding geometry,Vector geometry
+QGIS,qgis,qgis:pointsdisplacement,Points displacement,Vector geometry
+QGIS,qgis,qgis:polarplot,Polar plot,Plots
+QGIS,qgis,qgis:postgisexecuteandloadsql,PostgreSQL execute and load SQL,Database
+QGIS,qgis,qgis:randomextractwithinsubsets,Random extract within subsets,Vector selection
+QGIS,qgis,qgis:randompointsalongline,Random points along line,Vector creation
+QGIS,qgis,qgis:randompointsinlayerbounds,Random points in layer bounds,Vector creation
+QGIS,qgis,qgis:randompointsinsidepolygons,Random points inside polygons,Vector creation
+QGIS,qgis,qgis:randomselection,Random selection,Vector selection
+QGIS,qgis,qgis:randomselectionwithinsubsets,Random selection within subsets,Vector selection
+QGIS,qgis,qgis:rastercalculator,Raster calculator,Raster analysis
+QGIS,qgis,qgis:rasterlayerhistogram,Raster layer histogram,Plots
+QGIS,qgis,qgis:rectanglesovalsdiamondsvariable,"Rectangles, ovals, diamonds (variable)",Vector geometry
+QGIS,qgis,qgis:regularpoints,Regular points,Vector creation
+QGIS,qgis,qgis:relief,Relief,Raster terrain analysis
+QGIS,qgis,qgis:scatter3dplot,Vector layer scatterplot 3D,Plots
+QGIS,qgis,qgis:selectbyattribute,Select by attribute,Vector selection
+QGIS,qgis,qgis:selectbyexpression,Select by expression,Vector selection
+QGIS,qgis,qgis:setstyleforrasterlayer,Set style for raster layer,Raster tools
+QGIS,qgis,qgis:setstyleforvectorlayer,Set style for vector layer,Vector general
+QGIS,qgis,qgis:statisticsbycategories,Statistics by categories,Vector analysis
+QGIS,qgis,qgis:texttofloat,Text to float,Vector table
+QGIS,qgis,qgis:tininterpolation,TIN interpolation,Interpolation
+QGIS,qgis,qgis:topologicalcoloring,Topological coloring,Cartography
+QGIS,qgis,qgis:variabledistancebuffer,Variable distance buffer,Vector geometry
+QGIS,qgis,qgis:vectorlayerhistogram,Vector layer histogram,Plots
+QGIS,qgis,qgis:vectorlayerscatterplot,Vector layer scatterplot,Plots

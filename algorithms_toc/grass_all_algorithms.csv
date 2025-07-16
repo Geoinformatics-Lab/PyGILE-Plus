@@ -1,361 +1,361 @@
 tool,provider,algorithm_id,display_name,group,location
-GRASS,GRASS,d.barscale,d.barscale,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.colorlist,d.colorlist,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.colortable,d.colortable,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.erase,d.erase,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.font,d.font,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.fontlist,d.fontlist,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.geodesic,d.geodesic,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.graph,d.graph,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.grid,d.grid,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.his,d.his,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.histogram,d.histogram,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.info,d.info,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.labels,d.labels,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.legend,d.legend,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.legend.vect,d.legend.vect,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.linegraph,d.linegraph,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.mon,d.mon,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.northarrow,d.northarrow,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.path,d.path,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.profile,d.profile,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.rast,d.rast,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.rast.arrow,d.rast.arrow,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.rast.num,d.rast.num,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.redraw,d.redraw,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.rgb,d.rgb,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.rhumbline,d.rhumbline,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.text,d.text,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.title,d.title,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.vect,d.vect,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.vect.chart,d.vect.chart,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.vect.thematic,d.vect.thematic,Display,/opt/grass/grass84/bin
-GRASS,GRASS,d.where,d.where,Display,/opt/grass/grass84/bin
-GRASS,GRASS,db.columns,db.columns,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.connect,db.connect,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.copy,db.copy,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.createdb,db.createdb,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.databases,db.databases,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.describe,db.describe,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.drivers,db.drivers,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.dropdb,db.dropdb,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.execute,db.execute,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.login,db.login,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.select,db.select,Database,/opt/grass/grass84/bin
-GRASS,GRASS,db.tables,db.tables,Database,/opt/grass/grass84/bin
-GRASS,GRASS,g.access,g.access,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.cairocomp,g.cairocomp,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.copy,g.copy,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.dirseps,g.dirseps,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.filename,g.filename,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.findetc,g.findetc,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.findfile,g.findfile,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.gisenv,g.gisenv,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.gui,g.gui,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.list,g.list,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.mapset,g.mapset,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.mapsets,g.mapsets,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.message,g.message,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.mkfontcap,g.mkfontcap,General,/opt/grass/grass84/bin
+GRASS,GRASS,d.barscale,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.colorlist,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.colortable,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.erase,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.font,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.fontlist,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.geodesic,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.graph,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.grid,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.his,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.histogram,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.info,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.labels,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.legend,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.legend.vect,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.linegraph,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.mon,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.northarrow,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.path,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.profile,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.rast,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.rast.arrow,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.rast.num,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.redraw,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.rgb,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.rhumbline,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.text,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.title,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.vect,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.vect.chart,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.vect.thematic,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,d.where,ERROR: No active GRASS session: GISRC environment variable not set,Display,/opt/grass/grass84/bin
+GRASS,GRASS,db.columns,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.connect,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.copy,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.createdb,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.databases,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.describe,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.drivers,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.dropdb,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.execute,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.login,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.select,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,db.tables,ERROR: No active GRASS session: GISRC environment variable not set,Database,/opt/grass/grass84/bin
+GRASS,GRASS,g.access,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.cairocomp,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.copy,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.dirseps,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.filename,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.findetc,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.findfile,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.gisenv,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.gui,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.list,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.mapset,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.mapsets,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.message,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.mkfontcap,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
 GRASS,GRASS,g.parser,g.parser,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.pnmcomp,g.pnmcomp,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.ppmtopng,g.ppmtopng,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.proj,g.proj,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.region,g.region,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.remove,g.remove,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.rename,g.rename,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.tempfile,g.tempfile,General,/opt/grass/grass84/bin
-GRASS,GRASS,g.version,g.version,General,/opt/grass/grass84/bin
-GRASS,GRASS,i.albedo,i.albedo,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.aster.toar,i.aster.toar,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.atcorr,i.atcorr,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.biomass,i.biomass,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.cca,i.cca,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.cluster,i.cluster,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.eb.eta,i.eb.eta,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.eb.evapfr,i.eb.evapfr,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.eb.hsebal01,i.eb.hsebal01,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.eb.netrad,i.eb.netrad,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.eb.soilheatflux,i.eb.soilheatflux,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.emissivity,i.emissivity,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.evapo.mh,i.evapo.mh,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.evapo.pm,i.evapo.pm,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.evapo.pt,i.evapo.pt,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.evapo.time,i.evapo.time,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.fft,i.fft,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.gensig,i.gensig,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.gensigset,i.gensigset,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.group,i.group,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.his.rgb,i.his.rgb,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ifft,i.ifft,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.landsat.acca,i.landsat.acca,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.landsat.toar,i.landsat.toar,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.maxlik,i.maxlik,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.modis.qc,i.modis.qc,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.camera,i.ortho.camera,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.elev,i.ortho.elev,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.init,i.ortho.init,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.photo,i.ortho.photo,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.rectify,i.ortho.rectify,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.target,i.ortho.target,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.ortho.transform,i.ortho.transform,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.pca,i.pca,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.rectify,i.rectify,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.rgb.his,i.rgb.his,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.segment,i.segment,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.signatures,i.signatures,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.smap,i.smap,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.target,i.target,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.topo.corr,i.topo.corr,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.vi,i.vi,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,i.zc,i.zc,Imagery,/opt/grass/grass84/bin
-GRASS,GRASS,ps.map,ps.map,PostScript,/opt/grass/grass84/bin
-GRASS,GRASS,r.basins.fill,r.basins.fill,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.buffer,r.buffer,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.buildvrt,r.buildvrt,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.carve,r.carve,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.category,r.category,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.circle,r.circle,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.clump,r.clump,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.coin,r.coin,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.colors,r.colors,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.colors.out,r.colors.out,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.composite,r.composite,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.compress,r.compress,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.contour,r.contour,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.cost,r.cost,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.covar,r.covar,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.cross,r.cross,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.describe,r.describe,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.distance,r.distance,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.external,r.external,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.external.out,r.external.out,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.fill.dir,r.fill.dir,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.fill.stats,r.fill.stats,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.flow,r.flow,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.geomorphon,r.geomorphon,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.grow.distance,r.grow.distance,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.gwflow,r.gwflow,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.his,r.his,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.horizon,r.horizon,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.ascii,r.in.ascii,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.bin,r.in.bin,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.gdal,r.in.gdal,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.gridatb,r.in.gridatb,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.mat,r.in.mat,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.png,r.in.png,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.poly,r.in.poly,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.in.xyz,r.in.xyz,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.info,r.info,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.kappa,r.kappa,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.lake,r.lake,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.latlong,r.latlong,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.cwed,r.li.cwed,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.dominance,r.li.dominance,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.edgedensity,r.li.edgedensity,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.mpa,r.li.mpa,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.mps,r.li.mps,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.padcv,r.li.padcv,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.padrange,r.li.padrange,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.padsd,r.li.padsd,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.patchdensity,r.li.patchdensity,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.patchnum,r.li.patchnum,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.pielou,r.li.pielou,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.renyi,r.li.renyi,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.richness,r.li.richness,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.shannon,r.li.shannon,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.shape,r.li.shape,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.li.simpson,r.li.simpson,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.mapcalc,r.mapcalc,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.mfilter,r.mfilter,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.mode,r.mode,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.neighbors,r.neighbors,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.null,r.null,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.object.geometry,r.object.geometry,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.ascii,r.out.ascii,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.bin,r.out.bin,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.gdal,r.out.gdal,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.gridatb,r.out.gridatb,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.mat,r.out.mat,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.mpeg,r.out.mpeg,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.png,r.out.png,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.pov,r.out.pov,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.ppm,r.out.ppm,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.ppm3,r.out.ppm3,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.vrml,r.out.vrml,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.out.vtk,r.out.vtk,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.param.scale,r.param.scale,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.patch,r.patch,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.path,r.path,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.profile,r.profile,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.proj,r.proj,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.quant,r.quant,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.quantile,r.quantile,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.random,r.random,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.random.cells,r.random.cells,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.random.surface,r.random.surface,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.reclass,r.reclass,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.recode,r.recode,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.region,r.region,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.regression.line,r.regression.line,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.regression.multi,r.regression.multi,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.relief,r.relief,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.report,r.report,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resamp.bspline,r.resamp.bspline,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resamp.filter,r.resamp.filter,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resamp.interp,r.resamp.interp,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resamp.rst,r.resamp.rst,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resamp.stats,r.resamp.stats,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.resample,r.resample,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.rescale,r.rescale,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.rescale.eq,r.rescale.eq,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.ros,r.ros,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.series,r.series,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.series.accumulate,r.series.accumulate,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.series.interp,r.series.interp,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.sim.sediment,r.sim.sediment,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.sim.water,r.sim.water,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.slope.aspect,r.slope.aspect,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.solute.transport,r.solute.transport,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.spread,r.spread,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.spreadpath,r.spreadpath,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.statistics,r.statistics,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.stats,r.stats,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.stats.quantile,r.stats.quantile,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.stats.zonal,r.stats.zonal,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.stream.extract,r.stream.extract,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.sun,r.sun,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.sunhours,r.sunhours,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.sunmask,r.sunmask,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.support,r.support,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.support.stats,r.support.stats,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.area,r.surf.area,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.contour,r.surf.contour,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.fractal,r.surf.fractal,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.gauss,r.surf.gauss,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.idw,r.surf.idw,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.surf.random,r.surf.random,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.terraflow,r.terraflow,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.texture,r.texture,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.thin,r.thin,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.tile,r.tile,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.timestamp,r.timestamp,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.to.rast3,r.to.rast3,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.to.rast3elev,r.to.rast3elev,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.to.vect,r.to.vect,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.topidx,r.topidx,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.topmodel,r.topmodel,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.transect,r.transect,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.univar,r.univar,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.uslek,r.uslek,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.usler,r.usler,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.viewshed,r.viewshed,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.volume,r.volume,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.walk,r.walk,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.water.outlet,r.water.outlet,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.watershed,r.watershed,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.what,r.what,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,r.what.color,r.what.color,Raster,/opt/grass/grass84/bin
-GRASS,GRASS,t.connect,t.connect,Temporal,/opt/grass/grass84/bin
-GRASS,GRASS,v.buffer,v.buffer,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.build,v.build,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.build.polylines,v.build.polylines,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.category,v.category,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.class,v.class,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.clean,v.clean,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.cluster,v.cluster,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.colors,v.colors,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.colors.out,v.colors.out,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.db.connect,v.db.connect,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.db.select,v.db.select,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.decimate,v.decimate,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.delaunay,v.delaunay,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.distance,v.distance,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.drape,v.drape,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.edit,v.edit,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.external,v.external,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.external.out,v.external.out,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.extract,v.extract,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.extrude,v.extrude,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.fill.holes,v.fill.holes,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.generalize,v.generalize,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.hull,v.hull,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.in.ascii,v.in.ascii,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.in.db,v.in.db,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.in.dxf,v.in.dxf,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.in.ogr,v.in.ogr,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.in.region,v.in.region,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.info,v.info,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.kcv,v.kcv,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.kernel,v.kernel,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.label,v.label,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.label.sa,v.label.sa,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lidar.correction,v.lidar.correction,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lidar.edgedetection,v.lidar.edgedetection,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lidar.growing,v.lidar.growing,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lrs.create,v.lrs.create,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lrs.label,v.lrs.label,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lrs.segment,v.lrs.segment,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.lrs.where,v.lrs.where,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.mkgrid,v.mkgrid,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.neighbors,v.neighbors,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net,v.net,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.alloc,v.net.alloc,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.allpairs,v.net.allpairs,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.bridge,v.net.bridge,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.centrality,v.net.centrality,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.components,v.net.components,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.connectivity,v.net.connectivity,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.distance,v.net.distance,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.flow,v.net.flow,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.iso,v.net.iso,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.path,v.net.path,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.salesman,v.net.salesman,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.spanningtree,v.net.spanningtree,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.steiner,v.net.steiner,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.timetable,v.net.timetable,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.net.visibility,v.net.visibility,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.normal,v.normal,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.ascii,v.out.ascii,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.dxf,v.out.dxf,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.ogr,v.out.ogr,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.pov,v.out.pov,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.svg,v.out.svg,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.out.vtk,v.out.vtk,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.outlier,v.outlier,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.overlay,v.overlay,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.parallel,v.parallel,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.patch,v.patch,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.perturb,v.perturb,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.profile,v.profile,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.proj,v.proj,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.qcount,v.qcount,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.random,v.random,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.reclass,v.reclass,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.rectify,v.rectify,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.sample,v.sample,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.segment,v.segment,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.select,v.select,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.split,v.split,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.support,v.support,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.surf.bspline,v.surf.bspline,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.surf.idw,v.surf.idw,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.surf.rst,v.surf.rst,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.timestamp,v.timestamp,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.to.3d,v.to.3d,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.to.db,v.to.db,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.to.points,v.to.points,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.to.rast,v.to.rast,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.to.rast3,v.to.rast3,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.transform,v.transform,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.type,v.type,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.univar,v.univar,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.vect.stats,v.vect.stats,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.vol.rst,v.vol.rst,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.voronoi,v.voronoi,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.what,v.what,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.what.rast,v.what.rast,Vector,/opt/grass/grass84/bin
-GRASS,GRASS,v.what.rast3,v.what.rast3,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,g.pnmcomp,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.ppmtopng,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.proj,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.region,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.remove,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.rename,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.tempfile,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,g.version,ERROR: No active GRASS session: GISRC environment variable not set,General,/opt/grass/grass84/bin
+GRASS,GRASS,i.albedo,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.aster.toar,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.atcorr,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.biomass,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.cca,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.cluster,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.eb.eta,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.eb.evapfr,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.eb.hsebal01,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.eb.netrad,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.eb.soilheatflux,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.emissivity,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.evapo.mh,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.evapo.pm,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.evapo.pt,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.evapo.time,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.fft,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.gensig,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.gensigset,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.group,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.his.rgb,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ifft,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.landsat.acca,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.landsat.toar,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.maxlik,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.modis.qc,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.camera,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.elev,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.init,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.photo,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.rectify,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.target,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.ortho.transform,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.pca,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.rectify,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.rgb.his,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.segment,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.signatures,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.smap,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.target,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.topo.corr,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.vi,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,i.zc,ERROR: No active GRASS session: GISRC environment variable not set,Imagery,/opt/grass/grass84/bin
+GRASS,GRASS,ps.map,ERROR: No active GRASS session: GISRC environment variable not set,PostScript,/opt/grass/grass84/bin
+GRASS,GRASS,r.basins.fill,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.buffer,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.buildvrt,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.carve,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.category,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.circle,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.clump,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.coin,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.colors,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.colors.out,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.composite,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.compress,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.contour,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.cost,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.covar,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.cross,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.describe,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.distance,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.external,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.external.out,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.fill.dir,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.fill.stats,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.flow,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.geomorphon,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.grow.distance,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.gwflow,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.his,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.horizon,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.ascii,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.bin,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.gdal,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.gridatb,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.mat,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.png,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.poly,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.in.xyz,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.info,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.kappa,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.lake,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.latlong,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.cwed,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.dominance,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.edgedensity,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.mpa,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.mps,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.padcv,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.padrange,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.padsd,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.patchdensity,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.patchnum,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.pielou,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.renyi,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.richness,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.shannon,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.shape,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.li.simpson,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.mapcalc,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.mfilter,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.mode,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.neighbors,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.null,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.object.geometry,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.ascii,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.bin,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.gdal,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.gridatb,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.mat,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.mpeg,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.png,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.pov,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.ppm,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.ppm3,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.vrml,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.out.vtk,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.param.scale,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.patch,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.path,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.profile,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.proj,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.quant,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.quantile,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.random,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.random.cells,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.random.surface,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.reclass,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.recode,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.region,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.regression.line,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.regression.multi,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.relief,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.report,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resamp.bspline,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resamp.filter,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resamp.interp,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resamp.rst,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resamp.stats,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.resample,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.rescale,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.rescale.eq,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.ros,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.series,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.series.accumulate,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.series.interp,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.sim.sediment,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.sim.water,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.slope.aspect,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.solute.transport,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.spread,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.spreadpath,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.statistics,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.stats,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.stats.quantile,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.stats.zonal,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.stream.extract,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.sun,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.sunhours,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.sunmask,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.support,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.support.stats,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.area,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.contour,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.fractal,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.gauss,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.idw,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.surf.random,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.terraflow,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.texture,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.thin,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.tile,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.timestamp,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.to.rast3,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.to.rast3elev,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.to.vect,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.topidx,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.topmodel,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.transect,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.univar,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.uslek,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.usler,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.viewshed,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.volume,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.walk,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.water.outlet,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.watershed,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.what,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,r.what.color,ERROR: No active GRASS session: GISRC environment variable not set,Raster,/opt/grass/grass84/bin
+GRASS,GRASS,t.connect,ERROR: No active GRASS session: GISRC environment variable not set,Temporal,/opt/grass/grass84/bin
+GRASS,GRASS,v.buffer,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.build,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.build.polylines,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.category,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.class,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.clean,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.cluster,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.colors,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.colors.out,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.db.connect,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.db.select,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.decimate,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.delaunay,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.distance,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.drape,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.edit,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.external,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.external.out,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.extract,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.extrude,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.fill.holes,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.generalize,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.hull,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.in.ascii,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.in.db,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.in.dxf,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.in.ogr,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.in.region,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.info,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.kcv,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.kernel,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.label,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.label.sa,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lidar.correction,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lidar.edgedetection,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lidar.growing,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lrs.create,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lrs.label,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lrs.segment,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.lrs.where,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.mkgrid,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.neighbors,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.alloc,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.allpairs,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.bridge,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.centrality,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.components,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.connectivity,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.distance,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.flow,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.iso,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.path,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.salesman,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.spanningtree,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.steiner,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.timetable,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.net.visibility,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.normal,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.ascii,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.dxf,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.ogr,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.pov,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.svg,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.out.vtk,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.outlier,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.overlay,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.parallel,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.patch,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.perturb,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.profile,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.proj,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.qcount,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.random,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.reclass,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.rectify,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.sample,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.segment,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.select,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.split,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.support,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.surf.bspline,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.surf.idw,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.surf.rst,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.timestamp,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.to.3d,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.to.db,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.to.points,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.to.rast,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.to.rast3,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.transform,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.type,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.univar,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.vect.stats,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.vol.rst,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.voronoi,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.what,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.what.rast,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
+GRASS,GRASS,v.what.rast3,ERROR: No active GRASS session: GISRC environment variable not set,Vector,/opt/grass/grass84/bin
 GRASS,GRASS,d.background,Traceback (most recent call last):,Display,/opt/grass/grass84/scripts
 GRASS,GRASS,d.correlate,Traceback (most recent call last):,Display,/opt/grass/grass84/scripts
 GRASS,GRASS,d.frame,Traceback (most recent call last):,Display,/opt/grass/grass84/scripts
@@ -499,4 +499,3 @@ GRASS,GRASS,v.to.lines,Traceback (most recent call last):,Vector,/opt/grass/gras
 GRASS,GRASS,v.unpack,Traceback (most recent call last):,Vector,/opt/grass/grass84/scripts
 GRASS,GRASS,v.what.strds,Traceback (most recent call last):,Vector,/opt/grass/grass84/scripts
 GRASS,GRASS,v.what.vect,Traceback (most recent call last):,Vector,/opt/grass/grass84/scripts
-GRASS,GRASS,db.py,db.py,Database,/opt/grass/grass84/etc/python/grass/script

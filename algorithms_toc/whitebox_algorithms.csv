@@ -1,465 +1,461 @@
-tool,provider,algorithm_id,display_name,group,detection_method
-WhiteboxTools,WhiteboxTools,All 459 Available Tools,All 459 Available Tools,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AbsoluteValue,Calculates the absolute value of every cell in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AdaptiveFilter,Performs an adaptive filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Add,Performs an addition operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AddPointCoordinatesToTable,Modifies the attribute table of a point vector by adding fields containing each point's X and Y coordinates.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AggregateRaster,Aggregates a raster to a lower resolution.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,And,Performs a logical AND operator on two Boolean raster images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Anova,Performs an analysis of variance (ANOVA) test on a raster dataset.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ArcCos,Returns the inverse cosine (arccos) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ArcSin,Returns the inverse sine (arcsin) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ArcTan,Returns the inverse tangent (arctan) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Arcosh,Returns the inverse hyperbolic cosine (arcosh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Arsinh,Returns the inverse hyperbolic sine (arsinh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Artanh,Returns the inverse hyperbolic tangent (arctanh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AsciiToLas,Converts one or more ASCII files containing LiDAR points into LAS files.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Aspect,Calculates an aspect raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Atan2,Returns the 2-argument inverse tangent (atan2).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AttributeCorrelation,Performs a correlation analysis on attribute fields from a vector database.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AttributeCorrelationNeighbourhoodAnalysis,Performs a correlation on two input vector attributes within a neighbourhood search windows.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AttributeHistogram,Creates a histogram for the field values of a vector's attribute table.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AttributeScattergram,Creates a scattergram for two field values of a vector's attribute table.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AverageFlowpathSlope,Measures the average slope gradient from each grid cell to all upslope divide cells.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AverageNormalVectorAngularDeviation,Calculates the circular variance of aspect at a scale for a DEM.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AverageOverlay,Calculates the average for each grid cell from a group of raster images.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,AverageUpslopeFlowpathLength,Measures the average length of all upslope flowpaths draining each grid cell.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BalanceContrastEnhancement,Performs a balance contrast enhancement on a colour-composite image of multispectral data.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Basins,Identifies drainage basins that drain to the DEM edge.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BilateralFilter,A bilateral filter is an edge-preserving smoothing filter introduced by Tomasi and Manduchi (1998).,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BlockMaximumGridding,Creates a raster grid based on a set of vector points and assigns grid values using a block maximum scheme.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BlockMinimumGridding,Creates a raster grid based on a set of vector points and assigns grid values using a block minimum scheme.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BoundaryShapeComplexity,Calculates the complexity of the boundaries of raster polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BreachDepressions,Breaches all of the depressions in a DEM using Lindsay's (2016) algorithm. This should be preferred over depression filling in most cases.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BreachDepressionsLeastCost,Breaches the depressions in a DEM using a least-cost pathway method.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BreachSingleCellPits,Removes single-cell pits from an input DEM by breaching.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BufferRaster,Maps a distance-based buffer around each non-background (non-zero/non-nodata) grid cell in an input image.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,BurnStreamsAtRoads,Burns-in streams at the sites of road embankments.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Ceil,Returns the smallest (closest to negative infinity) value that is greater than or equal to the values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Centroid,"Calculates the centroid, or average location, of raster polygon objects.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CentroidVector,Identifies the centroid point of a vector polyline or polygon feature or a group of vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ChangeVectorAnalysis,Performs a change vector analysis on a two-date multi-spectral dataset.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CircularVarianceOfAspect,Calculates the circular variance of aspect at a scale for a DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ClassifyBuildingsInLidar,Reclassifies a LiDAR points that lie within vector building footprints.,Classification,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ClassifyOverlapPoints,Classifies or filters LAS points in regions of overlapping flight lines.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CleanVector,Removes null features and lines/polygons with fewer than the required number of vertices.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Clip,"Extract all the features, or parts of features, that overlap with the features of the clip vector.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ClipLidarToPolygon,Clips a LiDAR point cloud to a vector polygon or polygons.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ClipRasterToPolygon,Clips a raster to a vector polygon.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Closing,A closing is a mathematical morphology operation involving an erosion (min filter) of a dilation (max filter) set.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Clump,"Groups cells that form discrete areas, assigning them unique identifiers.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CompactnessRatio,"Calculates the compactness ratio (A/P), a measure of shape complexity, for vector polygons.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ConservativeSmoothingFilter,Performs a conservative-smoothing filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ConstructVectorTIN,Creates a vector triangular irregular network (TIN) for a set of vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ContoursFromPoints,Creates a contour coverage from a set of input points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ContoursFromRaster,Derives a vector contour coverage from a raster surface.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ConvertNodataToZero,Converts nodata values in a raster to zero.,Input/Output,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ConvertRasterFormat,Converts raster data from one format to another.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CornerDetection,Identifies corner patterns in boolean images using hit-and-miss pattern matching.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CorrectVignetting,Corrects the darkening of images towards corners.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Cos,Returns the cosine (cos) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Cosh,Returns the hyperbolic cosine (cosh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CostAllocation,Identifies the source cell to which each grid cell is connected by a least-cost pathway in a cost-distance analysis.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CostDistance,Performs cost-distance accumulation on a cost surface and a group of source cells.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CostPathway,Performs cost-distance pathway analysis using a series of destination grid cells.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CountIf,Counts the number of occurrences of a specified value in a cell-stack of rasters.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CreateColourComposite,Creates a colour-composite image from three bands of multispectral imagery.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CreateHexagonalVectorGrid,Creates a hexagonal vector grid.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CreatePlane,Creates a raster image based on the equation for a simple plane.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CreateRectangularVectorGrid,Creates a rectangular vector grid.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CrispnessIndex,"Calculates the Crispness Index, which is used to quantify how crisp (or conversely how fuzzy) a probability image is.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CrossTabulation,Performs a cross-tabulation on two categorical images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CsvPointsToVector,Converts a CSV text file to vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,CumulativeDistribution,Converts a raster image to its cumulative distribution function.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,D8FlowAccumulation,Calculates a D8 flow accumulation raster from an input DEM or flow pointer.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,D8MassFlux,Performs a D8 mass flux calculation.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,D8Pointer,Calculates a D8 flow pointer raster from an input DEM.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DInfFlowAccumulation,Calculates a D-infinity flow accumulation raster from an input DEM.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DInfMassFlux,Performs a D-infinity mass flux calculation.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DInfPointer,Calculates a D-infinity flow pointer (flow direction) raster from an input DEM.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Decrement,Decreases the values of each grid cell in an input raster by 1.0 (see also InPlaceSubtract).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DepthInSink,Measures the depth of sinks (depressions) in a DEM.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DevFromMeanElev,Calculates deviation from mean elevation.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DeviationFromRegionalDirection,Calculates the deviation of vector polygons from the regional average direction.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DiffFromMeanElev,Calculates difference from mean elevation (equivalent to a high-pass filter).,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DiffOfGaussianFilter,Performs a Difference of Gaussian (DoG) filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Difference,"Outputs the features that occur in one of the two vector inputs but not both, i.e. no overlapping features.",Change Detection,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DirectDecorrelationStretch,Performs a direct decorrelation stretch enhancement on a colour-composite image of multispectral data.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DirectionalRelief,Calculates relief for cells in an input DEM for a specified direction.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Dissolve,"Removes the interior, or shared, boundaries within a vector polygon coverage.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DistanceToOutlet,Calculates the distance of stream grid cells to the channel network outlet cell.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DiversityFilter,Assigns each cell in the output grid the number of different values in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Divide,Performs a division operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DownslopeDistanceToStream,Measures distance to the nearest downslope stream cell.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DownslopeFlowpathLength,Calculates the downslope flowpath length from each cell to basin outlet.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,DownslopeIndex,Calculates the Hjerdt et al. (2004) downslope index.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EdgeDensity,"Calculates the density of edges, or breaks-in-slope within DEMs.",Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EdgePreservingMeanFilter,Performs a simple edge-preserving mean filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EdgeProportion,Calculate the proportion of cells in a raster polygon that are edge cells.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevAbovePit,Calculate the elevation of each grid cell above the nearest downstream pit cell or grid edge cell.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevPercentile,Calculates the elevation percentile raster from a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevRelativeToMinMax,Calculates the elevation of a location relative to the minimum and maximum elevations in a DEM.,Geomorphometry,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevRelativeToWatershedMinMax,Calculates the elevation of a location relative to the minimum and maximum elevations in a watershed.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevationAboveStream,Calculates the elevation of cells above the nearest downslope stream cell.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElevationAboveStreamEuclidean,Calculates the elevation of cells above the nearest (Euclidean distance) stream cell.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EliminateCoincidentPoints,"Removes any coincident, or nearly coincident, points from a vector points file.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ElongationRatio,Calculates the elongation ratio for vector polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EmbankmentMapping,Maps and/or removes road embankments from an input fine-resolution DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EmbossFilter,"Performs an emboss filter on an image, similar to a hillshade operation.",Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EqualTo,Performs a equal-to comparison operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Erase,"Removes all the features, or parts of features, that overlap with the features of the erase vector polygon.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ErasePolygonFromLidar,Erases (cuts out) a vector polygon or polygons from a LiDAR point cloud.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ErasePolygonFromRaster,Erases (cuts out) a vector polygon from a raster.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EuclideanAllocation,"Assigns grid cells in the output raster the value of the nearest target cell in the input image, measured by the Shih and Wu (2004) Euclidean distance transform.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,EuclideanDistance,Calculates the Shih and Wu (2004) Euclidean distance transform.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Exp,Returns the exponential (base e) of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Exp2,Returns the exponential (base 2) of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExportTableToCsv,Exports an attribute table to a CSV text file.,Input/Output,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExtendVectorLines,Extends vector lines by a specified distance.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExtractNodes,Converts vector lines or polygons into vertex points.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExtractRasterValuesAtPoints,Extracts the values of raster(s) at vector point locations.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExtractStreams,Extracts stream grid cells from a flow accumulation raster.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ExtractValleys,Identifies potential valley bottom grid cells based on local topolography alone.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FD8FlowAccumulation,Calculates an FD8 flow accumulation raster from an input DEM.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FD8Pointer,Calculates an FD8 flow pointer raster from an input DEM.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FarthestChannelHead,Calculates the distance to the furthest upstream channel head for each stream cell.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FastAlmostGaussianFilter,Performs a fast approximate Gaussian filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FeaturePreservingSmoothing,Reduces short-scale variation in an input DEM using a modified Sun et al. (2007) algorithm.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FetchAnalysis,Performs an analysis of fetch or upwind distance to an obstacle.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillBurn,"Burns streams into a DEM using the FillBurn (Saunders, 1999) method.",Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillDepressions,Fills all of the depressions in a DEM. Depression breaching should be preferred in most cases.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillDepressionsPlanchonAndDarboux,Fills all of the depressions in a DEM using the Planchon and Darboux (2002) method.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillDepressionsWangAndLiu,Fills all of the depressions in a DEM using the Wang and Liu (2006) method. Depression breaching should be preferred in most cases.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillMissingData,Fills NoData holes in a DEM.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FillSingleCellPits,Raises pit cells to the elevation of their lowest neighbour.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FilterLidarClasses,Removes points in a LAS file with certain specified class values.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FilterLidarScanAngles,Removes points in a LAS file with scan angles greater than a threshold.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FilterRasterFeaturesByArea,Removes small-area features from a raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindFlightlineEdgePoints,Identifies points along a flightline's edge in a LAS file.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindLowestOrHighestPoints,Locates the lowest and/or highest valued cells in a raster.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindMainStem,"Finds the main stem, based on stream lengths, of each stream network.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindNoFlowCells,Finds grid cells with no downslope neighbours.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindParallelFlow,Finds areas of parallel flow in D8 flow direction rasters.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindPatchOrClassEdgeCells,Finds all cells located on the edge of patch or class features.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FindRidges,Identifies potential ridge and peak grid cells.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FlattenLakes,Flattens lake polygons in a raster DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FlightlineOverlap,Reads a LiDAR (LAS) point file and outputs a raster containing the number of overlapping flight-lines in each grid cell.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FlipImage,Reflects an image in the vertical or horizontal axis.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FloodOrder,"Assigns each DEM grid cell its order in the sequence of inundations that are encountered during a search starting from the edges, moving inward at increasing elevations.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Floor,Returns the largest (closest to positive infinity) value that is less than or equal to the values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FlowAccumulationFullWorkflow,"Resolves all of the depressions in a DEM, outputting a breached DEM, an aspect-aligned non-divergent flow pointer, and a flow accumulation raster.",Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,FlowLengthDiff,"Calculates the local maximum absolute difference in downslope flowpath length, useful in mapping drainage divides and ridges.",Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,GammaCorrection,Performs a gamma correction on an input images.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,GaussianContrastStretch,Performs a Gaussian contrast stretch on input images.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,GaussianCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,GaussianFilter,Performs a Gaussian filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Geomorphons,Computes geomorphon patterns.,Geomorphometry,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,GreaterThan,Performs a greater-than comparison operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HackStreamOrder,Assigns the Hack stream order to each tributary in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HeightAboveGround,"Normalizes a LiDAR point cloud, providing the height above the nearest ground-classified point.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HighPassBilateralFilter,"Performs a high-pass bilateral filter, by differencing an input image by the bilateral filter by Tomasi and Manduchi (1998).",Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HighPassFilter,Performs a high-pass filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HighPassMedianFilter,Performs a high pass median filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HighestPosition,Identifies the stack position of the maximum value within a raster stack on a cell-by-cell basis.,Geomorphometry,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Hillshade,Calculates a hillshade raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Hillslopes,Identifies the individual hillslopes draining to each link in a stream network.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HistogramEqualization,Performs a histogram equalization contrast enhancement on an image.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HistogramMatching,Alters the statistical distribution of a raster image matching it to a specified PDF.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HistogramMatchingTwoImages,Alters the cumulative distribution function of a raster image to that of another image.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HoleProportion,Calculates the proportion of the total area of a polygon's holes relative to the area of the polygon's hull.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HorizonAngle,Calculates horizon angle (maximum upwind slope) for each grid cell in an input DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HortonStreamOrder,Assigns the Horton stream order to each tributary in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HypsometricAnalysis,Calculates a hypsometric curve for one or more DEMs.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,HypsometricallyTintedHillshade,Creates an colour shaded relief image from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,IdwInterpolation,Interpolates vector points into a raster surface using an inverse-distance weighted scheme.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,IhsToRgb,"Converts intensity, hue, and saturation (IHS) images into red, green, and blue (RGB) images.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImageAutocorrelation,Performs Moran's I analysis on two or more input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImageCorrelation,Performs image correlation on two or more input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImageCorrelationNeighbourhoodAnalysis,Performs image correlation on two input images neighbourhood search windows.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImageRegression,Performs image regression analysis on two input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImageStackProfile,Plots an image stack profile (i.e. signature) for a set of points and multispectral images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ImpoundmentSizeIndex,Calculates the impoundment size resulting from damming a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,InPlaceAdd,Performs an in-place addition operation (input1 += input2).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,InPlaceDivide,Performs an in-place division operation (input1 /= input2).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,InPlaceMultiply,Performs an in-place multiplication operation (input1 *= input2).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,InPlaceSubtract,Performs an in-place subtraction operation (input1 -= input2).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Increment,Increases the values of each grid cell in an input raster by 1.0. (see also InPlaceAdd),General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,InsertDams,Calculates the impoundment size resulting from damming a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,IntegerDivision,Performs an integer division operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,IntegralImage,Transforms an input image (summed area table) into its integral image equivalent.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Intersect,Identifies the parts of features in common between two input vector layers.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,IsNoData,Identifies NoData valued pixels in an image.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Isobasins,Divides a landscape into nearly equal sized drainage basins (i.e. watersheds).,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,JensonSnapPourPoints,Moves outlet points used to specify points of interest in a watershedding operation to the nearest stream cell.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,JoinTables,Merge a vector's attribute table with another table based on a common field.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,KMeansClustering,Performs a k-means clustering operation on a multi-spectral dataset.,Classification,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,KNearestMeanFilter,A k-nearest mean filter is a type of edge-preserving smoothing filter.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,KappaIndex,Performs a kappa index of agreement (KIA) analysis on two categorical raster files.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,KsTestForNormality,Evaluates whether the values in a raster are normally distributed.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LaplacianFilter,Performs a Laplacian filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LaplacianOfGaussianFilter,Performs a Laplacian-of-Gaussian (LoG) filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LasToAscii,Converts one or more LAS files into ASCII text files.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LasToMultipointShapefile,"Converts one or more LAS files into MultipointZ vector Shapefiles. When the input parameter is not specified, the tool grids all LAS files contained within the working directory.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LasToShapefile,Converts one or more LAS files into a vector Shapefile of POINT ShapeType.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LasToZlidar,Converts one or more LAS files into the zlidar compressed LiDAR data format.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LayerFootprint,Creates a vector polygon footprint of the area covered by a raster grid or vector layer.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LeeSigmaFilter,Performs a Lee (Sigma) smoothing filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LengthOfUpstreamChannels,Calculates the total length of channels upstream.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LessThan,Performs a less-than comparison operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarBlockMaximum,"Creates a block-maximum raster from an input LAS file. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarBlockMinimum,"Creates a block-minimum raster from an input LAS file. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarClassifySubset,Classifies the values in one LiDAR point cloud that correspond with points in a subset cloud.,Classification,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarColourize,Adds the red-green-blue colour fields of a LiDAR (LAS) file based on an input image.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarDigitalSurfaceModel,Creates a top-surface digital surface model (DSM) from a LiDAR point cloud.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarElevationSlice,Outputs all of the points within a LiDAR (LAS) point file that lie between a specified elevation range.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarGroundPointFilter,Identifies ground points within LiDAR dataset using a slope-based method.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarHexBinning,Hex-bins a set of LiDAR points.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarHillshade,Calculates a hillshade value for points within a LAS file and stores these data in the RGB field.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarHistogram,Creates a histogram of LiDAR data.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarIdwInterpolation,"Interpolates LAS files using an inverse-distance weighted (IDW) scheme. When the input/output parameters are not specified, the tool interpolates all LAS files contained within the working directory.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarInfo,"Prints information about a LiDAR (LAS) dataset, including header, point return frequency, and classification data and information about the variable length records (VLRs) and geokeys.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarJoin,Joins multiple LiDAR (LAS) files into a single LAS file.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarKappaIndex,Performs a kappa index of agreement (KIA) analysis on the classifications of two LAS files.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarNearestNeighbourGridding,"Grids LiDAR files using nearest-neighbour scheme. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarPointDensity,"Calculates the spatial pattern of point density for a LiDAR data set. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarPointStats,"Creates several rasters summarizing the distribution of LAS point data. When the input/output parameters are not specified, the tool works on all LAS files contained within the working directory.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarRansacPlanes,Performs a RANSAC analysis to identify points within a LiDAR point cloud that belong to linear planes.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarRbfInterpolation,"Interpolates LAS files using a radial basis function (RBF) scheme. When the input/output parameters are not specified, the tool interpolates all LAS files contained within the working directory.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarRemoveDuplicates,Removes duplicate points from a LiDAR data set.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarRemoveOutliers,Removes outliers (high and low points) in a LiDAR point cloud.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarRooftopAnalysis,Identifies roof segments in a LiDAR point cloud.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarSegmentation,Segments a LiDAR point cloud based on differences in the orientation of fitted planar surfaces and point proximity.,Classification,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarSegmentationBasedFilter,Identifies ground points within LiDAR point clouds using a segmentation based approach.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarTINGridding,Creates a raster grid based on a Delaunay triangular irregular network (TIN) fitted to LiDAR points.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarThin,"Thins a LiDAR point cloud, reducing point density.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarThinHighDensity,Thins points from high density areas within a LiDAR point cloud.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarTile,Tiles a LiDAR LAS file into multiple LAS files.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarTileFootprint,"Creates a vector polygon of the convex hull of a LiDAR point cloud. When the input/output parameters are not specified, the tool works with all LAS files contained within the working directory.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LidarTophatTransform,"Performs a white top-hat transform on a Lidar dataset; as an estimate of height above ground, this is useful for modelling the vegetation canopy.",LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LineDetectionFilter,Performs a line-detection filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LineIntersections,Identifies points where the features of two vector line layers intersect.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LineThinning,Performs line thinning a on Boolean raster image; intended to be used with the RemoveSpurs tool.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LinearityIndex,Calculates the linearity index for vector polygons.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LinesToPolygons,Converts vector polylines to polygons.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ListUniqueValues,Lists the unique values contained in a field within a vector's attribute table.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ListUniqueValuesRaster,Lists the unique values contained in a field within a vector's attribute table.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Ln,Returns the natural logarithm of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Log10,Returns the base-10 logarithm of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Log2,Returns the base-2 logarithm of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LongProfile,Plots the stream longitudinal profiles for one or more rivers.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LongProfileFromPoints,Plots the longitudinal profiles from flow-paths initiating from a set of vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LongestFlowpath,Delineates the longest flowpaths for a group of subbasins or watersheds.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,LowestPosition,Identifies the stack position of the minimum value within a raster stack on a cell-by-cell basis.,Geomorphometry,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MDInfFlowAccumulation,Calculates an FD8 flow accumulation raster from an input DEM.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MajorityFilter,Assigns each cell in the output grid the most frequently occurring value (mode) in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MapOffTerrainObjects,Maps off-terrain objects in a digital elevation model (DEM).,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Max,Performs a MAX operation on two rasters or a raster and a constant value.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxAbsoluteOverlay,Evaluates the maximum absolute value for each grid cell from a stack of input rasters.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxAnisotropyDev,Calculates the maximum anisotropy (directionality) in elevation deviation over a range of spatial scales.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxAnisotropyDevSignature,Calculates the anisotropy in deviation from mean for points over a range of spatial scales.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxBranchLength,Lindsay and Seibert's (2013) branch length index is used to map drainage divides or ridge lines.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxDifferenceFromMean,Calculates the maximum difference from mean elevation over a range of spatial scales.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxDownslopeElevChange,Calculates the maximum downslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxElevDevSignature,Calculates the maximum elevation deviation over a range of spatial scales and for a set of points.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxElevationDeviation,Calculates the maximum elevation deviation over a range of spatial scales.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxOverlay,Evaluates the maximum value for each grid cell from a stack of input rasters.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxUpslopeElevChange,Calculates the maximum upslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaxUpslopeFlowpathLength,Measures the maximum length of all upslope flowpaths draining each grid cell.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaximalCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MaximumFilter,Assigns each cell in the output grid the maximum value in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MeanCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MeanFilter,Performs a mean filter (low-pass filter) on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MedianFilter,Performs a median filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Medoid,Calculates the medoid for a series of vector features contained in a shapefile.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MergeLineSegments,Merges vector line segments into larger features.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MergeTableWithCsv,Merge a vector's attribute table with a table contained within a CSV text file.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MergeVectors,"Combines two or more input vectors of the same ShapeType creating a single, new output vector.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Min,Performs a MIN operation on two rasters or a raster and a constant value.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinAbsoluteOverlay,Evaluates the minimum absolute value for each grid cell from a stack of input rasters.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinDownslopeElevChange,Calculates the minimum downslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinMaxContrastStretch,Performs a min-max contrast stretch on an input greytone image.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinOverlay,Evaluates the minimum value for each grid cell from a stack of input rasters.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimalCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimumBoundingBox,Creates a vector minimum bounding rectangle around vector features.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimumBoundingCircle,Delineates the minimum bounding circle (i.e. smallest enclosing circle) for a group of vectors.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimumBoundingEnvelope,Creates a vector axis-aligned minimum bounding rectangle (envelope) around vector features.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimumConvexHull,Creates a vector convex polygon around vector features.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MinimumFilter,Assigns each cell in the output grid the minimum value in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ModifiedKMeansClustering,Performs a modified k-means clustering operation on a multi-spectral dataset.,Classification,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ModifyNoDataValue,Modifies nodata values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Modulo,Performs a modulo operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Mosaic,Mosaics two or more images together.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MosaicWithFeathering,Mosaics two images together using a feathering technique in overlapping areas to reduce edge-effects.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiPartToSinglePart,Converts a vector file containing multi-part features into a vector containing only single-part features.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultidirectionalHillshade,Calculates a multi-direction hillshade raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Multiply,Performs a multiplication operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiplyOverlay,Calculates the sum for each grid cell from a group of raster images.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleElevationPercentile,Calculates surface roughness over a range of spatial scales.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleRoughness,Calculates surface roughness over a range of spatial scales.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleRoughnessSignature,Calculates the surface roughness for points over a range of spatial scales.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleStdDevNormals,Calculates surface roughness over a range of spatial scales.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleStdDevNormalsSignature,Calculates the surface roughness for points over a range of spatial scales.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,MultiscaleTopographicPositionImage,Creates a multiscale topographic position image from three DEVmax rasters of differing spatial scale ranges.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NarrownessIndex,Calculates the narrowness of raster polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NaturalNeighbourInterpolation,Creates a raster grid based on Sibson's natural neighbour method.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NearestNeighbourGridding,Creates a raster grid based on a set of vector points and assigns grid values using the nearest neighbour.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Negate,Changes the sign of values in a raster or the 0-1 values of a Boolean raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NewRasterFromBase,Creates a new raster using a base image.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NormalVectors,Calculates normal vectors for points within a LAS file and stores these data (XYZ vector components) in the RGB field.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NormalizedDifferenceIndex,Calculate a normalized-difference index (NDI) from two bands of multispectral image data.,Change Detection,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Not,Performs a logical NOT operator on two Boolean raster images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NotEqualTo,Performs a not-equal-to comparison operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NumDownslopeNeighbours,Calculates the number of downslope neighbours to each grid cell in a DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NumInflowingNeighbours,Computes the number of inflowing neighbours to each cell in an input DEM based on the D8 algorithm.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,NumUpslopeNeighbours,Calculates the number of upslope neighbours to each grid cell in a DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,OlympicFilter,Performs an olympic smoothing filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Opening,An opening is a mathematical morphology operation involving a dilation (max filter) of an erosion (min filter) set.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Or,Performs a logical OR operator on two Boolean raster images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PairedSampleTTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PanchromaticSharpening,Increases the spatial resolution of image data by combining multispectral bands with panchromatic data.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PatchOrientation,Calculates the orientation of vector polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PennockLandformClass,"Classifies hillslope zones based on slope, profile curvature, and plan curvature.",Geomorphometry,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentElevRange,Calculates percent of elevation range from a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentEqualTo,Calculates the percentage of a raster stack that have cell values equal to an input on a cell-by-cell basis.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentGreaterThan,Calculates the percentage of a raster stack that have cell values greater than an input on a cell-by-cell basis.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentLessThan,Calculates the percentage of a raster stack that have cell values less than an input on a cell-by-cell basis.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentageContrastStretch,Performs a percentage linear contrast stretch on input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PercentileFilter,Performs a percentile filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PerimeterAreaRatio,Calculates the perimeter-area ratio of vector polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PickFromList,Outputs the value from a raster stack specified by a position raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PlanCurvature,Calculates a plan (contour) curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PolygonArea,Calculates the area of vector polygons.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PolygonLongAxis,Used to map the long axis of polygon features.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PolygonPerimeter,Calculates the perimeter of vector polygons.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PolygonShortAxis,Used to map the short axis of polygon features.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Polygonize,Creates a polygon layer from two or more intersecting line features contained in one or more input vector line files.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PolygonsToLines,Converts vector polygons to polylines.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Power,"Raises the values in grid cells of one rasters, or a constant value, by values in another raster or constant value.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PrewittFilter,Performs a Prewitt edge-detection filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PrincipalComponentAnalysis,Performs a principal component analysis (PCA) on a multi-spectral dataset.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,PrintGeoTiffTags,Prints the tags within a GeoTIFF.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Profile,Plots profiles from digital surface models.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ProfileCurvature,Calculates a profile curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Quantiles,Transforms raster values into quantiles.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RadialBasisFunctionInterpolation,Interpolates vector points into a raster surface using a radial basis function scheme.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RadiusOfGyration,Calculates the distance of cells from their polygon's centroid.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RaiseWalls,"Raises walls in a DEM along a line or around a polygon, e.g. a watershed.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RandomField,Creates an image containing random values.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RandomSample,Creates an image containing randomly located sample grid cells with unique IDs.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RangeFilter,Assigns each cell in the output grid the range of values in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterArea,Calculates the area of polygons or classes within a raster image.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterCellAssignment,Assign row or column number to cells.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterHistogram,Creates a histogram from raster values.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterPerimeter,Calculates the perimeters of polygons or classes within a raster image.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterStreamsToVector,Converts a raster stream file into a vector file.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterSummaryStats,"Measures a rasters min, max, average, standard deviation, num. non-nodata cells, and total.",Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterToVectorLines,Converts a raster lines features into a vector of the POLYLINE shapetype,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterToVectorPoints,Converts a raster dataset to a vector of the POINT shapetype.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterToVectorPolygons,Converts a raster dataset to a vector of the POLYGON shapetype.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RasterizeStreams,Rasterizes vector streams based on Lindsay (2016) method.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Reciprocal,Returns the reciprocal (i.e. 1 / z) of values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Reclass,Reclassifies the values in a raster image.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ReclassEqualInterval,Reclassifies the values in a raster image based on equal-ranges.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ReclassFromFile,Reclassifies the values in a raster image using reclass ranges in a text file.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ReinitializeAttributeTable,Reinitializes a vector's attribute table deleting all fields but the feature ID (FID).,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RelatedCircumscribingCircle,Calculates the related circumscribing circle of vector polygons.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RelativeAspect,Calculates relative aspect (relative to a user-specified direction) from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RelativeTopographicPosition,Calculates the relative topographic position index from a DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RemoveOffTerrainObjects,Removes off-terrain objects from a raster digital elevation model (DEM).,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RemovePolygonHoles,Removes holes within the features of a vector polygon file.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RemoveShortStreams,Removes short first-order streams from a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RemoveSpurs,Removes the spurs (pruning operation) from a Boolean line image; intended to be used on the output of the LineThinning tool.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Resample,Resamples one or more input images into a destination image.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RescaleValueRange,Performs a min-max contrast stretch on an input greytone image.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RgbToIhs,"Converts red, green, and blue (RGB) images into intensity, hue, and saturation (IHS) images.",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Rho8Pointer,Calculates a stochastic Rho8 flow pointer raster from an input DEM.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RobertsCrossFilter,Performs a Robert's cross edge-detection filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RootMeanSquareError,Calculates the RMSE and other accuracy statistics.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Round,Rounds the values in an input raster to the nearest integer value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,RuggednessIndex,Calculates the Riley et al.'s (1999) terrain ruggedness index from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ScharrFilter,Performs a Scharr edge-detection filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SedimentTransportIndex,Calculates the sediment transport index.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SelectTilesByPolygon,Copies LiDAR tiles overlapping with a polygon into an output directory.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SetNodataValue,Assign the NoData value for an input image.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ShapeComplexityIndex,Calculates overall polygon shape complexity or irregularity.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ShapeComplexityIndexRaster,Calculates the complexity of raster polygons or classes.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ShreveStreamMagnitude,Assigns the Shreve stream magnitude to each link in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SigmoidalContrastStretch,Performs a sigmoidal contrast stretch on input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Sin,Returns the sine (sin) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SinglePartToMultiPart,Converts a vector file containing multi-part features into a vector containing only single-part features.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Sinh,Returns the hyperbolic sine (sinh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Sink,"Identifies the depressions in a DEM, giving each feature a unique identifier.",Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Slope,Calculates a slope raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SlopeVsElevationPlot,Creates a slope vs. elevation plot for one or more DEMs.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SmoothVectors,Smooths a vector coverage of either a POLYLINE or POLYGON base ShapeType.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SnapPourPoints,Moves outlet points used to specify points of interest in a watershedding operation to the cell with the highest flow accumulation in its neighbourhood.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SobelFilter,Performs a Sobel edge-detection filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SphericalStdDevOfNormals,Calculates the spherical standard deviation of surface normals for a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SplitColourComposite,Splits an RGB colour composite image into separate multispectral images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SplitWithLines,Splits the lines or polygons in one layer using the lines in another layer.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Square,Squares the values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SquareRoot,Returns the square root of the values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StandardDeviationContrastStretch,Performs a standard-deviation contrast stretch on input images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StandardDeviationFilter,Assigns each cell in the output grid the standard deviation of values in a moving window centred on each grid cell in the input raster.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StandardDeviationOfSlope,Calculates the standard deviation of slope from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StochasticDepressionAnalysis,Performs a stochastic analysis of depressions within a DEM.,Preprocessing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StrahlerOrderBasins,Identifies Strahler-order basins from an input stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StrahlerStreamOrder,Assigns the Strahler stream order to each link in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamLinkClass,Identifies the exterior/interior links and nodes in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamLinkIdentifier,Assigns a unique identifier to each link in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamLinkLength,Estimates the length of each link (or tributary) in a stream network.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamLinkSlope,Estimates the average slope of each link (or tributary) in a stream network.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamPowerIndex,Calculates the relative stream power index.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,StreamSlopeContinuous,Estimates the slope of each grid cell in a stream network.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Subbasins,"Identifies the catchments, or sub-basin, draining to each link in a stream network.",Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Subtract,Performs a differencing operation on two rasters or a raster and a constant value.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SumOverlay,Calculates the sum for each grid cell from a group of raster images.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SurfaceAreaRatio,Calculates a the surface area ratio of each grid cell in an input DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,SymmetricalDifference,"Outputs the features that occur in one of the two vector inputs but not both, i.e. no overlapping features.",Change Detection,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TINGridding,Creates a raster grid based on a triangular irregular network (TIN) fitted to vector points.,Raster Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Tan,Returns the tangent (tan) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TangentialCurvature,Calculates a tangential curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Tanh,Returns the hyperbolic tangent (tanh) of each values in a raster.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ThickenRasterLine,Thickens single-cell wide lines within a raster image.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TimeInDaylight,Calculates the proportion of time a location is not within an area of shadow.,Change Detection,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ToDegrees,Converts a raster from radians to degrees.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ToRadians,Converts a raster from degrees to radians.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TophatTransform,Performs either a white or black top-hat transform on an input image.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TopographicHachures,Derives topographic hachures from a raster surface.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TopologicalStreamOrder,Assigns each link in a stream network its topological order.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TotalCurvature,Calculates a total curvature raster from an input DEM.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TotalFilter,Performs a total filter on an input image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TraceDownslopeFlowpaths,Traces downslope flowpaths from one or more target sites (i.e. seed points).,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TrendSurface,Estimates the trend surface of an input raster file.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TrendSurfaceVectorPoints,Estimates a trend surface from vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TributaryIdentifier,Assigns a unique identifier to each tributary in a stream network.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Truncate,Truncates the values in a raster to the desired number of decimal places.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TurningBandsSimulation,Creates an image containing random values based on a turning-bands simulation.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,TwoSampleKsTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Union,"Splits vector layers at their overlaps, creating a layer containing all the portions from both input and overlay layers.",Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,UnnestBasins,Extract whole watersheds for a set of outlet points.,Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,UnsharpMasking,An image sharpening technique that enhances edges.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,UpdateNodataCells,Replaces the NoData values in an input raster with the corresponding values contained in a second update layer.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,UpslopeDepressionStorage,Estimates the average upslope depression storage depth.,Terrain Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,UserDefinedWeightsFilter,Performs a user-defined weights filter on an image.,Image Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VectorHexBinning,Hex-bins a set of vector points.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VectorLinesToRaster,Converts a vector containing polylines into a raster.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VectorPointsToRaster,Converts a vector containing points into a raster.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VectorPolygonsToRaster,Converts a vector containing polygons into a raster.,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Viewshed,Identifies the viewshed for a point or set of points.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VisibilityIndex,Estimates the relative visibility of sites in a DEM.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,VoronoiDiagram,Creates a vector Voronoi diagram for a set of vector points.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Watershed,"Identifies the watershed, or drainage basin, draining to a set of target cells.",Hydrological Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,WeightedOverlay,Performs a weighted sum on multiple input rasters after converting each image to a common scale. The tool performs a multi-criteria evaluation (MCE).,Vector Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,WeightedSum,Performs a weighted-sum overlay on multiple input raster images.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,WetnessIndex,"Calculates the topographic wetness index, Ln(A / tan(slope)).",General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,WilcoxonSignedRankTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,WriteFunctionMemoryInsertion,Performs a write function memory insertion for single-band multi-date change detection.,Input/Output,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Xor,Performs a logical XOR operator on two Boolean raster images.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ZScores,Standardizes the values in an input raster by converting to z-scores.,General,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ZlidarToLas,Converts one or more zlidar files into the LAS data format.,LiDAR Processing,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,ZonalStatistics,Extracts descriptive statistics for a group of patches in a raster.,Mathematical Analysis,"listtools_command, individual_help"
-WhiteboxTools,WhiteboxTools,Example,Example Usage:,General,help_output
-WhiteboxTools,WhiteboxTools,Description,,General,python_bindings
-WhiteboxTools,WhiteboxTools,Toolbox,Image Processing Tools/Image Enhancement,General,python_bindings
-WhiteboxTools,WhiteboxTools,Parameters,,General,python_bindings
+Tool,Provider,Algorithm_ID,Display_Name,Group
+WhiteboxTools,WhiteboxTools,All 459 Available Tools,,General
+WhiteboxTools,WhiteboxTools,AbsoluteValue,Calculates the absolute value of every cell in a raster.,General
+WhiteboxTools,WhiteboxTools,AdaptiveFilter,Performs an adaptive filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,Add,Performs an addition operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,AddPointCoordinatesToTable,Modifies the attribute table of a point vector by adding fields containing each point's X and Y coordinates.,General
+WhiteboxTools,WhiteboxTools,AggregateRaster,Aggregates a raster to a lower resolution.,Raster Processing
+WhiteboxTools,WhiteboxTools,And,Performs a logical AND operator on two Boolean raster images.,General
+WhiteboxTools,WhiteboxTools,Anova,Performs an analysis of variance (ANOVA) test on a raster dataset.,General
+WhiteboxTools,WhiteboxTools,ArcCos,Returns the inverse cosine (arccos) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,ArcSin,Returns the inverse sine (arcsin) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,ArcTan,Returns the inverse tangent (arctan) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,Arcosh,Returns the inverse hyperbolic cosine (arcosh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,Arsinh,Returns the inverse hyperbolic sine (arsinh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,Artanh,Returns the inverse hyperbolic tangent (arctanh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,AsciiToLas,Converts one or more ASCII files containing LiDAR points into LAS files.,General
+WhiteboxTools,WhiteboxTools,Aspect,Calculates an aspect raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Atan2,Returns the 2-argument inverse tangent (atan2).,General
+WhiteboxTools,WhiteboxTools,AttributeCorrelation,Performs a correlation analysis on attribute fields from a vector database.,General
+WhiteboxTools,WhiteboxTools,AttributeCorrelationNeighbourhoodAnalysis,Performs a correlation on two input vector attributes within a neighbourhood search windows.,General
+WhiteboxTools,WhiteboxTools,AttributeHistogram,Creates a histogram for the field values of a vector's attribute table.,General
+WhiteboxTools,WhiteboxTools,AttributeScattergram,Creates a scattergram for two field values of a vector's attribute table.,General
+WhiteboxTools,WhiteboxTools,AverageFlowpathSlope,Measures the average slope gradient from each grid cell to all upslope divide cells.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,AverageNormalVectorAngularDeviation,Calculates the circular variance of aspect at a scale for a DEM.,Vector Analysis
+WhiteboxTools,WhiteboxTools,AverageOverlay,Calculates the average for each grid cell from a group of raster images.,General
+WhiteboxTools,WhiteboxTools,AverageUpslopeFlowpathLength,Measures the average length of all upslope flowpaths draining each grid cell.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,BalanceContrastEnhancement,Performs a balance contrast enhancement on a colour-composite image of multispectral data.,General
+WhiteboxTools,WhiteboxTools,Basins,Identifies drainage basins that drain to the DEM edge.,General
+WhiteboxTools,WhiteboxTools,BilateralFilter,A bilateral filter is an edge-preserving smoothing filter introduced by Tomasi and Manduchi (1998).,Image Processing
+WhiteboxTools,WhiteboxTools,BlockMaximumGridding,Creates a raster grid based on a set of vector points and assigns grid values using a block maximum scheme.,Raster Processing
+WhiteboxTools,WhiteboxTools,BlockMinimumGridding,Creates a raster grid based on a set of vector points and assigns grid values using a block minimum scheme.,Raster Processing
+WhiteboxTools,WhiteboxTools,BoundaryShapeComplexity,Calculates the complexity of the boundaries of raster polygons.,General
+WhiteboxTools,WhiteboxTools,BreachDepressions,Breaches all of the depressions in a DEM using Lindsay's (2016) algorithm. This should be preferred over depression filling in most cases.,General
+WhiteboxTools,WhiteboxTools,BreachDepressionsLeastCost,Breaches the depressions in a DEM using a least-cost pathway method.,General
+WhiteboxTools,WhiteboxTools,BreachSingleCellPits,Removes single-cell pits from an input DEM by breaching.,General
+WhiteboxTools,WhiteboxTools,BufferRaster,Maps a distance-based buffer around each non-background (non-zero/non-nodata) grid cell in an input image.,Vector Analysis
+WhiteboxTools,WhiteboxTools,BurnStreamsAtRoads,Burns-in streams at the sites of road embankments.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,Ceil,Returns the smallest (closest to negative infinity) value that is greater than or equal to the values in a raster.,General
+WhiteboxTools,WhiteboxTools,Centroid,"Calculates the centroid, or average location, of raster polygon objects.",General
+WhiteboxTools,WhiteboxTools,CentroidVector,Identifies the centroid point of a vector polyline or polygon feature or a group of vector points.,Vector Analysis
+WhiteboxTools,WhiteboxTools,ChangeVectorAnalysis,Performs a change vector analysis on a two-date multi-spectral dataset.,Vector Analysis
+WhiteboxTools,WhiteboxTools,CircularVarianceOfAspect,Calculates the circular variance of aspect at a scale for a DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,ClassifyBuildingsInLidar,Reclassifies a LiDAR points that lie within vector building footprints.,General
+WhiteboxTools,WhiteboxTools,ClassifyOverlapPoints,Classifies or filters LAS points in regions of overlapping flight lines.,General
+WhiteboxTools,WhiteboxTools,CleanVector,Removes null features and lines/polygons with fewer than the required number of vertices.,Vector Analysis
+WhiteboxTools,WhiteboxTools,Clip,"Extract all the features, or parts of features, that overlap with the features of the clip vector.",Vector Analysis
+WhiteboxTools,WhiteboxTools,ClipLidarToPolygon,Clips a LiDAR point cloud to a vector polygon or polygons.,Vector Analysis
+WhiteboxTools,WhiteboxTools,ClipRasterToPolygon,Clips a raster to a vector polygon.,Vector Analysis
+WhiteboxTools,WhiteboxTools,Closing,A closing is a mathematical morphology operation involving an erosion (min filter) of a dilation (max filter) set.,General
+WhiteboxTools,WhiteboxTools,Clump,"Groups cells that form discrete areas, assigning them unique identifiers.",General
+WhiteboxTools,WhiteboxTools,CompactnessRatio,"Calculates the compactness ratio (A/P), a measure of shape complexity, for vector polygons.",General
+WhiteboxTools,WhiteboxTools,ConservativeSmoothingFilter,Performs a conservative-smoothing filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,ConstructVectorTIN,Creates a vector triangular irregular network (TIN) for a set of vector points.,Vector Analysis
+WhiteboxTools,WhiteboxTools,ContoursFromPoints,Creates a contour coverage from a set of input points.,General
+WhiteboxTools,WhiteboxTools,ContoursFromRaster,Derives a vector contour coverage from a raster surface.,Raster Processing
+WhiteboxTools,WhiteboxTools,ConvertNodataToZero,Converts nodata values in a raster to zero.,General
+WhiteboxTools,WhiteboxTools,ConvertRasterFormat,Converts raster data from one format to another.,Raster Processing
+WhiteboxTools,WhiteboxTools,CornerDetection,Identifies corner patterns in boolean images using hit-and-miss pattern matching.,General
+WhiteboxTools,WhiteboxTools,CorrectVignetting,Corrects the darkening of images towards corners.,General
+WhiteboxTools,WhiteboxTools,Cos,Returns the cosine (cos) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,Cosh,Returns the hyperbolic cosine (cosh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,CostAllocation,Identifies the source cell to which each grid cell is connected by a least-cost pathway in a cost-distance analysis.,General
+WhiteboxTools,WhiteboxTools,CostDistance,Performs cost-distance accumulation on a cost surface and a group of source cells.,General
+WhiteboxTools,WhiteboxTools,CostPathway,Performs cost-distance pathway analysis using a series of destination grid cells.,General
+WhiteboxTools,WhiteboxTools,CountIf,Counts the number of occurrences of a specified value in a cell-stack of rasters.,General
+WhiteboxTools,WhiteboxTools,CreateColourComposite,Creates a colour-composite image from three bands of multispectral imagery.,General
+WhiteboxTools,WhiteboxTools,CreateHexagonalVectorGrid,Creates a hexagonal vector grid.,Vector Analysis
+WhiteboxTools,WhiteboxTools,CreatePlane,Creates a raster image based on the equation for a simple plane.,General
+WhiteboxTools,WhiteboxTools,CreateRectangularVectorGrid,Creates a rectangular vector grid.,Vector Analysis
+WhiteboxTools,WhiteboxTools,CrispnessIndex,"Calculates the Crispness Index, which is used to quantify how crisp (or conversely how fuzzy) a probability image is.",General
+WhiteboxTools,WhiteboxTools,CrossTabulation,Performs a cross-tabulation on two categorical images.,General
+WhiteboxTools,WhiteboxTools,CsvPointsToVector,Converts a CSV text file to vector points.,Vector Analysis
+WhiteboxTools,WhiteboxTools,CumulativeDistribution,Converts a raster image to its cumulative distribution function.,General
+WhiteboxTools,WhiteboxTools,D8FlowAccumulation,Calculates a D8 flow accumulation raster from an input DEM or flow pointer.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,D8MassFlux,Performs a D8 mass flux calculation.,General
+WhiteboxTools,WhiteboxTools,D8Pointer,Calculates a D8 flow pointer raster from an input DEM.,General
+WhiteboxTools,WhiteboxTools,DInfFlowAccumulation,Calculates a D-infinity flow accumulation raster from an input DEM.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,DInfMassFlux,Performs a D-infinity mass flux calculation.,General
+WhiteboxTools,WhiteboxTools,DInfPointer,Calculates a D-infinity flow pointer (flow direction) raster from an input DEM.,General
+WhiteboxTools,WhiteboxTools,Decrement,Decreases the values of each grid cell in an input raster by 1.0 (see also InPlaceSubtract).,General
+WhiteboxTools,WhiteboxTools,DepthInSink,Measures the depth of sinks (depressions) in a DEM.,General
+WhiteboxTools,WhiteboxTools,DevFromMeanElev,Calculates deviation from mean elevation.,General
+WhiteboxTools,WhiteboxTools,DeviationFromRegionalDirection,Calculates the deviation of vector polygons from the regional average direction.,General
+WhiteboxTools,WhiteboxTools,DiffFromMeanElev,Calculates difference from mean elevation (equivalent to a high-pass filter).,General
+WhiteboxTools,WhiteboxTools,DiffOfGaussianFilter,Performs a Difference of Gaussian (DoG) filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,Difference,"Outputs the features that occur in one of the two vector inputs but not both, i.e. no overlapping features.",General
+WhiteboxTools,WhiteboxTools,DirectDecorrelationStretch,Performs a direct decorrelation stretch enhancement on a colour-composite image of multispectral data.,General
+WhiteboxTools,WhiteboxTools,DirectionalRelief,Calculates relief for cells in an input DEM for a specified direction.,General
+WhiteboxTools,WhiteboxTools,Dissolve,"Removes the interior, or shared, boundaries within a vector polygon coverage.",General
+WhiteboxTools,WhiteboxTools,DistanceToOutlet,Calculates the distance of stream grid cells to the channel network outlet cell.,General
+WhiteboxTools,WhiteboxTools,DiversityFilter,Assigns each cell in the output grid the number of different values in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,Divide,Performs a division operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,DownslopeDistanceToStream,Measures distance to the nearest downslope stream cell.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,DownslopeFlowpathLength,Calculates the downslope flowpath length from each cell to basin outlet.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,DownslopeIndex,Calculates the Hjerdt et al. (2004) downslope index.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,EdgeDensity,"Calculates the density of edges, or breaks-in-slope within DEMs.",General
+WhiteboxTools,WhiteboxTools,EdgePreservingMeanFilter,Performs a simple edge-preserving mean filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,EdgeProportion,Calculate the proportion of cells in a raster polygon that are edge cells.,General
+WhiteboxTools,WhiteboxTools,ElevAbovePit,Calculate the elevation of each grid cell above the nearest downstream pit cell or grid edge cell.,General
+WhiteboxTools,WhiteboxTools,ElevPercentile,Calculates the elevation percentile raster from a DEM.,General
+WhiteboxTools,WhiteboxTools,ElevRelativeToMinMax,Calculates the elevation of a location relative to the minimum and maximum elevations in a DEM.,General
+WhiteboxTools,WhiteboxTools,ElevRelativeToWatershedMinMax,Calculates the elevation of a location relative to the minimum and maximum elevations in a watershed.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,ElevationAboveStream,Calculates the elevation of cells above the nearest downslope stream cell.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,ElevationAboveStreamEuclidean,Calculates the elevation of cells above the nearest (Euclidean distance) stream cell.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,EliminateCoincidentPoints,"Removes any coincident, or nearly coincident, points from a vector points file.",General
+WhiteboxTools,WhiteboxTools,ElongationRatio,Calculates the elongation ratio for vector polygons.,General
+WhiteboxTools,WhiteboxTools,EmbankmentMapping,Maps and/or removes road embankments from an input fine-resolution DEM.,General
+WhiteboxTools,WhiteboxTools,EmbossFilter,"Performs an emboss filter on an image, similar to a hillshade operation.",Image Processing
+WhiteboxTools,WhiteboxTools,EqualTo,Performs a equal-to comparison operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,Erase,"Removes all the features, or parts of features, that overlap with the features of the erase vector polygon.",General
+WhiteboxTools,WhiteboxTools,ErasePolygonFromLidar,Erases (cuts out) a vector polygon or polygons from a LiDAR point cloud.,General
+WhiteboxTools,WhiteboxTools,ErasePolygonFromRaster,Erases (cuts out) a vector polygon from a raster.,Raster Processing
+WhiteboxTools,WhiteboxTools,EuclideanAllocation,"Assigns grid cells in the output raster the value of the nearest target cell in the input image, measured by the Shih and Wu (2004) Euclidean distance transform.",General
+WhiteboxTools,WhiteboxTools,EuclideanDistance,Calculates the Shih and Wu (2004) Euclidean distance transform.,General
+WhiteboxTools,WhiteboxTools,Exp,Returns the exponential (base e) of values in a raster.,General
+WhiteboxTools,WhiteboxTools,Exp2,Returns the exponential (base 2) of values in a raster.,General
+WhiteboxTools,WhiteboxTools,ExportTableToCsv,Exports an attribute table to a CSV text file.,General
+WhiteboxTools,WhiteboxTools,ExtendVectorLines,Extends vector lines by a specified distance.,Vector Analysis
+WhiteboxTools,WhiteboxTools,ExtractNodes,Converts vector lines or polygons into vertex points.,General
+WhiteboxTools,WhiteboxTools,ExtractRasterValuesAtPoints,Extracts the values of raster(s) at vector point locations.,Raster Processing
+WhiteboxTools,WhiteboxTools,ExtractStreams,Extracts stream grid cells from a flow accumulation raster.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,ExtractValleys,Identifies potential valley bottom grid cells based on local topolography alone.,General
+WhiteboxTools,WhiteboxTools,FD8FlowAccumulation,Calculates an FD8 flow accumulation raster from an input DEM.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,FD8Pointer,Calculates an FD8 flow pointer raster from an input DEM.,General
+WhiteboxTools,WhiteboxTools,FarthestChannelHead,Calculates the distance to the furthest upstream channel head for each stream cell.,General
+WhiteboxTools,WhiteboxTools,FastAlmostGaussianFilter,Performs a fast approximate Gaussian filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,FeaturePreservingSmoothing,Reduces short-scale variation in an input DEM using a modified Sun et al. (2007) algorithm.,Image Processing
+WhiteboxTools,WhiteboxTools,FetchAnalysis,Performs an analysis of fetch or upwind distance to an obstacle.,General
+WhiteboxTools,WhiteboxTools,FillBurn,"Burns streams into a DEM using the FillBurn (Saunders, 1999) method.",General
+WhiteboxTools,WhiteboxTools,FillDepressions,Fills all of the depressions in a DEM. Depression breaching should be preferred in most cases.,General
+WhiteboxTools,WhiteboxTools,FillDepressionsPlanchonAndDarboux,Fills all of the depressions in a DEM using the Planchon and Darboux (2002) method.,General
+WhiteboxTools,WhiteboxTools,FillDepressionsWangAndLiu,Fills all of the depressions in a DEM using the Wang and Liu (2006) method. Depression breaching should be preferred in most cases.,General
+WhiteboxTools,WhiteboxTools,FillMissingData,Fills NoData holes in a DEM.,General
+WhiteboxTools,WhiteboxTools,FillSingleCellPits,Raises pit cells to the elevation of their lowest neighbour.,General
+WhiteboxTools,WhiteboxTools,FilterLidarClasses,Removes points in a LAS file with certain specified class values.,Image Processing
+WhiteboxTools,WhiteboxTools,FilterLidarScanAngles,Removes points in a LAS file with scan angles greater than a threshold.,Image Processing
+WhiteboxTools,WhiteboxTools,FilterRasterFeaturesByArea,Removes small-area features from a raster.,Image Processing
+WhiteboxTools,WhiteboxTools,FindFlightlineEdgePoints,Identifies points along a flightline's edge in a LAS file.,General
+WhiteboxTools,WhiteboxTools,FindLowestOrHighestPoints,Locates the lowest and/or highest valued cells in a raster.,General
+WhiteboxTools,WhiteboxTools,FindMainStem,"Finds the main stem, based on stream lengths, of each stream network.",General
+WhiteboxTools,WhiteboxTools,FindNoFlowCells,Finds grid cells with no downslope neighbours.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,FindParallelFlow,Finds areas of parallel flow in D8 flow direction rasters.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,FindPatchOrClassEdgeCells,Finds all cells located on the edge of patch or class features.,General
+WhiteboxTools,WhiteboxTools,FindRidges,Identifies potential ridge and peak grid cells.,General
+WhiteboxTools,WhiteboxTools,FlattenLakes,Flattens lake polygons in a raster DEM.,General
+WhiteboxTools,WhiteboxTools,FlightlineOverlap,Reads a LiDAR (LAS) point file and outputs a raster containing the number of overlapping flight-lines in each grid cell.,General
+WhiteboxTools,WhiteboxTools,FlipImage,Reflects an image in the vertical or horizontal axis.,General
+WhiteboxTools,WhiteboxTools,FloodOrder,"Assigns each DEM grid cell its order in the sequence of inundations that are encountered during a search starting from the edges, moving inward at increasing elevations.",General
+WhiteboxTools,WhiteboxTools,Floor,Returns the largest (closest to positive infinity) value that is less than or equal to the values in a raster.,General
+WhiteboxTools,WhiteboxTools,FlowAccumulationFullWorkflow,"Resolves all of the depressions in a DEM, outputting a breached DEM, an aspect-aligned non-divergent flow pointer, and a flow accumulation raster.",Hydrological Analysis
+WhiteboxTools,WhiteboxTools,FlowLengthDiff,"Calculates the local maximum absolute difference in downslope flowpath length, useful in mapping drainage divides and ridges.",Hydrological Analysis
+WhiteboxTools,WhiteboxTools,GammaCorrection,Performs a gamma correction on an input images.,General
+WhiteboxTools,WhiteboxTools,GaussianContrastStretch,Performs a Gaussian contrast stretch on input images.,Image Processing
+WhiteboxTools,WhiteboxTools,GaussianCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,GaussianFilter,Performs a Gaussian filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,Geomorphons,Computes geomorphon patterns.,General
+WhiteboxTools,WhiteboxTools,GreaterThan,Performs a greater-than comparison operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,HackStreamOrder,Assigns the Hack stream order to each tributary in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,HeightAboveGround,"Normalizes a LiDAR point cloud, providing the height above the nearest ground-classified point.",General
+WhiteboxTools,WhiteboxTools,HighPassBilateralFilter,"Performs a high-pass bilateral filter, by differencing an input image by the bilateral filter by Tomasi and Manduchi (1998).",Image Processing
+WhiteboxTools,WhiteboxTools,HighPassFilter,Performs a high-pass filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,HighPassMedianFilter,Performs a high pass median filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,HighestPosition,Identifies the stack position of the maximum value within a raster stack on a cell-by-cell basis.,General
+WhiteboxTools,WhiteboxTools,Hillshade,Calculates a hillshade raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Hillslopes,Identifies the individual hillslopes draining to each link in a stream network.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,HistogramEqualization,Performs a histogram equalization contrast enhancement on an image.,General
+WhiteboxTools,WhiteboxTools,HistogramMatching,Alters the statistical distribution of a raster image matching it to a specified PDF.,General
+WhiteboxTools,WhiteboxTools,HistogramMatchingTwoImages,Alters the cumulative distribution function of a raster image to that of another image.,General
+WhiteboxTools,WhiteboxTools,HoleProportion,Calculates the proportion of the total area of a polygon's holes relative to the area of the polygon's hull.,General
+WhiteboxTools,WhiteboxTools,HorizonAngle,Calculates horizon angle (maximum upwind slope) for each grid cell in an input DEM.,General
+WhiteboxTools,WhiteboxTools,HortonStreamOrder,Assigns the Horton stream order to each tributary in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,HypsometricAnalysis,Calculates a hypsometric curve for one or more DEMs.,General
+WhiteboxTools,WhiteboxTools,HypsometricallyTintedHillshade,Creates an colour shaded relief image from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,IdwInterpolation,Interpolates vector points into a raster surface using an inverse-distance weighted scheme.,General
+WhiteboxTools,WhiteboxTools,IhsToRgb,"Converts intensity, hue, and saturation (IHS) images into red, green, and blue (RGB) images.",General
+WhiteboxTools,WhiteboxTools,ImageAutocorrelation,Performs Moran's I analysis on two or more input images.,General
+WhiteboxTools,WhiteboxTools,ImageCorrelation,Performs image correlation on two or more input images.,General
+WhiteboxTools,WhiteboxTools,ImageCorrelationNeighbourhoodAnalysis,Performs image correlation on two input images neighbourhood search windows.,General
+WhiteboxTools,WhiteboxTools,ImageRegression,Performs image regression analysis on two input images.,General
+WhiteboxTools,WhiteboxTools,ImageStackProfile,Plots an image stack profile (i.e. signature) for a set of points and multispectral images.,General
+WhiteboxTools,WhiteboxTools,ImpoundmentSizeIndex,Calculates the impoundment size resulting from damming a DEM.,General
+WhiteboxTools,WhiteboxTools,InPlaceAdd,Performs an in-place addition operation (input1 += input2).,General
+WhiteboxTools,WhiteboxTools,InPlaceDivide,Performs an in-place division operation (input1 /= input2).,General
+WhiteboxTools,WhiteboxTools,InPlaceMultiply,Performs an in-place multiplication operation (input1 *= input2).,General
+WhiteboxTools,WhiteboxTools,InPlaceSubtract,Performs an in-place subtraction operation (input1 -= input2).,General
+WhiteboxTools,WhiteboxTools,Increment,Increases the values of each grid cell in an input raster by 1.0. (see also InPlaceAdd),General
+WhiteboxTools,WhiteboxTools,InsertDams,Calculates the impoundment size resulting from damming a DEM.,General
+WhiteboxTools,WhiteboxTools,IntegerDivision,Performs an integer division operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,IntegralImage,Transforms an input image (summed area table) into its integral image equivalent.,General
+WhiteboxTools,WhiteboxTools,Intersect,Identifies the parts of features in common between two input vector layers.,General
+WhiteboxTools,WhiteboxTools,IsNoData,Identifies NoData valued pixels in an image.,General
+WhiteboxTools,WhiteboxTools,Isobasins,Divides a landscape into nearly equal sized drainage basins (i.e. watersheds).,General
+WhiteboxTools,WhiteboxTools,JensonSnapPourPoints,Moves outlet points used to specify points of interest in a watershedding operation to the nearest stream cell.,General
+WhiteboxTools,WhiteboxTools,JoinTables,Merge a vector's attribute table with another table based on a common field.,General
+WhiteboxTools,WhiteboxTools,KMeansClustering,Performs a k-means clustering operation on a multi-spectral dataset.,General
+WhiteboxTools,WhiteboxTools,KNearestMeanFilter,A k-nearest mean filter is a type of edge-preserving smoothing filter.,Image Processing
+WhiteboxTools,WhiteboxTools,KappaIndex,Performs a kappa index of agreement (KIA) analysis on two categorical raster files.,General
+WhiteboxTools,WhiteboxTools,KsTestForNormality,Evaluates whether the values in a raster are normally distributed.,General
+WhiteboxTools,WhiteboxTools,LaplacianFilter,Performs a Laplacian filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,LaplacianOfGaussianFilter,Performs a Laplacian-of-Gaussian (LoG) filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,LasToAscii,Converts one or more LAS files into ASCII text files.,General
+WhiteboxTools,WhiteboxTools,LasToMultipointShapefile,"Converts one or more LAS files into MultipointZ vector Shapefiles. When the input parameter is not specified, the tool grids all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LasToShapefile,Converts one or more LAS files into a vector Shapefile of POINT ShapeType.,General
+WhiteboxTools,WhiteboxTools,LasToZlidar,Converts one or more LAS files into the zlidar compressed LiDAR data format.,General
+WhiteboxTools,WhiteboxTools,LayerFootprint,Creates a vector polygon footprint of the area covered by a raster grid or vector layer.,General
+WhiteboxTools,WhiteboxTools,LeeSigmaFilter,Performs a Lee (Sigma) smoothing filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,LengthOfUpstreamChannels,Calculates the total length of channels upstream.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,LessThan,Performs a less-than comparison operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,LidarBlockMaximum,"Creates a block-maximum raster from an input LAS file. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarBlockMinimum,"Creates a block-minimum raster from an input LAS file. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarClassifySubset,Classifies the values in one LiDAR point cloud that correspond with points in a subset cloud.,General
+WhiteboxTools,WhiteboxTools,LidarColourize,Adds the red-green-blue colour fields of a LiDAR (LAS) file based on an input image.,General
+WhiteboxTools,WhiteboxTools,LidarDigitalSurfaceModel,Creates a top-surface digital surface model (DSM) from a LiDAR point cloud.,General
+WhiteboxTools,WhiteboxTools,LidarElevationSlice,Outputs all of the points within a LiDAR (LAS) point file that lie between a specified elevation range.,General
+WhiteboxTools,WhiteboxTools,LidarGroundPointFilter,Identifies ground points within LiDAR dataset using a slope-based method.,Image Processing
+WhiteboxTools,WhiteboxTools,LidarHexBinning,Hex-bins a set of LiDAR points.,General
+WhiteboxTools,WhiteboxTools,LidarHillshade,Calculates a hillshade value for points within a LAS file and stores these data in the RGB field.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,LidarHistogram,Creates a histogram of LiDAR data.,General
+WhiteboxTools,WhiteboxTools,LidarIdwInterpolation,"Interpolates LAS files using an inverse-distance weighted (IDW) scheme. When the input/output parameters are not specified, the tool interpolates all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarInfo,"Prints information about a LiDAR (LAS) dataset, including header, point return frequency, and classification data and information about the variable length records (VLRs) and geokeys.",General
+WhiteboxTools,WhiteboxTools,LidarJoin,Joins multiple LiDAR (LAS) files into a single LAS file.,General
+WhiteboxTools,WhiteboxTools,LidarKappaIndex,Performs a kappa index of agreement (KIA) analysis on the classifications of two LAS files.,General
+WhiteboxTools,WhiteboxTools,LidarNearestNeighbourGridding,"Grids LiDAR files using nearest-neighbour scheme. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",Raster Processing
+WhiteboxTools,WhiteboxTools,LidarPointDensity,"Calculates the spatial pattern of point density for a LiDAR data set. When the input/output parameters are not specified, the tool grids all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarPointStats,"Creates several rasters summarizing the distribution of LAS point data. When the input/output parameters are not specified, the tool works on all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarRansacPlanes,Performs a RANSAC analysis to identify points within a LiDAR point cloud that belong to linear planes.,General
+WhiteboxTools,WhiteboxTools,LidarRbfInterpolation,"Interpolates LAS files using a radial basis function (RBF) scheme. When the input/output parameters are not specified, the tool interpolates all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarRemoveDuplicates,Removes duplicate points from a LiDAR data set.,General
+WhiteboxTools,WhiteboxTools,LidarRemoveOutliers,Removes outliers (high and low points) in a LiDAR point cloud.,General
+WhiteboxTools,WhiteboxTools,LidarRooftopAnalysis,Identifies roof segments in a LiDAR point cloud.,General
+WhiteboxTools,WhiteboxTools,LidarSegmentation,Segments a LiDAR point cloud based on differences in the orientation of fitted planar surfaces and point proximity.,General
+WhiteboxTools,WhiteboxTools,LidarSegmentationBasedFilter,Identifies ground points within LiDAR point clouds using a segmentation based approach.,Image Processing
+WhiteboxTools,WhiteboxTools,LidarTINGridding,Creates a raster grid based on a Delaunay triangular irregular network (TIN) fitted to LiDAR points.,Raster Processing
+WhiteboxTools,WhiteboxTools,LidarThin,"Thins a LiDAR point cloud, reducing point density.",General
+WhiteboxTools,WhiteboxTools,LidarThinHighDensity,Thins points from high density areas within a LiDAR point cloud.,General
+WhiteboxTools,WhiteboxTools,LidarTile,Tiles a LiDAR LAS file into multiple LAS files.,General
+WhiteboxTools,WhiteboxTools,LidarTileFootprint,"Creates a vector polygon of the convex hull of a LiDAR point cloud. When the input/output parameters are not specified, the tool works with all LAS files contained within the working directory.",General
+WhiteboxTools,WhiteboxTools,LidarTophatTransform,"Performs a white top-hat transform on a Lidar dataset; as an estimate of height above ground, this is useful for modelling the vegetation canopy.",General
+WhiteboxTools,WhiteboxTools,LineDetectionFilter,Performs a line-detection filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,LineIntersections,Identifies points where the features of two vector line layers intersect.,General
+WhiteboxTools,WhiteboxTools,LineThinning,Performs line thinning a on Boolean raster image; intended to be used with the RemoveSpurs tool.,General
+WhiteboxTools,WhiteboxTools,LinearityIndex,Calculates the linearity index for vector polygons.,General
+WhiteboxTools,WhiteboxTools,LinesToPolygons,Converts vector polylines to polygons.,General
+WhiteboxTools,WhiteboxTools,ListUniqueValues,Lists the unique values contained in a field within a vector's attribute table.,General
+WhiteboxTools,WhiteboxTools,ListUniqueValuesRaster,Lists the unique values contained in a field within a vector's attribute table.,Raster Processing
+WhiteboxTools,WhiteboxTools,Ln,Returns the natural logarithm of values in a raster.,General
+WhiteboxTools,WhiteboxTools,Log10,Returns the base-10 logarithm of values in a raster.,General
+WhiteboxTools,WhiteboxTools,Log2,Returns the base-2 logarithm of values in a raster.,General
+WhiteboxTools,WhiteboxTools,LongProfile,Plots the stream longitudinal profiles for one or more rivers.,General
+WhiteboxTools,WhiteboxTools,LongProfileFromPoints,Plots the longitudinal profiles from flow-paths initiating from a set of vector points.,General
+WhiteboxTools,WhiteboxTools,LongestFlowpath,Delineates the longest flowpaths for a group of subbasins or watersheds.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,LowestPosition,Identifies the stack position of the minimum value within a raster stack on a cell-by-cell basis.,General
+WhiteboxTools,WhiteboxTools,MDInfFlowAccumulation,Calculates an FD8 flow accumulation raster from an input DEM.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,MajorityFilter,Assigns each cell in the output grid the most frequently occurring value (mode) in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,MapOffTerrainObjects,Maps off-terrain objects in a digital elevation model (DEM).,General
+WhiteboxTools,WhiteboxTools,Max,Performs a MAX operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,MaxAbsoluteOverlay,Evaluates the maximum absolute value for each grid cell from a stack of input rasters.,General
+WhiteboxTools,WhiteboxTools,MaxAnisotropyDev,Calculates the maximum anisotropy (directionality) in elevation deviation over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MaxAnisotropyDevSignature,Calculates the anisotropy in deviation from mean for points over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MaxBranchLength,Lindsay and Seibert's (2013) branch length index is used to map drainage divides or ridge lines.,General
+WhiteboxTools,WhiteboxTools,MaxDifferenceFromMean,Calculates the maximum difference from mean elevation over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MaxDownslopeElevChange,Calculates the maximum downslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MaxElevDevSignature,Calculates the maximum elevation deviation over a range of spatial scales and for a set of points.,General
+WhiteboxTools,WhiteboxTools,MaxElevationDeviation,Calculates the maximum elevation deviation over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MaxOverlay,Evaluates the maximum value for each grid cell from a stack of input rasters.,General
+WhiteboxTools,WhiteboxTools,MaxUpslopeElevChange,Calculates the maximum upslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MaxUpslopeFlowpathLength,Measures the maximum length of all upslope flowpaths draining each grid cell.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MaximalCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MaximumFilter,Assigns each cell in the output grid the maximum value in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,MeanCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MeanFilter,Performs a mean filter (low-pass filter) on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,MedianFilter,Performs a median filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,Medoid,Calculates the medoid for a series of vector features contained in a shapefile.,General
+WhiteboxTools,WhiteboxTools,MergeLineSegments,Merges vector line segments into larger features.,General
+WhiteboxTools,WhiteboxTools,MergeTableWithCsv,Merge a vector's attribute table with a table contained within a CSV text file.,General
+WhiteboxTools,WhiteboxTools,MergeVectors,"Combines two or more input vectors of the same ShapeType creating a single, new output vector.",Vector Analysis
+WhiteboxTools,WhiteboxTools,Min,Performs a MIN operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,MinAbsoluteOverlay,Evaluates the minimum absolute value for each grid cell from a stack of input rasters.,General
+WhiteboxTools,WhiteboxTools,MinDownslopeElevChange,Calculates the minimum downslope change in elevation between a grid cell and its eight downslope neighbors.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MinMaxContrastStretch,Performs a min-max contrast stretch on an input greytone image.,General
+WhiteboxTools,WhiteboxTools,MinOverlay,Evaluates the minimum value for each grid cell from a stack of input rasters.,General
+WhiteboxTools,WhiteboxTools,MinimalCurvature,Calculates a mean curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,MinimumBoundingBox,Creates a vector minimum bounding rectangle around vector features.,General
+WhiteboxTools,WhiteboxTools,MinimumBoundingCircle,Delineates the minimum bounding circle (i.e. smallest enclosing circle) for a group of vectors.,General
+WhiteboxTools,WhiteboxTools,MinimumBoundingEnvelope,Creates a vector axis-aligned minimum bounding rectangle (envelope) around vector features.,General
+WhiteboxTools,WhiteboxTools,MinimumConvexHull,Creates a vector convex polygon around vector features.,General
+WhiteboxTools,WhiteboxTools,MinimumFilter,Assigns each cell in the output grid the minimum value in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,ModifiedKMeansClustering,Performs a modified k-means clustering operation on a multi-spectral dataset.,General
+WhiteboxTools,WhiteboxTools,ModifyNoDataValue,Modifies nodata values in a raster.,General
+WhiteboxTools,WhiteboxTools,Modulo,Performs a modulo operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,Mosaic,Mosaics two or more images together.,General
+WhiteboxTools,WhiteboxTools,MosaicWithFeathering,Mosaics two images together using a feathering technique in overlapping areas to reduce edge-effects.,General
+WhiteboxTools,WhiteboxTools,MultiPartToSinglePart,Converts a vector file containing multi-part features into a vector containing only single-part features.,General
+WhiteboxTools,WhiteboxTools,MultidirectionalHillshade,Calculates a multi-direction hillshade raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Multiply,Performs a multiplication operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,MultiplyOverlay,Calculates the sum for each grid cell from a group of raster images.,General
+WhiteboxTools,WhiteboxTools,MultiscaleElevationPercentile,Calculates surface roughness over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MultiscaleRoughness,Calculates surface roughness over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MultiscaleRoughnessSignature,Calculates the surface roughness for points over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MultiscaleStdDevNormals,Calculates surface roughness over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MultiscaleStdDevNormalsSignature,Calculates the surface roughness for points over a range of spatial scales.,General
+WhiteboxTools,WhiteboxTools,MultiscaleTopographicPositionImage,Creates a multiscale topographic position image from three DEVmax rasters of differing spatial scale ranges.,General
+WhiteboxTools,WhiteboxTools,NarrownessIndex,Calculates the narrowness of raster polygons.,General
+WhiteboxTools,WhiteboxTools,NaturalNeighbourInterpolation,Creates a raster grid based on Sibson's natural neighbour method.,General
+WhiteboxTools,WhiteboxTools,NearestNeighbourGridding,Creates a raster grid based on a set of vector points and assigns grid values using the nearest neighbour.,Raster Processing
+WhiteboxTools,WhiteboxTools,Negate,Changes the sign of values in a raster or the 0-1 values of a Boolean raster.,General
+WhiteboxTools,WhiteboxTools,NewRasterFromBase,Creates a new raster using a base image.,Raster Processing
+WhiteboxTools,WhiteboxTools,NormalVectors,Calculates normal vectors for points within a LAS file and stores these data (XYZ vector components) in the RGB field.,Vector Analysis
+WhiteboxTools,WhiteboxTools,NormalizedDifferenceIndex,Calculate a normalized-difference index (NDI) from two bands of multispectral image data.,General
+WhiteboxTools,WhiteboxTools,Not,Performs a logical NOT operator on two Boolean raster images.,General
+WhiteboxTools,WhiteboxTools,NotEqualTo,Performs a not-equal-to comparison operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,NumDownslopeNeighbours,Calculates the number of downslope neighbours to each grid cell in a DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,NumInflowingNeighbours,Computes the number of inflowing neighbours to each cell in an input DEM based on the D8 algorithm.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,NumUpslopeNeighbours,Calculates the number of upslope neighbours to each grid cell in a DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,OlympicFilter,Performs an olympic smoothing filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,Opening,An opening is a mathematical morphology operation involving a dilation (max filter) of an erosion (min filter) set.,General
+WhiteboxTools,WhiteboxTools,Or,Performs a logical OR operator on two Boolean raster images.,General
+WhiteboxTools,WhiteboxTools,PairedSampleTTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General
+WhiteboxTools,WhiteboxTools,PanchromaticSharpening,Increases the spatial resolution of image data by combining multispectral bands with panchromatic data.,General
+WhiteboxTools,WhiteboxTools,PatchOrientation,Calculates the orientation of vector polygons.,General
+WhiteboxTools,WhiteboxTools,PennockLandformClass,"Classifies hillslope zones based on slope, profile curvature, and plan curvature.",General
+WhiteboxTools,WhiteboxTools,PercentElevRange,Calculates percent of elevation range from a DEM.,General
+WhiteboxTools,WhiteboxTools,PercentEqualTo,Calculates the percentage of a raster stack that have cell values equal to an input on a cell-by-cell basis.,General
+WhiteboxTools,WhiteboxTools,PercentGreaterThan,Calculates the percentage of a raster stack that have cell values greater than an input on a cell-by-cell basis.,General
+WhiteboxTools,WhiteboxTools,PercentLessThan,Calculates the percentage of a raster stack that have cell values less than an input on a cell-by-cell basis.,General
+WhiteboxTools,WhiteboxTools,PercentageContrastStretch,Performs a percentage linear contrast stretch on input images.,General
+WhiteboxTools,WhiteboxTools,PercentileFilter,Performs a percentile filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,PerimeterAreaRatio,Calculates the perimeter-area ratio of vector polygons.,General
+WhiteboxTools,WhiteboxTools,PickFromList,Outputs the value from a raster stack specified by a position raster.,General
+WhiteboxTools,WhiteboxTools,PlanCurvature,Calculates a plan (contour) curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,PolygonArea,Calculates the area of vector polygons.,General
+WhiteboxTools,WhiteboxTools,PolygonLongAxis,Used to map the long axis of polygon features.,General
+WhiteboxTools,WhiteboxTools,PolygonPerimeter,Calculates the perimeter of vector polygons.,General
+WhiteboxTools,WhiteboxTools,PolygonShortAxis,Used to map the short axis of polygon features.,General
+WhiteboxTools,WhiteboxTools,Polygonize,Creates a polygon layer from two or more intersecting line features contained in one or more input vector line files.,General
+WhiteboxTools,WhiteboxTools,PolygonsToLines,Converts vector polygons to polylines.,General
+WhiteboxTools,WhiteboxTools,Power,"Raises the values in grid cells of one rasters, or a constant value, by values in another raster or constant value.",General
+WhiteboxTools,WhiteboxTools,PrewittFilter,Performs a Prewitt edge-detection filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,PrincipalComponentAnalysis,Performs a principal component analysis (PCA) on a multi-spectral dataset.,General
+WhiteboxTools,WhiteboxTools,PrintGeoTiffTags,Prints the tags within a GeoTIFF.,General
+WhiteboxTools,WhiteboxTools,Profile,Plots profiles from digital surface models.,General
+WhiteboxTools,WhiteboxTools,ProfileCurvature,Calculates a profile curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Quantiles,Transforms raster values into quantiles.,General
+WhiteboxTools,WhiteboxTools,RadialBasisFunctionInterpolation,Interpolates vector points into a raster surface using a radial basis function scheme.,General
+WhiteboxTools,WhiteboxTools,RadiusOfGyration,Calculates the distance of cells from their polygon's centroid.,General
+WhiteboxTools,WhiteboxTools,RaiseWalls,"Raises walls in a DEM along a line or around a polygon, e.g. a watershed.",General
+WhiteboxTools,WhiteboxTools,RandomField,Creates an image containing random values.,General
+WhiteboxTools,WhiteboxTools,RandomSample,Creates an image containing randomly located sample grid cells with unique IDs.,General
+WhiteboxTools,WhiteboxTools,RangeFilter,Assigns each cell in the output grid the range of values in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,RasterArea,Calculates the area of polygons or classes within a raster image.,Raster Processing
+WhiteboxTools,WhiteboxTools,RasterCellAssignment,Assign row or column number to cells.,Raster Processing
+WhiteboxTools,WhiteboxTools,RasterHistogram,Creates a histogram from raster values.,Raster Processing
+WhiteboxTools,WhiteboxTools,RasterPerimeter,Calculates the perimeters of polygons or classes within a raster image.,Raster Processing
+WhiteboxTools,WhiteboxTools,RasterStreamsToVector,Converts a raster stream file into a vector file.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,RasterSummaryStats,"Measures a rasters min, max, average, standard deviation, num. non-nodata cells, and total.",Raster Processing
+WhiteboxTools,WhiteboxTools,RasterToVectorLines,Converts a raster lines features into a vector of the POLYLINE shapetype,Vector Analysis
+WhiteboxTools,WhiteboxTools,RasterToVectorPoints,Converts a raster dataset to a vector of the POINT shapetype.,Vector Analysis
+WhiteboxTools,WhiteboxTools,RasterToVectorPolygons,Converts a raster dataset to a vector of the POLYGON shapetype.,Vector Analysis
+WhiteboxTools,WhiteboxTools,RasterizeStreams,Rasterizes vector streams based on Lindsay (2016) method.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,Reciprocal,Returns the reciprocal (i.e. 1 / z) of values in a raster.,General
+WhiteboxTools,WhiteboxTools,Reclass,Reclassifies the values in a raster image.,General
+WhiteboxTools,WhiteboxTools,ReclassEqualInterval,Reclassifies the values in a raster image based on equal-ranges.,General
+WhiteboxTools,WhiteboxTools,ReclassFromFile,Reclassifies the values in a raster image using reclass ranges in a text file.,General
+WhiteboxTools,WhiteboxTools,ReinitializeAttributeTable,Reinitializes a vector's attribute table deleting all fields but the feature ID (FID).,General
+WhiteboxTools,WhiteboxTools,RelatedCircumscribingCircle,Calculates the related circumscribing circle of vector polygons.,General
+WhiteboxTools,WhiteboxTools,RelativeAspect,Calculates relative aspect (relative to a user-specified direction) from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,RelativeTopographicPosition,Calculates the relative topographic position index from a DEM.,General
+WhiteboxTools,WhiteboxTools,RemoveOffTerrainObjects,Removes off-terrain objects from a raster digital elevation model (DEM).,General
+WhiteboxTools,WhiteboxTools,RemovePolygonHoles,Removes holes within the features of a vector polygon file.,General
+WhiteboxTools,WhiteboxTools,RemoveShortStreams,Removes short first-order streams from a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,RemoveSpurs,Removes the spurs (pruning operation) from a Boolean line image; intended to be used on the output of the LineThinning tool.,General
+WhiteboxTools,WhiteboxTools,Resample,Resamples one or more input images into a destination image.,Raster Processing
+WhiteboxTools,WhiteboxTools,RescaleValueRange,Performs a min-max contrast stretch on an input greytone image.,General
+WhiteboxTools,WhiteboxTools,RgbToIhs,"Converts red, green, and blue (RGB) images into intensity, hue, and saturation (IHS) images.",General
+WhiteboxTools,WhiteboxTools,Rho8Pointer,Calculates a stochastic Rho8 flow pointer raster from an input DEM.,General
+WhiteboxTools,WhiteboxTools,RobertsCrossFilter,Performs a Robert's cross edge-detection filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,RootMeanSquareError,Calculates the RMSE and other accuracy statistics.,General
+WhiteboxTools,WhiteboxTools,Round,Rounds the values in an input raster to the nearest integer value.,General
+WhiteboxTools,WhiteboxTools,RuggednessIndex,Calculates the Riley et al.'s (1999) terrain ruggedness index from an input DEM.,General
+WhiteboxTools,WhiteboxTools,ScharrFilter,Performs a Scharr edge-detection filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,SedimentTransportIndex,Calculates the sediment transport index.,General
+WhiteboxTools,WhiteboxTools,SelectTilesByPolygon,Copies LiDAR tiles overlapping with a polygon into an output directory.,General
+WhiteboxTools,WhiteboxTools,SetNodataValue,Assign the NoData value for an input image.,General
+WhiteboxTools,WhiteboxTools,ShapeComplexityIndex,Calculates overall polygon shape complexity or irregularity.,General
+WhiteboxTools,WhiteboxTools,ShapeComplexityIndexRaster,Calculates the complexity of raster polygons or classes.,Raster Processing
+WhiteboxTools,WhiteboxTools,ShreveStreamMagnitude,Assigns the Shreve stream magnitude to each link in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,SigmoidalContrastStretch,Performs a sigmoidal contrast stretch on input images.,General
+WhiteboxTools,WhiteboxTools,Sin,Returns the sine (sin) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,SinglePartToMultiPart,Converts a vector file containing multi-part features into a vector containing only single-part features.,General
+WhiteboxTools,WhiteboxTools,Sinh,Returns the hyperbolic sine (sinh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,Sink,"Identifies the depressions in a DEM, giving each feature a unique identifier.",General
+WhiteboxTools,WhiteboxTools,Slope,Calculates a slope raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,SlopeVsElevationPlot,Creates a slope vs. elevation plot for one or more DEMs.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,SmoothVectors,Smooths a vector coverage of either a POLYLINE or POLYGON base ShapeType.,Image Processing
+WhiteboxTools,WhiteboxTools,SnapPourPoints,Moves outlet points used to specify points of interest in a watershedding operation to the cell with the highest flow accumulation in its neighbourhood.,General
+WhiteboxTools,WhiteboxTools,SobelFilter,Performs a Sobel edge-detection filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,SphericalStdDevOfNormals,Calculates the spherical standard deviation of surface normals for a DEM.,General
+WhiteboxTools,WhiteboxTools,SplitColourComposite,Splits an RGB colour composite image into separate multispectral images.,General
+WhiteboxTools,WhiteboxTools,SplitWithLines,Splits the lines or polygons in one layer using the lines in another layer.,General
+WhiteboxTools,WhiteboxTools,Square,Squares the values in a raster.,General
+WhiteboxTools,WhiteboxTools,SquareRoot,Returns the square root of the values in a raster.,General
+WhiteboxTools,WhiteboxTools,StandardDeviationContrastStretch,Performs a standard-deviation contrast stretch on input images.,General
+WhiteboxTools,WhiteboxTools,StandardDeviationFilter,Assigns each cell in the output grid the standard deviation of values in a moving window centred on each grid cell in the input raster.,Image Processing
+WhiteboxTools,WhiteboxTools,StandardDeviationOfSlope,Calculates the standard deviation of slope from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,StochasticDepressionAnalysis,Performs a stochastic analysis of depressions within a DEM.,General
+WhiteboxTools,WhiteboxTools,StrahlerOrderBasins,Identifies Strahler-order basins from an input stream network.,General
+WhiteboxTools,WhiteboxTools,StrahlerStreamOrder,Assigns the Strahler stream order to each link in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,StreamLinkClass,Identifies the exterior/interior links and nodes in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,StreamLinkIdentifier,Assigns a unique identifier to each link in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,StreamLinkLength,Estimates the length of each link (or tributary) in a stream network.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,StreamLinkSlope,Estimates the average slope of each link (or tributary) in a stream network.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,StreamPowerIndex,Calculates the relative stream power index.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,StreamSlopeContinuous,Estimates the slope of each grid cell in a stream network.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Subbasins,"Identifies the catchments, or sub-basin, draining to each link in a stream network.",General
+WhiteboxTools,WhiteboxTools,Subtract,Performs a differencing operation on two rasters or a raster and a constant value.,General
+WhiteboxTools,WhiteboxTools,SumOverlay,Calculates the sum for each grid cell from a group of raster images.,General
+WhiteboxTools,WhiteboxTools,SurfaceAreaRatio,Calculates a the surface area ratio of each grid cell in an input DEM.,General
+WhiteboxTools,WhiteboxTools,SymmetricalDifference,"Outputs the features that occur in one of the two vector inputs but not both, i.e. no overlapping features.",General
+WhiteboxTools,WhiteboxTools,TINGridding,Creates a raster grid based on a triangular irregular network (TIN) fitted to vector points.,Raster Processing
+WhiteboxTools,WhiteboxTools,Tan,Returns the tangent (tan) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,TangentialCurvature,Calculates a tangential curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,Tanh,Returns the hyperbolic tangent (tanh) of each values in a raster.,General
+WhiteboxTools,WhiteboxTools,ThickenRasterLine,Thickens single-cell wide lines within a raster image.,Raster Processing
+WhiteboxTools,WhiteboxTools,TimeInDaylight,Calculates the proportion of time a location is not within an area of shadow.,General
+WhiteboxTools,WhiteboxTools,ToDegrees,Converts a raster from radians to degrees.,General
+WhiteboxTools,WhiteboxTools,ToRadians,Converts a raster from degrees to radians.,General
+WhiteboxTools,WhiteboxTools,TophatTransform,Performs either a white or black top-hat transform on an input image.,General
+WhiteboxTools,WhiteboxTools,TopographicHachures,Derives topographic hachures from a raster surface.,General
+WhiteboxTools,WhiteboxTools,TopologicalStreamOrder,Assigns each link in a stream network its topological order.,Hydrological Analysis
+WhiteboxTools,WhiteboxTools,TotalCurvature,Calculates a total curvature raster from an input DEM.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,TotalFilter,Performs a total filter on an input image.,Image Processing
+WhiteboxTools,WhiteboxTools,TraceDownslopeFlowpaths,Traces downslope flowpaths from one or more target sites (i.e. seed points).,Terrain Analysis
+WhiteboxTools,WhiteboxTools,TrendSurface,Estimates the trend surface of an input raster file.,General
+WhiteboxTools,WhiteboxTools,TrendSurfaceVectorPoints,Estimates a trend surface from vector points.,Vector Analysis
+WhiteboxTools,WhiteboxTools,TributaryIdentifier,Assigns a unique identifier to each tributary in a stream network.,General
+WhiteboxTools,WhiteboxTools,Truncate,Truncates the values in a raster to the desired number of decimal places.,General
+WhiteboxTools,WhiteboxTools,TurningBandsSimulation,Creates an image containing random values based on a turning-bands simulation.,General
+WhiteboxTools,WhiteboxTools,TwoSampleKsTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General
+WhiteboxTools,WhiteboxTools,Union,"Splits vector layers at their overlaps, creating a layer containing all the portions from both input and overlay layers.",General
+WhiteboxTools,WhiteboxTools,UnnestBasins,Extract whole watersheds for a set of outlet points.,General
+WhiteboxTools,WhiteboxTools,UnsharpMasking,An image sharpening technique that enhances edges.,General
+WhiteboxTools,WhiteboxTools,UpdateNodataCells,Replaces the NoData values in an input raster with the corresponding values contained in a second update layer.,General
+WhiteboxTools,WhiteboxTools,UpslopeDepressionStorage,Estimates the average upslope depression storage depth.,Terrain Analysis
+WhiteboxTools,WhiteboxTools,UserDefinedWeightsFilter,Performs a user-defined weights filter on an image.,Image Processing
+WhiteboxTools,WhiteboxTools,VectorHexBinning,Hex-bins a set of vector points.,Vector Analysis
+WhiteboxTools,WhiteboxTools,VectorLinesToRaster,Converts a vector containing polylines into a raster.,Vector Analysis
+WhiteboxTools,WhiteboxTools,VectorPointsToRaster,Converts a vector containing points into a raster.,Vector Analysis
+WhiteboxTools,WhiteboxTools,VectorPolygonsToRaster,Converts a vector containing polygons into a raster.,Vector Analysis
+WhiteboxTools,WhiteboxTools,Viewshed,Identifies the viewshed for a point or set of points.,General
+WhiteboxTools,WhiteboxTools,VisibilityIndex,Estimates the relative visibility of sites in a DEM.,General
+WhiteboxTools,WhiteboxTools,VoronoiDiagram,Creates a vector Voronoi diagram for a set of vector points.,General
+WhiteboxTools,WhiteboxTools,Watershed,"Identifies the watershed, or drainage basin, draining to a set of target cells.",Hydrological Analysis
+WhiteboxTools,WhiteboxTools,WeightedOverlay,Performs a weighted sum on multiple input rasters after converting each image to a common scale. The tool performs a multi-criteria evaluation (MCE).,General
+WhiteboxTools,WhiteboxTools,WeightedSum,Performs a weighted-sum overlay on multiple input raster images.,General
+WhiteboxTools,WhiteboxTools,WetnessIndex,"Calculates the topographic wetness index, Ln(A / tan(slope)).",General
+WhiteboxTools,WhiteboxTools,WilcoxonSignedRankTest,Performs a 2-sample K-S test for significant differences on two input rasters.,General
+WhiteboxTools,WhiteboxTools,WriteFunctionMemoryInsertion,Performs a write function memory insertion for single-band multi-date change detection.,General
+WhiteboxTools,WhiteboxTools,Xor,Performs a logical XOR operator on two Boolean raster images.,General
+WhiteboxTools,WhiteboxTools,ZScores,Standardizes the values in an input raster by converting to z-scores.,General
+WhiteboxTools,WhiteboxTools,ZlidarToLas,Converts one or more zlidar files into the LAS data format.,General
+WhiteboxTools,WhiteboxTools,ZonalStatistics,Extracts descriptive statistics for a group of patches in a raster.,General
