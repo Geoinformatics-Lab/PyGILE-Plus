@@ -70,12 +70,12 @@ print("PyGILE-Plus initialized with 2,326+ GIS algorithms + complete Python stac
 
 ## Available Tools & Libraries
 
-### GIS Processing Algorithms (2,326 total)
-- **SAGA GIS**: 733 algorithms (CLI)
-- **GRASS GIS**: 501 modules (CLI + Python + QGIS integration)
-- **Whitebox Tools**: 464 algorithms (CLI)
-- **QGIS**: 398 algorithms (Python/QGIS integration)
-- **OTB**: 230 algorithms (CLI)
+### GIS Processing Algorithms 
+- **SAGA GIS**: (CLI)
+- **GRASS GIS**: (CLI + Python + QGIS integration)
+- **Whitebox Tools**: (CLI)
+- **QGIS**: (Python/QGIS integration)
+- **OTB**: (CLI)
 
 ### Python Geospatial Stack
 **Core:** GDAL, Shapely, Fiona, Rasterio, GeoPandas, PyProj  
@@ -199,6 +199,5 @@ docker rm pygile-plus-container
 1. **Access Jupyter**: http://localhost:8888
 2. **Run environment setup** in terminal
 3. **Initialize QGIS** in first notebook cell
-4. **Start analyzing** with 2,326+ algorithms!
 
 For detailed examples and algorithm documentation, see the main repository README and [algorithms_toc/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/algorithms_toc) directory.

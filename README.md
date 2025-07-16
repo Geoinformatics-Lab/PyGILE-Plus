@@ -5,11 +5,11 @@ A comprehensive, headless Docker environment for geospatial research with **2,30
 ## What's Included
 
 **Major GIS Platforms:**
-- **QGIS LTR 3.40** - 398 processing algorithms
-- **SAGA GIS 9.3.2** - 733 geoprocessing tools
-- **GRASS GIS 8.4.0** - 501 modules for vector/raster analysis
-- **Whitebox Tools** (Latest) - 464 geospatial analysis tools
-- **Orfeo ToolBox (OTB) 9.1.1** - 230 remote sensing algorithms
+- **QGIS LTR 3.40** 
+- **SAGA GIS 9.3.2** 
+- **GRASS GIS 8.4.0** 
+- **Whitebox Tools** (Latest) 
+- **Orfeo ToolBox (OTB) 9.1.1** 
 
 **Python Geospatial Stack:**
 - **Core Libraries**: GDAL, PROJ, GEOS, Shapely, Fiona, Rasterio, GeoPandas
