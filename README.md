@@ -47,14 +47,14 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 
 ## What's Available
 
-### GIS Processing Algorithms (2,326 total)
-| Platform | Count | Access Method | Description |
-|----------|-------|---------------|-------------|
-| SAGA GIS | 733 | CLI | Comprehensive geoprocessing and analysis |
-| GRASS GIS | 501 | CLI + Python | Vector/raster analysis and modeling |
-| Whitebox Tools | 464 | CLI | Advanced geospatial analysis |
-| QGIS | 398 | Python/GUI | Desktop GIS processing algorithms |
-| OTB | 230 | CLI | Remote sensing and image processing |
+### GIS Processing Algorithms 
+| Platform | Access Method | Description |
+|----------|---------------|-------------|
+| SAGA GIS |  CLI | Comprehensive geoprocessing and analysis |
+| GRASS GIS |  CLI + Python | Vector/raster analysis and modeling |
+| Whitebox Tools | CLI | Advanced geospatial analysis |
+| QGIS | Python/GUI | Desktop GIS processing algorithms |
+| OTB | CLI | Remote sensing and image processing |
 
 ### Python Libraries & Frameworks
 **Geospatial Core:** GDAL, Shapely, Fiona, Rasterio, GeoPandas, PyProj, Cartopy
