@@ -4,7 +4,7 @@ Quick setup instructions for the PyGILE-Plus Docker environment.
 
 ## Quick Start 
 
-### Option 1: Pull Pre-built Image (Recommended) [After pulling, then se "Runing the container"]
+### Option 1: Pull Pre-built Image (Recommended) [After successful pull, then see "Runing the container"]
 ```bash
 docker pull dockagile/pygile-plus
 ```
