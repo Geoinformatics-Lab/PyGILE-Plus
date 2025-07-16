@@ -1,6 +1,5 @@
 #!/bin/bash
 # PyGILE-Plus Working Environment Script
-# Enables access to 1,773+ GIS algorithms
 
 echo "Loading PyGILE-Plus with all fixes..."
 
@@ -25,5 +24,5 @@ export PATH="/opt/otb/bin:$PATH"
 export PATH="/opt/conda/envs/pygile/bin:$PATH"
 
 echo " PyGILE-Plus environment loaded successfully"
-echo " 1,773+ algorithms now available"
-echo " Ready for GIS analysis"
+echo " 2,326+ algorithms now available"
+echo " Ready for Geospatial analysis"
