@@ -98,6 +98,17 @@ RUN mamba install -n pygile -c conda-forge -y \
     osmnx earthpy geoplot \
     && mamba clean -all -y
 
+# Spatial statistics and analysis tools (new addition)
+RUN mamba install -n pygile -c conda-forge -y \
+    rasterstats || \
+    mamba run -n pygile pip install --no-cache-dir rasterstats || \
+    echo "rasterstats installation failed - continuing"
+
+RUN mamba install -n pygile -c conda-forge -y \
+    xarray-spatial || \
+    mamba run -n pygile pip install --no-cache-dir xarray-spatial || \
+    echo "xarray-spatial installation failed - continuing"
+
 # Image processing libraries (batch file grouping)
 RUN mamba install -n pygile -c conda-forge -y \
     scikit-image tifffile imageio-ffmpeg \
