@@ -83,9 +83,12 @@ print("PyGILE-Plus initialized with 2,326+ GIS algorithms + complete Python stac
 **ML/AI:** PyTorch, TensorFlow, scikit-learn, scikit-image, OpenCV  
 **Visualization:** Matplotlib, Plotly, Folium, Leafmap, Geemap  
 **Web/Cloud:** Earth Engine API, STAC tools, Planetary Computer, localtileserver  
-**Documentation:** Sphinx ecosystem, Jupyter-book  
+**Spatial Analysis:** rasterstats, xarray-spatial
 
 **All PyGILE libraries included** except Geowombat (see Optional Libraries below)  
+
+### Optional Libraries
+**Geowombat**: Not included by default but functionality is replicated by rioxarray (for raster I/O and CRS handling), xarray (multi-dimensional data operations), rasterio (core raster functionality), dask (via dask-geopandas for chunked processing), scikit-learn (for classification tasks), pyproj (CRS management), rasterstats, and xarray-spatial. Can be installed via `pip install geowombat` if unified API is preferred.
 
 ## Access Methods
 
