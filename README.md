@@ -22,7 +22,6 @@ A comprehensive, headless Docker environment for geospatial research with **2,30
 - **Documentation**: Sphinx ecosystem, Jupyter-book
 - **Jupyter Lab**: Interactive analysis environment
 
-**Note**: All PyGILE libraries included except Geowombat (NumPy 2.0 compatibility issue). See installation instructions for optional Geowombat setup.
 
 **Key Features:**
 - Headless operation (no GUI required)
@@ -83,18 +82,6 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 - Large-scale geospatial data processing
 - Web mapping and interactive visualization
 - Cloud-based geospatial analysis workflows
-
-## Optional Components
-
-### Geowombat Installation
-Geowombat is not pre-installed due to NumPy 2.0 compatibility requirements for modern ML frameworks. Install if needed:
-
-```python
-# In Jupyter notebook
-!pip install geowombat --no-build-isolation
-```
-
-**Note**: This may cause conflicts with TensorFlow/PyTorch if you need the latest ML features.
 
 ## System Requirements
 
