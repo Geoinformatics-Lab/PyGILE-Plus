@@ -149,3 +149,9 @@ For detailed algorithm listings and capabilities, please refer the individual CS
 
 **Package Management:**
 - Conda/Mamba: https://github.com/conda-forge/miniforge
+
+## Reference & Citation
+
+Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16146572.svg)](https://doi.org/10.5281/zenodo.16146572)
