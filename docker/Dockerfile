@@ -217,6 +217,11 @@ RUN mamba run -n pygile pip install --no-cache-dir \
     PySAGA-cmd || \
     echo "additional geospatial packages installation failed - continuing"
 
+# Missing packages from original PyGILE (added to complete the environment)
+RUN mamba run -n pygile pip install --no-cache-dir \
+    streamlit-folium nbconvert black flake8 || \
+    echo "PyGILE missing packages installation failed - continuing"
+
 # Download and compile GRASS GIS 8.4 from source (keeping existing)
 RUN cd /tmp && \
     wget -q https://grass.osgeo.org/grass84/source/grass-8.4.0.tar.gz && \
