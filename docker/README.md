@@ -45,7 +45,7 @@ Run this **first cell** in any new notebook:
 import os
 import sys
 
-# Environment setup for all 2,326+ algorithms
+# Environment setup for direct tool access
 os.environ['LD_LIBRARY_PATH'] = "/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/opt/conda/envs/pygile/lib"
 os.environ['SAGA_CMD'] = '/opt/saga/bin/saga_cmd'
 os.environ['SAGA_MLB'] = '/opt/saga/lib/saga'
@@ -55,53 +55,28 @@ os.environ['OTB_APPLICATION_PATH'] = '/opt/otb/lib/otb/applications'
 # Add GRASS to Python path
 sys.path.insert(0, '/opt/grass/etc/python')
 
-# Initialize QGIS
-from qgis.core import QgsApplication
-QgsApplication.setPrefixPath('/opt/conda/envs/pygile', True)
-qgs = QgsApplication([], False)
-qgs.initQgis()
-
-import processing
-from processing.core.Processing import Processing
-Processing.initialize()
-
-print("PyGILE-Plus initialized with 2,326+ GIS algorithms + complete Python stack!")
+print("PyGILE-Plus initialized with direct GIS tool access + complete Python stack!")
 ```
 
 ## Available Tools & Libraries
 
 ### GIS Processing Algorithms 
 - **SAGA GIS**: (CLI)
-- **GRASS GIS**: (CLI + Python + QGIS integration)
+- **GRASS GIS**: (CLI + Python + direct integration)
 - **Whitebox Tools**: (CLI)
-- **QGIS**: (Python/QGIS integration)
 - **OTB**: (CLI)
 
 ### Python Geospatial Stack
 **Core:** GDAL, Shapely, Fiona, Rasterio, GeoPandas, PyProj  
 **Scientific:** NumPy, SciPy, Pandas, Xarray  
-**ML/AI:** PyTorch, TensorFlow, scikit-learn, scikit-image, OpenCV  
-**Visualization:** Matplotlib, Plotly, Folium, Leafmap, Geemap  
+**ML/AI:** PyTorch, TensorFlow, scikit-learn, scikit-image, OpenCV, PySpatialML  
+**Visualization:** Matplotlib, Plotly, Folium, Leafmap, Geemap, pythreejs  
 **Web/Cloud:** Earth Engine API, STAC tools, Planetary Computer, localtileserver  
 **Spatial Analysis:** rasterstats, xarray-spatial
 
-**All PyGILE libraries included** except Geowombat (see Optional Libraries below)  
-
-### Optional Libraries
-**Geowombat**: Not included by default but functionality is replicated by rioxarray (for raster I/O and CRS handling), xarray (multi-dimensional data operations), rasterio (core raster functionality), dask (via dask-geopandas for chunked processing), scikit-learn (for classification tasks), pyproj (CRS management), rasterstats, and xarray-spatial. Can be installed via `pip install geowombat` if unified API is preferred.
+**All PyGILE libraries included**
 
 ## Access Methods
-
-### QGIS Integration
-```python
-# Use QGIS processing algorithms
-import processing
-result = processing.run("native:buffer", {
-    'INPUT': 'path/to/vector.shp',
-    'DISTANCE': 100,
-    'OUTPUT': 'path/to/output.shp'
-})
-```
 
 ### GRASS GIS (Dual Access)
 ```python
@@ -131,13 +106,25 @@ whitebox_tools --run=Slope --input=dem.tif --output=slope.tif
 otbcli_BandMath -il image.tif -out result.tif -exp "im1b1+im1b2"
 ```
 
+### PySpatialML (New)
+```python
+# Spatial machine learning on raster stacks
+from pyspatialml import Raster
+stack = Raster(['band1.tif', 'band2.tif', 'band3.tif'])
+```
+
+### pythreejs (New)
+```python
+# Interactive 3D visualization in Jupyter
+import pythreejs as p3j
+```
+
 ## Verification Test
 
 For complete testing and examples of all tools, see the example notebook:
-[Test_QGIS, SAGA, GRASS, OTB, Whitebox and Python Packages.ipynb](https://github.com/Geoinformatics-Lab/PyGILE-Plus/blob/main/example_notebooks/Test_QGIS%2C%20SAGA%2C%20GRASS%2C%20OTB%2C%20Whitebox%20and%20Python%20Packages.ipynb)
+[Test_SAGA, GRASS, OTB, Whitebox and Python Packages.ipynb](https://github.com/Geoinformatics-Lab/PyGILE-Plus/blob/main/example_notebooks/Test_QGIS%2C%20SAGA%2C%20GRASS%2C%20OTB%2C%20Whitebox%20and%20Python%20Packages.ipynb)
 
 This notebook demonstrates:
-- QGIS processing framework integration
 - SAGA GIS command-line usage  
 - GRASS GIS dual access (CLI + Python)
 - OTB remote sensing tools
@@ -183,10 +170,6 @@ docker rm pygile-plus-container
 - Ensure you ran: `source /workspace/pygile_working_env.sh`
 - Check PATH: `echo $PATH`
 
-**QGIS initialization fails:**
-- Verify environment variables are set in Python
-- Restart kernel and re-run initialization code
-
 **Import errors:**
 - Container uses conda environment: `/opt/conda/envs/pygile`
 - All packages pre-installed, no additional setup needed
@@ -201,6 +184,6 @@ docker rm pygile-plus-container
 
 1. **Access Jupyter**: http://localhost:8888
 2. **Run environment setup** in terminal
-3. **Initialize QGIS** in first notebook cell
+3. **Initialize environment** in first notebook cell
 
 For detailed examples and algorithm documentation, see the main repository README and [algorithms_toc/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/algorithms_toc) directory.

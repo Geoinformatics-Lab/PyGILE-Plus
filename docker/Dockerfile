@@ -1,39 +1,24 @@
 FROM condaforge/mambaforge:24.9.0-0
 
-# PyGILE-Plus: Stable headless geospatial research environment
+# PyGILE-Plus: Streamlined headless geospatial research environment  
 LABEL name="PyGILE-Plus"
-LABEL description="Stable headless geospatial research environment with SAGA 9.x + GRASS 8.4 + latest QGIS + modern ML stack + NumPy 2.0 compatibility"
+LABEL description="Streamlined headless geospatial research environment with SAGA 9.x + GRASS 8.4 + OTB + modern ML stack + PySpatialML + 3D visualization"
 LABEL maintainer="research-team"
 
 ARG PYTHON_VERSION=3.10
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Headless environment variables
+# Environment variables
 ENV PYTHONUNBUFFERED=1
-ENV QT_QPA_PLATFORM=offscreen
-ENV XDG_RUNTIME_DIR=/tmp/runtime-root
-ENV DISPLAY=:99
 
-# Add wxWidgets 3.2 repository for Ubuntu focal
-RUN apt-get update && apt-get install -y software-properties-common && \
-    apt-key adv --fetch-keys https://repos.codelite.org/CodeLite.asc && \
-    apt-add-repository 'deb https://repos.codelite.org/wx3.2/ubuntu/ focal universe' && \
-    apt-get update
-
-# System dependencies for headless operation + SAGA/GRASS compilation
+# System dependencies for geospatial tools compilation (removed Qt/GUI dependencies)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential cmake git wget curl unzip \
-    libgl1-mesa-glx libegl1-mesa libxrandr2 libxss1 libxcursor1 \
-    libxcomposite1 libasound2 libxi6 libxtst6 libxinerama1 \
-    libfontconfig1 libxrender1 libglib2.0-0 \
-    ca-certificates gnupg xvfb \
+    ca-certificates \
     flex make bison gcc g++ ccache \
     libproj-dev proj-data proj-bin \
     libgeos-dev libgdal-dev python3-gdal gdal-bin \
     python3-dev python3-numpy \
-    libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev wx3.2-headers wx-common \
-    libgtk-3-dev libgdk-pixbuf2.0-dev libpango1.0-dev libatk1.0-dev \
-    libnotify4 libnotify-dev \
     libpq-dev libpdal-dev libopencv-dev libhpdf-dev unixodbc-dev \
     libfftw3-dev libgsl-dev \
     libsqlite3-dev libtiff5-dev libpng-dev \
@@ -93,6 +78,11 @@ RUN mamba install -n pygile -c conda-forge -y \
     holoviews hvplot \
     && mamba clean -all -y
 
+# 3D visualization packages - Three.js ecosystem + PyVista
+RUN mamba install -n pygile -c conda-forge -y \
+    pythreejs pyvista \
+    && mamba clean -all -y
+
 # Geospatial analysis tools (batch file grouping)
 RUN mamba install -n pygile -c conda-forge -y \
     osmnx earthpy geoplot \
@@ -142,11 +132,6 @@ RUN mamba install -n pygile -c conda-forge -y \
 # Cloud tools (batch file grouping)
 RUN mamba install -n pygile -c conda-forge -y \
     pystac stackstac planetary-computer \
-    && mamba clean -all -y
-
-# QGIS LTR - latest stable for 5-year support (keeping existing)
-RUN mamba install -n pygile -c conda-forge -y \
-    qgis \
     && mamba clean -all -y
 
 # Deep Learning frameworks - CPU versions for stability (keeping existing)
@@ -214,7 +199,7 @@ RUN mamba run -n pygile pip install --no-cache-dir \
     geojson dask-geopandas \
     pykrige cenpy census us \
     sklearn-xarray whitebox \
-    PySAGA-cmd || \
+    PySAGA-cmd pyspatialml || \
     echo "additional geospatial packages installation failed - continuing"
 
 # Missing packages from original PyGILE (added to complete the environment)

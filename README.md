@@ -1,11 +1,10 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
 
-A comprehensive, headless Docker environment for geospatial research with **2,300+ algorithms** across multiple GIS platforms plus a complete Python geospatial stack.
+A comprehensive, headless Docker environment for geospatial research with algorithms across multiple GIS platforms plus a complete Python geospatial stack.
 
 ## What's Included
 
 **Major GIS Platforms:**
-- **QGIS LTR 3.40** 
 - **SAGA GIS 9.3.2** 
 - **GRASS GIS 8.4.0** 
 - **Whitebox Tools** (Latest) 
@@ -25,7 +24,6 @@ A comprehensive, headless Docker environment for geospatial research with **2,30
 
 **Key Features:**
 - Headless operation (no GUI required)
-- **2,326+ GIS algorithms** across major platforms
 - **Complete Python geospatial ecosystem** with ML/AI capabilities
 - Pre-configured environment with all dependencies
 - Jupyter Lab integration for interactive workflows
@@ -52,7 +50,6 @@ docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
 | SAGA GIS |  CLI | Comprehensive geoprocessing and analysis |
 | GRASS GIS |  CLI + Python | Vector/raster analysis and modeling |
 | Whitebox Tools | CLI | Advanced geospatial analysis |
-| QGIS | Python/GUI | Desktop GIS processing algorithms |
 | OTB | CLI | Remote sensing and image processing |
 
 ### Python Libraries & Frameworks
@@ -98,7 +95,6 @@ For detailed algorithm listings and capabilities, please refer the individual CS
 **License Notice**: All software and packages included in this container are made available under their respective licenses. Please refer to the original documentation for specific license terms:
 
 **GIS Platforms:**
-- QGIS: https://github.com/qgis/QGIS
 - GRASS GIS: https://github.com/OSGeo/grass
 - SAGA GIS: https://sourceforge.net/projects/saga-gis/
 - Whitebox Tools: https://github.com/jblindsay/whitebox-tools

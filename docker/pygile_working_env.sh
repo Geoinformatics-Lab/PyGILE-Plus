@@ -24,5 +24,5 @@ export PATH="/opt/otb/bin:$PATH"
 export PATH="/opt/conda/envs/pygile/bin:$PATH"
 
 echo " PyGILE-Plus environment loaded successfully"
-echo " 2,326+ algorithms now available"
-echo " Ready for Geospatial analysis"
+echo " Direct access to SAGA, GRASS, OTB, Whitebox + PySpatialML + 3D visualization"
+echo " Ready for Geospatial analysis and machine learning"

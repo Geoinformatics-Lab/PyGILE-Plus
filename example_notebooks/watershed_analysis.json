@@ -21,7 +21,6 @@
     "boundary_weight": 2,
     "tile_layer": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     "tile_attribution": "\u00a9 OpenStreetMap contributors",
-    "qt_platform": "offscreen",
     "gdal_data_path": "/opt/conda/envs/pygile/share/gdal",
     "proj_lib_path": "/opt/conda/envs/pygile/share/proj",
     "locale": "C",
