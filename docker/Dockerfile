@@ -11,7 +11,13 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Environment variables
 ENV PYTHONUNBUFFERED=1
 
-# System dependencies for geospatial tools compilation (removed Qt/GUI dependencies)
+# Add wxWidgets 3.2 repository for Ubuntu focal (CRITICAL FIX for SAGA)
+RUN apt-get update && apt-get install -y software-properties-common && \
+    apt-key adv --fetch-keys https://repos.codelite.org/CodeLite.asc && \
+    apt-add-repository 'deb https://repos.codelite.org/wx3.2/ubuntu/ focal universe' && \
+    apt-get update
+
+# System dependencies for geospatial tools compilation (added wxWidgets 3.2 for SAGA)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential cmake git wget curl unzip \
     ca-certificates \
@@ -23,6 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libfftw3-dev libgsl-dev \
     libsqlite3-dev libtiff5-dev libpng-dev \
     libcairo2-dev libfreetype6-dev \
+    libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev wx3.2-headers wx-common \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Create conda environment with strict conda-forge priority (matching batch file strategy)
@@ -207,7 +214,7 @@ RUN mamba run -n pygile pip install --no-cache-dir \
     streamlit-folium nbconvert black flake8 || \
     echo "PyGILE missing packages installation failed - continuing"
 
-# Download and compile GRASS GIS 8.4 from source (keeping existing)
+# Download and compile GRASS GIS 8.4 from source with OpenGL disabled (FIXED)
 RUN cd /tmp && \
     wget -q https://grass.osgeo.org/grass84/source/grass-8.4.0.tar.gz && \
     tar -xzf grass-8.4.0.tar.gz && \
@@ -226,12 +233,13 @@ RUN cd /tmp && \
         --without-mysql \
         --without-odbc \
         --without-pdal \
-        --without-openmp && \
+        --without-openmp \
+        --without-opengl && \
     make -j$(nproc) && \
     make install && \
     cd / && rm -rf /tmp/grass-8.4.0*
 
-# Download and compile SAGA GIS 9.3 from source (keeping existing)
+# Compile SAGA GIS 9.3.2 from source (FIXED - using your working approach)
 RUN cd /tmp && \
     wget -q https://sourceforge.net/projects/saga-gis/files/SAGA%20-%209/SAGA%20-%209.3.2/saga-9.3.2.tar.gz && \
     tar -xzf saga-9.3.2.tar.gz && \
@@ -243,11 +251,10 @@ RUN cd /tmp && \
         -DWITH_TRIANGLE=OFF \
         -DWITH_SYSTEM_SVM=ON \
         -DWITH_DEV_TOOLS=OFF \
+        -DWITH_GUI=OFF \
         -DWITH_TOOLS_VIGRA=OFF \
         -DWITH_TOOLS_PDAL=OFF && \
-    make -j$(nproc) && \
-    make install && \
-    ldconfig && \
+    make -j$(nproc) && make install && ldconfig && \
     cd / && rm -rf /tmp/saga-9.3.2*
 
 # Download and install OTB with Python bindings setup (keeping existing)
@@ -261,7 +268,7 @@ RUN cd /tmp && \
     echo 'export OTB_APPLICATION_PATH="/opt/otb/lib/otb/applications"' >> /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh && \
     chmod +x /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh
 
-# Environment variables for tools (keeping existing)
+# Environment variables for tools (updated with your working SAGA path)
 ENV PATH="/opt/grass/bin:/opt/saga/bin:/opt/otb/bin:$PATH"
 ENV LD_LIBRARY_PATH="/opt/grass/lib:/opt/saga/lib:/opt/otb/lib"
 ENV SAGA_CMD="/opt/saga/bin/saga_cmd"
@@ -274,6 +281,9 @@ RUN mamba run -n pygile python -c "import numpy, pandas, geopandas, rasterio, ma
 # Create workspace structure (keeping existing)
 WORKDIR /workspace
 RUN mkdir -p /workspace/{data,output,scripts,notebooks,samples}
+
+# Copy environment setup script
+COPY pygile_working_env.sh /workspace/
 
 # Create startup script (keeping existing)
 RUN printf '#!/bin/bash\n\
