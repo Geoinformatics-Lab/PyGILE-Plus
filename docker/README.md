@@ -6,7 +6,7 @@ Quick setup instructions for the PyGILE-Plus Docker environment.
 
 ### Option 1: Pull Pre-built Image (Recommended) [After successful pull, then see "Running the container"]
 ```bash
-docker pull iamvuon/pygile-plus
+docker pull dockagile/pygile-plus
 ```
 
 OR
@@ -22,7 +22,7 @@ docker build -t pygile-plus .
 ### Basic Setup
 ```bash
 # Run with Jupyter Lab auto-start
-docker run -it --name pygile-plus-container -p 8888:8888 -v $(pwd):/workspace iamvuon/pygile-plus
+docker run -it --name pygile-plus-container -p 8888:8888 -v $(pwd):/workspace dockagile/pygile-plus
 ```
 
 **Jupyter Lab starts automatically at `http://localhost:8888`**
