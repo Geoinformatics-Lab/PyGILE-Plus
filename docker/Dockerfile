@@ -95,7 +95,12 @@ RUN mamba install -n pygile -c conda-forge -y \
     osmnx earthpy geoplot \
     && mamba clean -all -y
 
-# Spatial statistics and analysis tools (new addition)
+# Spatial statistics and analysis tools - PySAL ecosystem
+RUN mamba install -n pygile -c conda-forge -y \
+    libpysal esda || \
+    mamba run -n pygile pip install --no-cache-dir libpysal esda || \
+    echo "PySAL packages installation failed - continuing"
+
 RUN mamba install -n pygile -c conda-forge -y \
     rasterstats || \
     mamba run -n pygile pip install --no-cache-dir rasterstats || \
@@ -130,6 +135,11 @@ RUN mamba install -n pygile -c conda-forge -y \
 RUN mamba install -n pygile -c conda-forge -y \
     geemap leafmap \
     && mamba clean -all -y
+
+# Advanced geospatial visualization - keplergl
+RUN mamba run -n pygile pip install --no-cache-dir \
+    keplergl || \
+    echo "keplergl installation failed - continuing"
 
 # Optional packages (batch file grouping)
 RUN mamba install -n pygile -c conda-forge -y \
