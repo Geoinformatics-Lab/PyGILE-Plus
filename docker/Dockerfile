@@ -1,106 +1,105 @@
 FROM condaforge/mambaforge:24.9.0-0
 
-# PyGILE-Plus: Streamlined headless geospatial research environment  
+# PyGILE-Plus: Stable headless geospatial research environment
 LABEL name="PyGILE-Plus"
-LABEL description="Streamlined headless geospatial research environment with SAGA 9.x + GRASS 8.4 + OTB + modern ML stack + PySpatialML + 3D visualization"
+LABEL description="Stable headless geospatial research environment with SAGA 9.x + GRASS 8.4 + modern ML stack + 3D visualization"
 LABEL maintainer="research-team"
 
 ARG PYTHON_VERSION=3.10
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Environment variables
+# Headless environment variables
 ENV PYTHONUNBUFFERED=1
+ENV QT_QPA_PLATFORM=offscreen
+ENV XDG_RUNTIME_DIR=/tmp/runtime-root
+ENV DISPLAY=:99
 
-# Add wxWidgets 3.2 repository for Ubuntu focal (CRITICAL FIX for SAGA)
+# Add wxWidgets 3.2 repository for Ubuntu focal
 RUN apt-get update && apt-get install -y software-properties-common && \
     apt-key adv --fetch-keys https://repos.codelite.org/CodeLite.asc && \
     apt-add-repository 'deb https://repos.codelite.org/wx3.2/ubuntu/ focal universe' && \
     apt-get update
 
-# System dependencies for geospatial tools compilation (added wxWidgets 3.2 for SAGA)
+# System dependencies for headless operation + SAGA/GRASS compilation + PyVista
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential cmake git wget curl unzip \
-    ca-certificates \
+    libgl1-mesa-glx libgl1-mesa-dev libegl1-mesa libxrandr2 libxss1 libxcursor1 \
+    libxcomposite1 libasound2 libxi6 libxtst6 libxinerama1 \
+    libfontconfig1 libxrender1 libglib2.0-0 \
+    ca-certificates gnupg xvfb \
     flex make bison gcc g++ ccache \
     libproj-dev proj-data proj-bin \
     libgeos-dev libgdal-dev python3-gdal gdal-bin \
     python3-dev python3-numpy \
+    libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev wx3.2-headers wx-common \
+    libgtk-3-dev libgdk-pixbuf2.0-dev libpango1.0-dev libatk1.0-dev \
+    libnotify4 libnotify-dev \
     libpq-dev libpdal-dev libopencv-dev libhpdf-dev unixodbc-dev \
     libfftw3-dev libgsl-dev \
     libsqlite3-dev libtiff5-dev libpng-dev \
     libcairo2-dev libfreetype6-dev \
-    libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev wx3.2-headers wx-common \
+    nodejs npm \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Create conda environment with strict conda-forge priority (matching batch file strategy)
+# Create conda environment with strict conda-forge priority
 RUN mamba create -n pygile python=${PYTHON_VERSION} -y && \
     mamba run -n pygile conda config --env --add channels conda-forge && \
     mamba run -n pygile conda config --env --set channel_priority strict
 
-# Clean conda cache to prevent compatibility issues (batch file strategy)
+# Clean conda cache
 RUN mamba clean --all -y
 
-# Install NumPy without version constraint (NumPy 2.0 compatible with modern ML stack)
+# Install NumPy (NumPy 2.0 compatible with modern ML stack)
 RUN mamba install -n pygile -c conda-forge -y \
     numpy \
     && mamba clean -all -y
 
-# Install core geospatial libraries with version pins (batch file approach)
+# Install core geospatial libraries
 RUN mamba install -n pygile -c conda-forge -y \
     gdal proj geos libspatialindex boost-cpp \
     && mamba clean -all -y
 
-# Install Fiona, Shapely, PyProj (batch file grouping)
+# Install Fiona, Shapely, PyProj
 RUN mamba install -n pygile -c conda-forge -y \
     fiona shapely pyproj \
     && mamba clean -all -y
 
-# Scientific computing core - including missing scikit-learn (batch file grouping)
+# Scientific computing core
 RUN mamba install -n pygile -c conda-forge -y \
     pandas scipy matplotlib seaborn scikit-learn \
     && mamba clean -all -y
 
-# GeoPandas and Rasterio (batch file grouping)
+# GeoPandas and Rasterio
 RUN mamba install -n pygile -c conda-forge -y \
     geopandas rasterio \
     && mamba clean -all -y
 
-# Data format libraries (batch file grouping)
+# Data format libraries
 RUN mamba install -n pygile -c conda-forge -y \
     xarray netcdf4 h5py h5netcdf zarr \
     && mamba clean -all -y
 
-# Jupyter ecosystem (batch file grouping)
+# Jupyter ecosystem
 RUN mamba install -n pygile -c conda-forge -y \
     jupyter jupyterlab ipywidgets \
     && mamba clean -all -y
 
-# Visualization packages (batch file grouping)
+# Visualization packages
 RUN mamba install -n pygile -c conda-forge -y \
     plotly bokeh folium contextily mapclassify \
     && mamba clean -all -y
 
-# Additional visualization (keeping existing holoviews hvplot)
+# Additional visualization
 RUN mamba install -n pygile -c conda-forge -y \
     holoviews hvplot \
     && mamba clean -all -y
 
-# 3D visualization packages - Three.js ecosystem + PyVista
-RUN mamba install -n pygile -c conda-forge -y \
-    pythreejs pyvista \
-    && mamba clean -all -y
-
-# Geospatial analysis tools (batch file grouping)
+# Geospatial analysis tools
 RUN mamba install -n pygile -c conda-forge -y \
     osmnx earthpy geoplot \
     && mamba clean -all -y
 
-# Spatial statistics and analysis tools - PySAL ecosystem
-RUN mamba install -n pygile -c conda-forge -y \
-    libpysal esda || \
-    mamba run -n pygile pip install --no-cache-dir libpysal esda || \
-    echo "PySAL packages installation failed - continuing"
-
+# Spatial statistics and analysis tools
 RUN mamba install -n pygile -c conda-forge -y \
     rasterstats || \
     mamba run -n pygile pip install --no-cache-dir rasterstats || \
@@ -111,120 +110,145 @@ RUN mamba install -n pygile -c conda-forge -y \
     mamba run -n pygile pip install --no-cache-dir xarray-spatial || \
     echo "xarray-spatial installation failed - continuing"
 
-# Image processing libraries (batch file grouping)
+# Image processing libraries
 RUN mamba install -n pygile -c conda-forge -y \
     scikit-image tifffile imageio-ffmpeg \
     && mamba clean -all -y
 
-# Keep existing opencv separate (original dockerfile had it)
+# OpenCV
 RUN mamba install -n pygile -c conda-forge -y \
     opencv \
     && mamba clean -all -y
 
-# Web mapping dependencies (batch file grouping)
+# Web mapping dependencies
 RUN mamba install -n pygile -c conda-forge -y \
     localtileserver rio-cogeo rioxarray \
     && mamba clean -all -y
 
-# Interactive mapping tools (batch file grouping)
+# Interactive mapping tools
 RUN mamba install -n pygile -c conda-forge -y \
     ipyleaflet owslib \
     && mamba clean -all -y
 
-# geemap and leafmap (batch file grouping)
+# geemap and leafmap
 RUN mamba install -n pygile -c conda-forge -y \
     geemap leafmap \
     && mamba clean -all -y
 
-# Advanced geospatial visualization - keplergl
-RUN mamba run -n pygile pip install --no-cache-dir \
-    keplergl || \
-    echo "keplergl installation failed - continuing"
-
-# Optional packages (batch file grouping)
+# Optional packages
 RUN mamba install -n pygile -c conda-forge -y \
     census us pykrige palettable geojson \
     && mamba clean -all -y
 
-# Cloud tools (batch file grouping)
+# Cloud tools
 RUN mamba install -n pygile -c conda-forge -y \
     pystac stackstac planetary-computer \
     && mamba clean -all -y
 
-# Deep Learning frameworks - CPU versions for stability (keeping existing)
+# Deep Learning frameworks - CPU versions
 RUN mamba install -n pygile -c conda-forge -y \
     pytorch-cpu torchvision torchaudio pytorch-lightning \
     && mamba clean -all -y
 
-# Install TensorFlow via pip for better compatibility (keeping existing)
+# Install TensorFlow via pip
 RUN mamba run -n pygile pip install --no-cache-dir \
     tensorflow keras
 
-# Additional ML/DL tools (keeping existing + adding batch file items)
+# Additional ML/DL tools
 RUN mamba run -n pygile pip install --no-cache-dir \
     albumentations timm
 
-# Install pygis meta-package with fallback (batch file approach)
+# Install pygis meta-package with fallback
 RUN mamba install -n pygile -c conda-forge -y pygis || \
     mamba run -n pygile pip install pygis || \
     echo "pygis installation failed - continuing"
 
-# WhiteboxTools via conda-forge (keeping existing)
+# WhiteboxTools
 RUN mamba install -n pygile -c conda-forge -y \
     whitebox_tools \
     && mamba clean -all -y
 
-# Earth Engine API (batch file - pip only)
+# ========================================
+# PROBLEMATIC PACKAGES - ALL VIA PIP NOW!
+# ========================================
+
+# 3D visualization packages - pythreejs & pyvista via PIP ONLY
+RUN mamba run -n pygile pip install --no-cache-dir \
+    pythreejs pyvista || \
+    echo "3D visualization packages installation failed - continuing"
+
+# PySAL spatial statistics - libpysal & esda via PIP ONLY
+RUN mamba run -n pygile pip install --no-cache-dir \
+    libpysal esda || \
+    echo "PySAL packages installation failed - continuing"
+
+# Advanced geospatial visualization - keplergl via PIP ONLY
+RUN mamba run -n pygile pip install --no-cache-dir \
+    keplergl || \
+    echo "keplergl installation failed - continuing"
+
+# Spatial ML package - pyspatialml via PIP ONLY (from PyPI or GitHub)
+RUN mamba run -n pygile pip install --no-cache-dir \
+    pyspatialml || \
+    mamba run -n pygile pip install --no-cache-dir \
+    "git+https://github.com/stevenpawley/Pyspatialml.git" || \
+    echo "pyspatialml installation failed - continuing"
+
+# ========================================
+# END OF PROBLEMATIC PACKAGES
+# ========================================
+
+# Earth Engine API
 RUN mamba run -n pygile pip install --no-cache-dir \
     earthengine-api || \
     echo "earthengine-api installation failed - continuing"
 
-# Custom sklearn_xarray (batch file approach with fallback)
+# Custom sklearn_xarray
 RUN mamba run -n pygile pip install --no-cache-dir \
     "git+https://github.com/jgrss/sklearn-xarray.git" || \
     mamba run -n pygile pip install sklearn_xarray || \
     echo "sklearn_xarray installation failed - continuing"
 
-# Sphinx documentation tools (batch file grouping)
+# Sphinx documentation tools
 RUN mamba run -n pygile pip install --no-cache-dir \
     sphinx sphinx_sitemap "sphinxcontrib.bibtex" \
     sphinx_inline_tabs pydata-sphinx-theme || \
     echo "Sphinx tools installation failed - continuing"
 
-# Specialized packages (batch file grouping)
+# Specialized packages
 RUN mamba run -n pygile pip install --no-cache-dir \
     sankee || \
     echo "sankee installation failed - continuing"
 
-# Advanced packages (batch file grouping)
+# Advanced packages
 RUN mamba run -n pygile pip install --no-cache-dir \
     overturemaps whiteboxgui || \
     echo "advanced packages installation failed - continuing"
 
-# Publishing tools (batch file grouping)
+# Publishing tools
 RUN mamba run -n pygile pip install --no-cache-dir \
     jupyter-book ghp-import || \
     echo "publishing tools installation failed - continuing"
 
-# NumPy utilities (batch file grouping)
+# NumPy utilities
 RUN mamba run -n pygile pip install --no-cache-dir \
     numpy-groupies sympy || \
     echo "numpy utilities installation failed - continuing"
 
-# Additional geospatial Python packages (keeping from original approach)
+# Additional geospatial Python packages
 RUN mamba run -n pygile pip install --no-cache-dir \
     geojson dask-geopandas \
     pykrige cenpy census us \
     sklearn-xarray whitebox \
-    PySAGA-cmd pyspatialml || \
+    PySAGA-cmd || \
     echo "additional geospatial packages installation failed - continuing"
 
-# Missing packages from original PyGILE (added to complete the environment)
+# Missing packages from original PyGILE
 RUN mamba run -n pygile pip install --no-cache-dir \
     streamlit-folium nbconvert black flake8 || \
     echo "PyGILE missing packages installation failed - continuing"
 
-# Download and compile GRASS GIS 8.4 from source with OpenGL disabled (FIXED)
+# Download and compile GRASS GIS 8.4 from source
 RUN cd /tmp && \
     wget -q https://grass.osgeo.org/grass84/source/grass-8.4.0.tar.gz && \
     tar -xzf grass-8.4.0.tar.gz && \
@@ -249,7 +273,7 @@ RUN cd /tmp && \
     make install && \
     cd / && rm -rf /tmp/grass-8.4.0*
 
-# Compile SAGA GIS 9.3.2 from source (FIXED - using your working approach)
+# Download and compile SAGA GIS 9.3 from source
 RUN cd /tmp && \
     wget -q https://sourceforge.net/projects/saga-gis/files/SAGA%20-%209/SAGA%20-%209.3.2/saga-9.3.2.tar.gz && \
     tar -xzf saga-9.3.2.tar.gz && \
@@ -264,10 +288,12 @@ RUN cd /tmp && \
         -DWITH_GUI=OFF \
         -DWITH_TOOLS_VIGRA=OFF \
         -DWITH_TOOLS_PDAL=OFF && \
-    make -j$(nproc) && make install && ldconfig && \
+    make -j$(nproc) && \
+    make install && \
+    ldconfig && \
     cd / && rm -rf /tmp/saga-9.3.2*
 
-# Download and install OTB with Python bindings setup (keeping existing)
+# Download and install OTB with Python bindings
 RUN cd /tmp && \
     wget -q https://www.orfeo-toolbox.org/packages/OTB-9.1.1-Linux.tar.gz && \
     tar xf OTB-9.1.1-Linux.tar.gz --one-top-level=/opt/otb && \
@@ -278,24 +304,21 @@ RUN cd /tmp && \
     echo 'export OTB_APPLICATION_PATH="/opt/otb/lib/otb/applications"' >> /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh && \
     chmod +x /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh
 
-# Environment variables for tools (updated with your working SAGA path)
+# Environment variables for tools
 ENV PATH="/opt/grass/bin:/opt/saga/bin:/opt/otb/bin:$PATH"
 ENV LD_LIBRARY_PATH="/opt/grass/lib:/opt/saga/lib:/opt/otb/lib"
 ENV SAGA_CMD="/opt/saga/bin/saga_cmd"
 ENV GISBASE="/opt/grass"
 
-# Verification of core packages (batch file approach)
+# Verification of core packages
 RUN mamba run -n pygile python -c "import numpy, pandas, geopandas, rasterio, matplotlib; print('Core packages verification: OK')" || \
     echo "Core package verification failed"
 
-# Create workspace structure (keeping existing)
+# Create workspace structure
 WORKDIR /workspace
 RUN mkdir -p /workspace/{data,output,scripts,notebooks,samples}
 
-# Copy environment setup script
-COPY pygile_working_env.sh /workspace/
-
-# Create startup script (keeping existing)
+# Create startup script
 RUN printf '#!/bin/bash\n\
 source /opt/conda/etc/profile.d/conda.sh\n\
 conda activate pygile\n\
