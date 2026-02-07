@@ -1,153 +1,201 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
 
-A comprehensive, headless Docker environment for geospatial research with algorithms across multiple GIS platforms plus a complete Python geospatial stack.
+A headless Docker environment combining SAGA GIS, GRASS GIS, Whitebox Tools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning.
+
+## Quick Start
+
+```bash
+docker pull dockagile/pygile-plus:latest
+docker run -it -p 8888:8888 -v $(pwd)/data:/workspace/data dockagile/pygile-plus:latest
+```
+
+Access Jupyter Lab at `http://localhost:8888`
+
+For detailed setup instructions, see [docker/README.md](docker/README.md)
 
 ## What's Included
 
-**Major GIS Platforms:**
-- **SAGA GIS 9.3.2** 
-- **GRASS GIS 8.4.0** 
-- **Whitebox Tools** (Latest) 
-- **Orfeo ToolBox (OTB) 9.1.1** 
+### GIS Processing Platforms
 
-**Python Geospatial Stack:**
-- **Core Libraries**: GDAL, PROJ, GEOS, Shapely, Fiona, Rasterio, GeoPandas
-- **Scientific Computing**: NumPy, SciPy, Pandas, Xarray
-- **Machine Learning**: PyTorch, TensorFlow, scikit-learn, scikit-image
-- **Visualization**: Matplotlib, Plotly, Folium, Holoviews, Seaborn
-- **Image Processing**: OpenCV, scikit-image
-- **Web Mapping**: Leafmap, Geemap, ipyleaflet, localtileserver
-- **Cloud/Remote Sensing**: EarthEngine API, STAC tools, Planetary Computer
-- **Documentation**: Sphinx ecosystem, Jupyter-book
-- **Jupyter Lab**: Interactive analysis environment
+- **SAGA GIS 9.3.2** - Command-line geoprocessing
+- **GRASS GIS 8.4.0** - Command-line + Python integration  
+- **Whitebox Tools** - Command-line geospatial analysis
+- **Orfeo ToolBox 9.1.1** - Remote sensing processing
 
+### Python Libraries (60+ packages)
 
-**Key Features:**
-- Headless operation (no GUI required)
-- **Complete Python geospatial ecosystem** with ML/AI capabilities
-- Pre-configured environment with all dependencies
-- Jupyter Lab integration for interactive workflows
-- Support for both Python scripting and CLI tool access
-
-## Getting Started
-
-### Quick Setup
-```bash
-# Pull and run the container
-docker pull dockagile/pygile-plus
-docker run -p 8888:8888 -v $(pwd)/data:/workspace/data pygile-plus
-
-# Access Jupyter Lab at http://localhost:8888
+**Core Geospatial**
+```
+gdal, proj, geos, libspatialindex, boost-cpp
+shapely, fiona, pyproj
+geopandas, rasterio
+cartopy, geoplot, osmnx, earthpy
 ```
 
-**For complete setup instructions**: See [docker/README.md](docker/) for detailed setup guide including environment configuration and tool initialization.
+**Scientific Computing**
+```
+numpy, scipy, pandas
+xarray, netcdf4, h5py, h5netcdf, zarr
+scikit-learn, scikit-image
+```
 
-## What's Available
+**Machine Learning & Deep Learning**
+```
+pytorch (CPU), torchvision, torchaudio, pytorch-lightning
+tensorflow, keras
+albumentations, timm
+pyspatialml, sklearn-xarray
+```
 
-### GIS Processing Algorithms 
-| Platform | Access Method | Description |
-|----------|---------------|-------------|
-| SAGA GIS |  CLI | Comprehensive geoprocessing and analysis |
-| GRASS GIS |  CLI + Python | Vector/raster analysis and modeling |
-| Whitebox Tools | CLI | Advanced geospatial analysis |
-| OTB | CLI | Remote sensing and image processing |
+**Visualization**
+```
+matplotlib, seaborn, plotly, bokeh
+folium, contextily, mapclassify
+holoviews, hvplot
+pyvista, pythreejs
+keplergl
+```
 
-### Python Libraries & Frameworks
-**Geospatial Core:** GDAL, Shapely, Fiona, Rasterio, GeoPandas, PyProj, Cartopy
+**Web Mapping**
+```
+leafmap, geemap
+ipyleaflet, owslib
+localtileserver, rio-cogeo, rioxarray
+```
 
-**Scientific Computing:** NumPy, SciPy, Pandas, Xarray, Dask
+**Cloud & Remote Sensing**
+```
+earthengine-api
+pystac, stackstac, planetary-computer
+```
 
-**Machine Learning:** PyTorch, TensorFlow, scikit-learn, scikit-image
+**Image Processing**
+```
+opencv
+tifffile, imageio-ffmpeg
+```
 
-**Visualization:** Matplotlib, Plotly, Seaborn, Folium, Holoviews, Bokeh
+**Spatial Analysis**
+```
+rasterstats, xarray-spatial
+libpysal, esda
+pykrige
+```
 
-**Image Processing:** OpenCV, scikit-image, Pillow
+**Data & Utilities**
+```
+census, us
+geojson
+dask-geopandas
+pygis, whitebox, PySAGA-cmd
+numpy-groupies, sympy
+```
 
-**Web Mapping:** Leafmap, Geemap, ipyleaflet, Folium
+**Development Tools**
+```
+jupyter, jupyterlab, ipywidgets
+sphinx, sphinx_sitemap, sphinxcontrib.bibtex
+sphinx_inline_tabs, pydata-sphinx-theme
+jupyter-book, ghp-import
+git, nodejs, npm
+black, flake8, nbconvert
+streamlit-folium
+```
 
-**Cloud/Remote Sensing:** Google Earth Engine API, STAC tools, Planetary Computer
+## Usage Examples
 
-**Development:** Jupyter Lab, IPython, Git
+### Initialize Environment (Jupyter)
+```python
+import os, sys
+os.environ['LD_LIBRARY_PATH'] = "/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/opt/conda/envs/pygile/lib"
+os.environ['SAGA_CMD'] = '/opt/saga/bin/saga_cmd'
+os.environ['SAGA_MLB'] = '/opt/saga/lib/saga'
+os.environ['GISBASE'] = '/opt/grass'
+os.environ['OTB_APPLICATION_PATH'] = '/opt/otb/lib/otb/applications'
+sys.path.insert(0, '/opt/grass/etc/python')
+```
 
-## Use Cases
+### SAGA GIS
+```bash
+saga_cmd ta_morphometry 0 -ELEVATION=dem.tif -SLOPE=slope.tif
+```
 
-- Remote sensing analysis and classification
-- Spatial data processing and geostatistics  
-- Machine learning on geospatial data
-- Raster and vector analysis workflows
-- Educational geospatial computing
-- Large-scale geospatial data processing
-- Web mapping and interactive visualization
-- Cloud-based geospatial analysis workflows
+### GRASS GIS
+```python
+import grass.script as gscript
+gscript.run_command('r.slope.aspect', elevation='dem', slope='slope')
+```
+
+### Whitebox Tools
+```bash
+whitebox_tools --run=Slope --input=dem.tif --output=slope.tif
+```
+
+### OTB
+```bash
+otbcli_BandMath -il image.tif -out result.tif -exp "im1b1+im1b2"
+```
+
+### Python ML
+```python
+from pyspatialml import Raster
+from sklearn.ensemble import RandomForestClassifier
+
+stack = Raster(['B2.tif', 'B3.tif', 'B4.tif', 'B8.tif'])
+X, y, coords = stack.extract_vector('training.shp', field='class')
+clf = RandomForestClassifier(n_estimators=200)
+clf.fit(X, y)
+prediction = stack.predict(clf, output='landcover.tif')
+```
+
+## Environment Details
+
+- **Base Image:** condaforge/mambaforge:24.9.0-0
+- **Python Version:** 3.10
+- **Package Manager:** Mamba (conda-forge)
+- **Operation Mode:** Headless (no GUI)
+- **Jupyter Port:** 8888
+
+## Directory Structure
+
+```
+/workspace/
+  ├── data/         # Input data
+  ├── output/       # Processing results
+  ├── scripts/      # Python/bash scripts
+  ├── notebooks/    # Jupyter notebooks
+  └── samples/      # Example datasets
+
+/opt/
+  ├── grass/        # GRASS GIS 8.4.0 installation
+  ├── saga/         # SAGA GIS 9.3.2 installation
+  └── otb/          # OTB 9.1.1 installation
+```
 
 ## System Requirements
 
-- Docker with 8GB+ RAM recommended
-- 10GB+ storage for the image
-- Network access for initial build/pull
+**Minimum:**
+- 8 GB RAM
+- 15 GB storage
+- 4 CPU cores
+- Docker 20.10+
+
 
 ## Documentation
 
-For detailed algorithm listings and capabilities, please refer the individual CSV files in the [algorithms_toc/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/algorithms_toc) directory.
+- **Setup Guide:** [docker/README.md](docker/README.md)
+- **Algorithm Catalogs:** [algorithms_toc/](algorithms_toc/)
+- **Example Notebooks:** [example_notebooks/](example_notebooks/)
 
-## License Information
 
-**License Notice**: All software and packages included in this container are made available under their respective licenses. Please refer to the original documentation for specific license terms:
+## Links
 
-**GIS Platforms:**
-- GRASS GIS: https://github.com/OSGeo/grass
-- SAGA GIS: https://sourceforge.net/projects/saga-gis/
-- Whitebox Tools: https://github.com/jblindsay/whitebox-tools
-- OTB (Orfeo ToolBox): https://github.com/orfeotoolbox/OTB
+- GitHub: https://github.com/Geoinformatics-Lab/PyGILE-Plus
+- Docker Hub: https://hub.docker.com/r/dockagile/pygile-plus
+- DOI: https://doi.org/10.5281/zenodo.16146572
 
-**Python Core Libraries:**
-- GDAL: https://github.com/OSGeo/gdal
-- Shapely: https://github.com/shapely/shapely
-- Fiona: https://github.com/Toblerity/Fiona
-- Rasterio: https://github.com/rasterio/rasterio
-- GeoPandas: https://github.com/geopandas/geopandas
-- PyProj: https://github.com/pyproj4/pyproj
 
-**Scientific Computing:**
-- NumPy: https://github.com/numpy/numpy
-- SciPy: https://github.com/scipy/scipy
-- Pandas: https://github.com/pandas-dev/pandas
-- Xarray: https://github.com/pydata/xarray
-- scikit-learn: https://github.com/scikit-learn/scikit-learn
-- scikit-image: https://github.com/scikit-image/scikit-image
-
-**Machine Learning:**
-- PyTorch: https://github.com/pytorch/pytorch
-- TensorFlow: https://github.com/tensorflow/tensorflow
-- OpenCV: https://github.com/opencv/opencv
-
-**Visualization:**
-- Matplotlib: https://github.com/matplotlib/matplotlib
-- Plotly: https://github.com/plotly/plotly.py
-- Folium: https://github.com/python-visualization/folium
-- Seaborn: https://github.com/mwaskom/seaborn
-- Bokeh: https://github.com/bokeh/bokeh
-
-**Web Mapping:**
-- Leafmap: https://github.com/opengeos/leafmap
-- Geemap: https://github.com/opengeos/geemap
-- ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet
-
-**Cloud/Remote Sensing:**
-- Google Earth Engine API: https://github.com/google/earthengine-api
-- PySTAC: https://github.com/stac-utils/pystac
-- Stackstac: https://github.com/gjoseph92/stackstac
-- Planetary Computer: https://github.com/microsoft/planetary-computer-sdk-for-python
-
-**Documentation:**
-- Sphinx: https://github.com/sphinx-doc/sphinx
-- Jupyter Book: https://github.com/executablebooks/jupyter-book
-
-**Package Management:**
-- Conda/Mamba: https://github.com/conda-forge/miniforge
-
-## Reference & Citation
-
+## Citation
 Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16146572.svg)](https://doi.org/10.5281/zenodo.16146572)

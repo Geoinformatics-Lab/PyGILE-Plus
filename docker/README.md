@@ -1,189 +1,390 @@
 # PyGILE-Plus Docker Setup
 
-Quick setup instructions for the PyGILE-Plus Docker environment.
+Setup and usage instructions for the PyGILE-Plus Docker container.
 
-## Quick Start 
+## Installation
 
-### Option 1: Pull Pre-built Image (Recommended) [After successful pull, then see "Running the container"]
+### Pull Pre-built Image
+
 ```bash
-docker pull dockagile/pygile-plus
+docker pull dockagile/pygile-plus:latest
 ```
 
-OR
+### Build from Source
 
-### Option 2: Build from Source
 ```bash
-# From the docker/ directory
+git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git
+cd PyGILE-Plus/docker
 docker build -t pygile-plus .
 ```
 
+Build time: ~30-45 minutes
+
 ## Running the Container
 
-### Basic Setup
+### Basic Run
+
 ```bash
-# Run with Jupyter Lab auto-start
-docker run -it --name pygile-plus-container -p 8888:8888 -v $(pwd):/workspace dockagile/pygile-plus
+docker run -it --name pygile-plus \
+  -p 8888:8888 \
+  -v $(pwd)/data:/workspace/data \
+  dockagile/pygile-plus:latest
 ```
 
-**Jupyter Lab starts automatically at `http://localhost:8888`**
+Jupyter Lab starts automatically at `http://localhost:8888`
 
-### Full Environment Setup (Required for All Tools)
+### With Resource Allocation
 
-**Step 1: Environment Setup for CLI Tools**
-In a **new terminal window**:
 ```bash
-# Connect to running container
-docker exec -it pygile-plus-container bash
-
-# Run environment setup script
-source /workspace/pygile_working_env.sh
+docker run -it --name pygile-plus \
+  -p 8888:8888 \
+  --memory=16g \
+  --cpus=8 \
+  --shm-size=2g \
+  -v $(pwd)/data:/workspace/data \
+  dockagile/pygile-plus:latest
 ```
 
-**Step 2: Initialize in Jupyter**
-Run this **first cell** in any new notebook:
+### Multiple Mount Points
+
+```bash
+docker run -it --name pygile-plus \
+  -p 8888:8888 \
+  -v /path/to/data:/workspace/data \
+  -v /path/to/output:/workspace/output \
+  -v /path/to/notebooks:/workspace/notebooks \
+  dockagile/pygile-plus:latest
+```
+
+### Custom Port
+
+```bash
+docker run -it --name pygile-plus \
+  -p 8889:8888 \
+  dockagile/pygile-plus:latest
+```
+
+Access at `http://localhost:8889`
+
+## Environment Setup
+
+### For Jupyter Notebooks
+
+Add this as the **first cell** in every notebook:
+
 ```python
 import os
 import sys
 
-# Environment setup for direct tool access
 os.environ['LD_LIBRARY_PATH'] = "/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/opt/conda/envs/pygile/lib"
 os.environ['SAGA_CMD'] = '/opt/saga/bin/saga_cmd'
 os.environ['SAGA_MLB'] = '/opt/saga/lib/saga'
 os.environ['GISBASE'] = '/opt/grass'
 os.environ['OTB_APPLICATION_PATH'] = '/opt/otb/lib/otb/applications'
-
-# Add GRASS to Python path
 sys.path.insert(0, '/opt/grass/etc/python')
 
-print("PyGILE-Plus initialized with direct GIS tool access + complete Python stack!")
+print("PyGILE-Plus environment initialized")
 ```
 
-## Available Tools & Libraries
+### For Command-Line
 
-### GIS Processing Algorithms 
-- **SAGA GIS**: (CLI)
-- **GRASS GIS**: (CLI + Python + direct integration)
-- **Whitebox Tools**: (CLI)
-- **OTB**: (CLI)
-
-### Python Geospatial Stack
-**Core:** GDAL, Shapely, Fiona, Rasterio, GeoPandas, PyProj  
-**Scientific:** NumPy, SciPy, Pandas, Xarray  
-**ML/AI:** PyTorch, TensorFlow, scikit-learn, scikit-image, OpenCV, PySpatialML  
-**Visualization:** Matplotlib, Plotly, Folium, Leafmap, Geemap, pythreejs  
-**Web/Cloud:** Earth Engine API, STAC tools, Planetary Computer, localtileserver  
-**Spatial Analysis:** rasterstats, xarray-spatial
-
-**All PyGILE libraries included**
-
-## Access Methods
-
-### GRASS GIS (Dual Access)
-```python
-# Python integration
-import grass.script as gscript
-gscript.run_command('r.slope.aspect', elevation='dem', slope='slope')
-
-# Or CLI (in terminal)
-# r.slope.aspect elevation=dem slope=slope
-```
-
-### SAGA GIS (CLI)
 ```bash
-# Terminal/CLI access
-saga_cmd ta_morphometry 0 -ELEVATION=dem.tif -SLOPE=slope.tif
+# Connect to running container
+docker exec -it pygile-plus bash
+
+# Source environment
+source /workspace/pygile_working_env.sh
+
+# Verify tools
+saga_cmd --version
+grass --version
+whitebox_tools --version
 ```
-
-### Whitebox Tools (CLI)
-```bash
-# Terminal/CLI access
-whitebox_tools --run=Slope --input=dem.tif --output=slope.tif
-```
-
-### OTB (CLI)
-```bash
-# Terminal/CLI access
-otbcli_BandMath -il image.tif -out result.tif -exp "im1b1+im1b2"
-```
-
-### PySpatialML (New)
-```python
-# Spatial machine learning on raster stacks
-from pyspatialml import Raster
-stack = Raster(['band1.tif', 'band2.tif', 'band3.tif'])
-```
-
-### pythreejs (New)
-```python
-# Interactive 3D visualization in Jupyter
-import pythreejs as p3j
-```
-
-## Verification Test
-
-For complete testing and examples of all tools, see the example notebook:
-[Test_SAGA, GRASS, OTB, Whitebox and Python Packages.ipynb](https://github.com/Geoinformatics-Lab/PyGILE-Plus/blob/main/example_notebooks/Test_QGIS%2C%20SAGA%2C%20GRASS%2C%20OTB%2C%20Whitebox%20and%20Python%20Packages.ipynb)
-
-This notebook demonstrates:
-- SAGA GIS command-line usage  
-- GRASS GIS dual access (CLI + Python)
-- OTB remote sensing tools
-- Whitebox Tools geospatial analysis
-- Python geospatial library imports
-- Complete algorithm extraction and verification
 
 ## Container Management
 
-### Persistent Data
-```bash
-# Mount local directory for persistent data
-docker run -p 8888:8888 -v /path/to/your/data:/workspace/data pygile-plus
-```
-
-### Resource Allocation
-```bash
-# Allocate more resources
-docker run -p 8888:8888 --memory=8g --cpus=4 pygile-plus
-```
-
-### Stop/Restart
 ```bash
 # Stop container
-docker stop pygile-plus-container
+docker stop pygile-plus
+
+# Start container
+docker start pygile-plus
 
 # Restart container
-docker start pygile-plus-container
+docker restart pygile-plus
+
+# View logs
+docker logs pygile-plus
 
 # Remove container
-docker rm pygile-plus-container
+docker stop pygile-plus
+docker rm pygile-plus
+
+# Remove image
+docker rmi dockagile/pygile-plus:latest
 ```
+
+## Accessing Tools
+
+### SAGA GIS (CLI)
+
+```bash
+# List libraries
+saga_cmd -h
+
+# List tools in library
+saga_cmd ta_morphometry
+
+# Run tool
+saga_cmd ta_morphometry 0 \
+  -ELEVATION=dem.tif \
+  -SLOPE=slope.tif \
+  -ASPECT=aspect.tif
+```
+
+### GRASS GIS (CLI + Python)
+
+**Command-Line:**
+```bash
+grass /path/to/location/mapset
+r.slope.aspect elevation=dem slope=slope
+```
+
+**Python:**
+```python
+import grass.script as gscript
+gscript.run_command('r.slope.aspect', elevation='dem', slope='slope')
+```
+
+### Whitebox Tools (CLI)
+
+```bash
+# List tools
+whitebox_tools --listtools
+
+# Tool help
+whitebox_tools --toolhelp=Slope
+
+# Run tool
+whitebox_tools --run=Slope \
+  --input=dem.tif \
+  --output=slope.tif
+```
+
+### OTB (CLI)
+
+```bash
+# List applications
+otbcli_-h
+
+# Run application
+otbcli_BandMath \
+  -il image.tif \
+  -out result.tif \
+  -exp "im1b1 + im1b2"
+```
+
+### Python Libraries
+
+```python
+# Standard imports after environment initialization
+import geopandas as gpd
+import rasterio
+import xarray as xr
+from pyspatialml import Raster
+import torch
+import tensorflow as tf
+```
+
+## Directory Structure
+
+```
+/workspace/
+├── data/           # Input data (mount here)
+├── output/         # Results (mount here)
+├── scripts/        # Scripts
+├── notebooks/      # Jupyter notebooks
+└── samples/        # Examples
+
+/opt/
+├── grass/          # GRASS GIS 8.4.0
+├── saga/           # SAGA GIS 9.3.2
+└── otb/            # OTB 9.1.1
+```
+
+## Verification
+
+### Quick Check
+
+```python
+import sys
+packages = ['numpy', 'pandas', 'geopandas', 'rasterio', 
+            'torch', 'tensorflow', 'pyvista']
+for pkg in packages:
+    try:
+        __import__(pkg)
+        print(f"✓ {pkg}")
+    except ImportError:
+        print(f"✗ {pkg}")
+```
+
+### Full Test
+
+See example notebook:
+[Test_SAGA, GRASS, OTB, Whitebox and Python Packages.ipynb](https://github.com/Geoinformatics-Lab/PyGILE-Plus/blob/main/example_notebooks/)
 
 ## Troubleshooting
 
-### Common Issues
+### Jupyter Not Accessible
 
-**Jupyter not accessible:**
-- Check if port 8888 is available
-- Try: `docker run -p 8889:8888 pygile-plus`
+```bash
+# Check container status
+docker ps
 
-**CLI tools not found:**
-- Ensure you ran: `source /workspace/pygile_working_env.sh`
-- Check PATH: `echo $PATH`
+# Check port availability
+lsof -i :8888  # Linux/Mac
+netstat -ano | findstr :8888  # Windows
 
-**Import errors:**
-- Container uses conda environment: `/opt/conda/envs/pygile`
-- All packages pre-installed, no additional setup needed
+# Try different port
+docker run -p 8889:8888 dockagile/pygile-plus:latest
 
-### Performance Tips
+# View logs
+docker logs pygile-plus
+```
 
-- Allocate 8GB+ RAM for large datasets
-- Use SSD storage for better I/O performance
-- Mount data directories rather than copying into container
+### CLI Tools Not Found
 
-## Next Steps
+```bash
+# Enter container
+docker exec -it pygile-plus bash
 
-1. **Access Jupyter**: http://localhost:8888
-2. **Run environment setup** in terminal
-3. **Initialize environment** in first notebook cell
+# Source environment
+source /workspace/pygile_working_env.sh
 
-For detailed examples and algorithm documentation, see the main repository README and [algorithms_toc/](https://github.com/Geoinformatics-Lab/PyGILE-Plus/tree/main/algorithms_toc) directory.
+# Check PATH
+echo $PATH
+
+# Manual PATH setup if needed
+export PATH="/opt/saga/bin:/opt/grass/bin:$PATH"
+```
+
+### Import Errors
+
+```python
+# Check Python path
+import sys
+print(sys.executable)  # Should be /opt/conda/envs/pygile/bin/python
+
+# Check package installation
+import subprocess
+subprocess.run(['mamba', 'list'], check=True)
+```
+
+```bash
+# In terminal
+conda activate pygile
+mamba list | grep package-name
+```
+
+### Out of Memory
+
+```bash
+# Increase memory
+docker run --memory=16g --memory-swap=16g dockagile/pygile-plus:latest
+
+# Increase shared memory
+docker run --shm-size=4g dockagile/pygile-plus:latest
+
+# Use chunked processing
+import dask.array as da
+```
+
+### Slow Performance
+
+```bash
+# More CPU cores
+docker run --cpus=8 dockagile/pygile-plus:latest
+
+# Use SSD for data
+docker run -v /ssd/path:/workspace/data dockagile/pygile-plus:latest
+```
+
+### Permission Issues
+
+```bash
+# Map user ID
+docker run --user $(id -u):$(id -g) dockagile/pygile-plus:latest
+
+# Or fix permissions
+chmod -R 777 /path/to/data
+```
+
+## Example Workflows
+
+### Terrain Analysis
+
+```bash
+docker run -it --name terrain \
+  -p 8888:8888 \
+  -v /path/to/dem:/workspace/data \
+  dockagile/pygile-plus:latest
+
+# In container terminal
+docker exec -it terrain bash
+source /workspace/pygile_working_env.sh
+
+saga_cmd ta_morphometry 0 \
+  -ELEVATION=/workspace/data/dem.tif \
+  -SLOPE=/workspace/data/slope.tif
+```
+
+### Machine Learning
+
+```python
+# In Jupyter (http://localhost:8888)
+
+# Initialize (first cell)
+import os, sys
+os.environ['LD_LIBRARY_PATH'] = "/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/opt/conda/envs/pygile/lib"
+sys.path.insert(0, '/opt/grass/etc/python')
+
+# Process
+from pyspatialml import Raster
+import geopandas as gpd
+from sklearn.ensemble import RandomForestClassifier
+
+stack = Raster(['band1.tif', 'band2.tif', 'band3.tif'])
+training = gpd.read_file('training.shp')
+X, y, coords = stack.extract_vector(training, field='class')
+
+clf = RandomForestClassifier(n_estimators=200)
+clf.fit(X, y)
+prediction = stack.predict(clf, output='classification.tif')
+```
+
+## Performance Tips
+
+**For Large Datasets:**
+```bash
+docker run --memory=16g --cpus=8 --shm-size=4g dockagile/pygile-plus:latest
+```
+
+**Chunked Processing:**
+```python
+import rioxarray
+data = rioxarray.open_rasterio('large.tif', chunks={'x': 512, 'y': 512})
+```
+
+**Batch Processing:**
+```bash
+docker run -d dockagile/pygile-plus:latest
+docker exec pygile-plus python /workspace/scripts/process.py
+```
+
+## Additional Resources
+
+- Main README: [../README.md](../README.md)
+- Algorithm Catalogs: [../algorithms_toc/](../algorithms_toc/)
+- Example Notebooks: [../example_notebooks/](../example_notebooks/)
+- GitHub: https://github.com/Geoinformatics-Lab/PyGILE-Plus
+- Docker Hub: https://hub.docker.com/r/dockagile/pygile-plus
