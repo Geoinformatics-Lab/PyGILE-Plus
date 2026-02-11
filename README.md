@@ -196,6 +196,10 @@ prediction = stack.predict(clf, output='landcover.tif')
 
 
 ## Citation
+Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18512474
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18512474.svg)]( https://doi.org/10.5281/zenodo.18512474)
+
 Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16146572.svg)](https://doi.org/10.5281/zenodo.16146572)
