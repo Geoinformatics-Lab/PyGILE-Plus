@@ -184,8 +184,8 @@ prediction = stack.predict(clf, output='landcover.tif')
 ## Documentation
 
 - **Setup Guide:** [docker/README.md](docker/README.md)
-- **Algorithm Catalogs:** [algorithms_toc/](algorithms_toc/)
-- **Example Notebooks:** [example_notebooks/](example_notebooks/)
+- Example Notebooks: [../notebooks/](../notebooks/)
+- **Algorithm Catalog:** [notebooks/pygile_plus_algorithm_catalog.ipynb](notebooks/pygile_plus_algorithm_catalog.ipynb) — generates full algorithm list for SAGA, GRASS, OTB, and Whitebox as CSV/Excel
 
 
 ## Links

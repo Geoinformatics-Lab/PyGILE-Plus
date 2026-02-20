@@ -145,14 +145,17 @@ RUN mamba install -n pygile -c conda-forge -y \
     pystac stackstac planetary-computer \
     && mamba clean -all -y
 
-# Deep Learning frameworks - CPU versions
-RUN mamba install -n pygile -c conda-forge -y \
-    pytorch-cpu torchvision torchaudio pytorch-lightning \
-    && mamba clean -all -y
-
-# Install TensorFlow via pip
+# Deep Learning frameworks - GPU versions via pip (avoids conda ffmpeg conflict)
+# Uses PyTorch's official CUDA 12.4 wheel index - works with Python 3.10
 RUN mamba run -n pygile pip install --no-cache-dir \
-    tensorflow keras
+    torch torchvision torchaudio \
+    --index-url https://download.pytorch.org/whl/cu124 && \
+    mamba run -n pygile pip install --no-cache-dir \
+    pytorch-lightning
+
+# Install TensorFlow GPU via pip (tensorflow[and-cuda] bundles CUDA/cuDNN wheels)
+RUN mamba run -n pygile pip install --no-cache-dir \
+    "tensorflow[and-cuda]" keras
 
 # Additional ML/DL tools
 RUN mamba run -n pygile pip install --no-cache-dir \
@@ -309,6 +312,12 @@ ENV PATH="/opt/grass/bin:/opt/saga/bin:/opt/otb/bin:$PATH"
 ENV LD_LIBRARY_PATH="/opt/grass/lib:/opt/saga/lib:/opt/otb/lib"
 ENV SAGA_CMD="/opt/saga/bin/saga_cmd"
 ENV GISBASE="/opt/grass"
+
+# GPU / CUDA environment - lets TensorFlow find its bundled CUDA libraries
+# and allows Apptainer --nv passthrough to work correctly
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV LD_LIBRARY_PATH="/opt/conda/envs/pygile/lib/python3.10/site-packages/nvidia/cuda_runtime/lib:${LD_LIBRARY_PATH}"
 
 # Verification of core packages
 RUN mamba run -n pygile python -c "import numpy, pandas, geopandas, rasterio, matplotlib; print('Core packages verification: OK')" || \
