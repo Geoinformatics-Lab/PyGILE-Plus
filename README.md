@@ -224,8 +224,8 @@ whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
 ## Documentation
 
 - **Setup Guide:** [docker/README.md](docker/README.md)
-- Example Notebooks: [../notebooks/](../notebooks/)
-- **Algorithm Catalog:** [notebooks/pygile_plus_algorithm_catalog.ipynb](notebooks/pygile_plus_algorithm_catalog.ipynb) — generates full algorithm list for SAGA, GRASS, OTB, and Whitebox as CSV/Excel
+- **Example Notebooks**: [notebooks/](notebooks/)
+
 
 
 ## Links

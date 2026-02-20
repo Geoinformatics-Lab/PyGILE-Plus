@@ -135,4 +135,3 @@ docker rmi dockagile/pygile-plus
 ├── saga/           # SAGA GIS 9.3.2
 └── otb/            # OTB 9.1.1
 ```
-- **Algorithm Catalog:** [notebooks/pygile_plus_algorithm_catalog.ipynb](notebooks/pygile_plus_algorithm_catalog.ipynb) — generates full algorithm list for SAGA, GRASS, OTB, and Whitebox as CSV/Excel
