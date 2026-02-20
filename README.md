@@ -1,12 +1,17 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
 
-A headless Docker environment combining SAGA GIS, GRASS GIS, Whitebox Tools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning.
+A headless Docker environment combining SAGA GIS, GRASS GIS, Whitebox Tools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning — with GPU acceleration support.
 
 ## Quick Start
 
 ```bash
-docker pull dockagile/pygile-plus:latest
-docker run -it -p 8888:8888 -v $(pwd)/data:/workspace/data dockagile/pygile-plus:latest
+docker pull dockagile/pygile-plus
+
+# Run with GPU support
+docker run -it --gpus all -p 8888:8888 -v $(pwd)/data:/workspace/data dockagile/pygile-plus
+
+# Run without GPU (CPU only)
+docker run -it -p 8888:8888 -v $(pwd)/data:/workspace/data dockagile/pygile-plus
 ```
 
 Access Jupyter Lab at `http://localhost:8888`
@@ -41,8 +46,8 @@ scikit-learn, scikit-image
 
 **Machine Learning & Deep Learning**
 ```
-pytorch (CPU), torchvision, torchaudio, pytorch-lightning
-tensorflow, keras
+pytorch (CUDA 12.4), torchvision, torchaudio, pytorch-lightning
+tensorflow (CUDA), keras
 albumentations, timm
 pyspatialml, sklearn-xarray
 ```
@@ -115,6 +120,15 @@ os.environ['OTB_APPLICATION_PATH'] = '/opt/otb/lib/otb/applications'
 sys.path.insert(0, '/opt/grass/etc/python')
 ```
 
+### GPU Verification (Jupyter)
+```python
+import torch
+import tensorflow as tf
+print("PyTorch CUDA:", torch.cuda.is_available())
+print("GPU:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "None")
+print("TensorFlow GPUs:", tf.config.list_physical_devices('GPU'))
+```
+
 ### SAGA GIS
 ```bash
 saga_cmd ta_morphometry 0 -ELEVATION=dem.tif -SLOPE=slope.tif
@@ -148,6 +162,16 @@ clf.fit(X, y)
 prediction = stack.predict(clf, output='landcover.tif')
 ```
 
+## HPC / Apptainer (Singularity)
+
+```bash
+# Pull and convert from Docker Hub
+apptainer pull docker://dockagile/pygile-plus
+
+# Run with GPU passthrough
+apptainer run --nv pygile-plus_latest.sif
+```
+
 ## Environment Details
 
 - **Base Image:** condaforge/mambaforge:24.9.0-0
@@ -155,6 +179,18 @@ prediction = stack.predict(clf, output='landcover.tif')
 - **Package Manager:** Mamba (conda-forge)
 - **Operation Mode:** Headless (no GUI)
 - **Jupyter Port:** 8888
+- **GPU Support:** CUDA 12.4 (PyTorch + TensorFlow)
+
+## Tool Paths
+
+```python
+conda_env_path = "/opt/conda/envs/pygile"
+saga_cmd       = "/opt/saga/bin/saga_cmd"
+saga_lib       = "/opt/saga/lib/saga"
+grass_bin      = "/opt/grass/bin"
+otb_bin        = "/opt/otb/bin"
+whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
+```
 
 ## Directory Structure
 
@@ -180,6 +216,10 @@ prediction = stack.predict(clf, output='landcover.tif')
 - 4 CPU cores
 - Docker 20.10+
 
+**For GPU Support:**
+- NVIDIA GPU
+- NVIDIA Container Toolkit installed on host
+- For HPC: Apptainer/Singularity with `--nv` flag support
 
 ## Documentation
 
