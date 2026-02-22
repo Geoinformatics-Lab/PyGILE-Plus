@@ -232,7 +232,7 @@ whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
 
 - GitHub: https://github.com/Geoinformatics-Lab/PyGILE-Plus
 - Docker Hub: https://hub.docker.com/r/dockagile/pygile-plus
-- DOI: https://doi.org/10.5281/zenodo.16146572
+- DOI: https://doi.org/10.5281/zenodo.18512474
 
 
 ## Citation
