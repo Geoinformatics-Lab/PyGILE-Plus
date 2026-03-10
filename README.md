@@ -1,7 +1,5 @@
 # PyGILE-Plus: Python GeoInformatics Lab Environment-Plus
-<img src="./image/pygile_plus.png" width="250">
-
-A headless Docker environment combining SAGA GIS, GRASS GIS, Whitebox Tools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning — with GPU acceleration support.
+<img src="./image/pygile_plus.png" width="250" style="float: left;"> A headless Docker environment combining SAGA GIS, GRASS GIS, Whitebox Tools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning — with GPU acceleration support.
 
 ## Quick Start
 
