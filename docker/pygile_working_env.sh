@@ -12,9 +12,7 @@ export SAGA_MLB="/opt/saga/lib/saga"
 export PATH="/opt/saga/bin:$PATH"
 
 # GRASS GIS Configuration
-export GISBASE="/opt/grass"
-export PYTHONPATH="/opt/grass/etc/python:$PYTHONPATH"
-export PATH="/opt/grass/bin:$PATH"
+export PATH="/opt/grass/bin:/opt/grass/scripts:$PATH"
 
 # OTB Configuration
 export OTB_APPLICATION_PATH="/opt/otb/lib/otb/applications"

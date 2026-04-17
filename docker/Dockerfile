@@ -308,10 +308,10 @@ RUN cd /tmp && \
     chmod +x /opt/conda/envs/pygile/etc/conda/activate.d/otb.sh
 
 # Environment variables for tools
-ENV PATH="/opt/grass/bin:/opt/saga/bin:/opt/otb/bin:$PATH"
+ENV PATH="/opt/grass/bin:/opt/grass/scripts:/opt/saga/bin:/opt/otb/bin:$PATH"
+ENV PYTHONPATH="/opt/grass/etc/python:${PYTHONPATH}"
 ENV LD_LIBRARY_PATH="/opt/grass/lib:/opt/saga/lib:/opt/otb/lib"
 ENV SAGA_CMD="/opt/saga/bin/saga_cmd"
-ENV GISBASE="/opt/grass"
 
 # GPU / CUDA environment - lets TensorFlow find its bundled CUDA libraries
 # and allows Apptainer --nv passthrough to work correctly
