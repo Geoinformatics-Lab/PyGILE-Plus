@@ -80,21 +80,6 @@ Jupyter Lab starts automatically at `http://localhost:8888`.
 
 For more detailed Docker usage, see `docker/README.md`.
 
-## Environment behavior
-
-The container configures the working environment internally. No notebook
-initialization cell or manual environment script is required.
-
-All core geospatial libraries (GRASS, GDAL, PROJ) are resolved within a
-unified conda environment, ensuring consistent CRS/EPSG handling across
-tools.
-
-The following components are configured in the container: - GRASS GIS
-CLI and Python bindings - SAGA GIS - OTB CLI and Python bindings -
-WhiteboxTools - GeoAI - Conda environment `pygile`
-
-No manual configuration is required: - No GISBASE - No manual sys.path
-modification - No manual GRASS session setup
 
 ## Usage inside container
 
@@ -138,7 +123,7 @@ otb_bin = "/opt/otb/bin"
 whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
 ```
 
-## Available workflows
+## Applications
 
 -   Remote sensing analysis and classification
 -   Raster and vector processing
@@ -159,9 +144,6 @@ whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
 -   For HPC: Apptainer or Singularity with `--nv` support when GPU
     passthrough is needed
 
-## Documentation
-
-For algorithm listings, see the CSV files in `algorithms_toc/`.
 
 ## License information
 
@@ -172,10 +154,10 @@ Refer to the original project documentation for specific license terms.
 
 Latest release citation will be updated after the v1.1.1 Zenodo archive is published.
 
-Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026).
-Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo.
-https://doi.org/10.5281/zenodo.18512474
+Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18512474
 
-Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025).
-PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo.
-https://doi.org/10.5281/zenodo.16146572
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18512474.svg)]( https://doi.org/10.5281/zenodo.18512474)
+
+Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16146572.svg)](https://doi.org/10.5281/zenodo.16146572)

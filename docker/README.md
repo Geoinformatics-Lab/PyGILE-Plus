@@ -4,8 +4,7 @@ PyGILE-Plus is a containerized geospatial research environment that
 includes GRASS GIS, SAGA GIS, OTB, GeoAI, and a Python-based analysis
 stack.
 
-The environment is preconfigured and consistent across tools --- no
-manual setup inside notebooks or the container is required.
+The environment is preconfigured and consistent across tools.
 
 ------------------------------------------------------------------------
 
@@ -63,12 +62,6 @@ The container automatically configures:
 -   OTB (CLI and Python)
 -   GeoAI stack
 -   Conda environment: `pygile`
-
-The environment is managed at the container level: - No GISBASE - No
-manual sys.path changes - No notebook-level configuration
-
-All tools share a consistent GDAL/PROJ runtime through the conda
-environment.
 
 ------------------------------------------------------------------------
 
