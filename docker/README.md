@@ -1,137 +1,105 @@
-# PyGILE-Plus Docker Setup
+# PyGILE-Plus Docker
 
-Setup and usage instructions for the PyGILE-Plus Docker container.
+PyGILE-Plus is a containerized geospatial research environment that
+includes GRASS GIS, SAGA GIS, OTB, GeoAI, and a Python-based analysis
+stack.
+
+The environment is preconfigured and consistent across tools --- no
+manual setup inside notebooks or the container is required.
+
+------------------------------------------------------------------------
 
 ## Installation
 
-### Pull Pre-built Image
+### Pull pre-built image
 
-```bash
 docker pull dockagile/pygile-plus
-```
 
-### Build from Source
+### Build from source
 
-```bash
-git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git
-cd PyGILE-Plus/docker
+git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git\
+cd PyGILE-Plus/docker\
 docker build -t pygile-plus .
-```
 
-Build time: ~30-45 minutes
+------------------------------------------------------------------------
 
-## Running the Container
+## Run
 
-### Basic Run (CPU only)
+### CPU
 
-```bash
-docker run -it --name pygile-plus \
-  -p 8888:8888 \
-  -v $(pwd)/data:/workspace/data \
-  dockagile/pygile-plus
-```
+docker run -it --name pygile-plus\
+-p 8888:8888\
+-v \$(pwd)/data:/workspace/data\
+pygile-plus
 
-Jupyter Lab starts automatically at `http://localhost:8888`
+### GPU
 
-### With GPU Support
+docker run -it --name pygile-plus\
+--gpus all\
+-p 8888:8888\
+-v \$(pwd)/data:/workspace/data\
+pygile-plus
 
-```bash
-docker run -it --name pygile-plus \
-  --gpus all \
-  -p 8888:8888 \
-  -v $(pwd)/data:/workspace/data \
-  dockagile/pygile-plus
-```
+GPU usage requires: - NVIDIA GPU - Updated NVIDIA driver - NVIDIA
+Container Toolkit
 
-Requires NVIDIA GPU + [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) on the host.
+------------------------------------------------------------------------
 
-### With Resource Allocation
+## Access
 
-```bash
-docker run -it --name pygile-plus \
-  --gpus all \
-  -p 8888:8888 \
-  --memory=16g \
-  --cpus=8 \
-  --shm-size=2g \
-  -v $(pwd)/data:/workspace/data \
-  dockagile/pygile-plus
-```
+Jupyter Lab starts automatically.
 
-### Custom Port
+Open:\
+http://localhost:8888
 
-```bash
-docker run -it --name pygile-plus \
-  -p 8889:8888 \
-  dockagile/pygile-plus
-```
+------------------------------------------------------------------------
 
-## HPC / Apptainer (Singularity)
+## Environment
 
-```bash
-# Pull and convert from Docker Hub
-apptainer pull docker://dockagile/pygile-plus
+The container automatically configures:
 
-# Run with GPU passthrough
-apptainer run --nv pygile-plus_latest.sif
-```
+-   GRASS GIS (via conda, with Python bindings)
+-   SAGA GIS
+-   OTB (CLI and Python)
+-   GeoAI stack
+-   Conda environment: `pygile`
 
-## Environment Setup
+The environment is managed at the container level: - No GISBASE - No
+manual sys.path changes - No notebook-level configuration
 
-### Jupyter Notebooks — First Cell
+All tools share a consistent GDAL/PROJ runtime through the conda
+environment.
 
-```python
-import os, sys
-os.environ['LD_LIBRARY_PATH'] = "/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/opt/conda/envs/pygile/lib"
-os.environ['SAGA_CMD'] = '/opt/saga/bin/saga_cmd'
-os.environ['SAGA_MLB'] = '/opt/saga/lib/saga'
-os.environ['GISBASE'] = '/opt/grass'
-os.environ['OTB_APPLICATION_PATH'] = '/opt/otb/lib/otb/applications'
-sys.path.insert(0, '/opt/grass/etc/python')
-print("PyGILE-Plus environment initialized")
-```
+------------------------------------------------------------------------
 
-### Command-Line
+## Usage
 
-```bash
-docker exec -it pygile-plus bash
-source /workspace/pygile_working_env.sh
-```
+Activate environment:
 
-## Tool Paths
+conda activate pygile
 
-```python
-conda_env_path = "/opt/conda/envs/pygile"
-saga_cmd       = "/opt/saga/bin/saga_cmd"
-saga_lib       = "/opt/saga/lib/saga"
-grass_bin      = "/opt/grass/bin"
-otb_bin        = "/opt/otb/bin"
-whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
-```
+Basic checks:
+
+python -c "import grass.script as g; print('GRASS OK')" grass --version
+otbcli_BandMath -help python -c "import otbApplication; print('OTB OK')"
+
+------------------------------------------------------------------------
+
+## GPU Check
+
+python -c "import torch; print(torch.cuda.is_available())" python -c
+"import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+------------------------------------------------------------------------
+
+## HPC (Apptainer)
+
+apptainer pull docker://dockagile/pygile-plus apptainer run --nv
+pygile-plus_latest.sif
+
+------------------------------------------------------------------------
 
 ## Container Management
 
-```bash
-docker stop pygile-plus
-docker start pygile-plus
-docker restart pygile-plus
-docker logs pygile-plus
-docker rm pygile-plus
-docker rmi dockagile/pygile-plus
-```
-
-## Directory Structure
-
-```
-/workspace/
-├── data/           # Input data (mount here)
-├── output/         # Results (mount here)
-├── scripts/        # Scripts
-├── notebooks/      # Jupyter notebooks
-└── samples/        # Examples
-
-/opt/
-├── grass/          # GRASS GIS 8.4.0
-├── saga/           # SAGA GIS 9.3.2
-└── otb/            # OTB 9.1.1
-```
+docker stop pygile-plus docker start pygile-plus docker restart
+pygile-plus docker logs pygile-plus docker rm pygile-plus
