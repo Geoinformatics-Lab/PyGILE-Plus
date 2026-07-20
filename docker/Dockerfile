@@ -46,7 +46,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
         libcairo2-dev libfreetype6-dev \
         libfftw3-dev libgsl-dev \
         libpq-dev libopencv-dev \
-        libgdal-dev gdal-bin libproj-dev proj-bin \
+        libgdal-dev gdal-bin libproj-dev proj-bin libgeos-dev \
         libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev \
         libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev \
         wx3.2-headers wx-common \
