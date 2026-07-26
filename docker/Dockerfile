@@ -28,6 +28,7 @@ ENV XDG_RUNTIME_DIR=/tmp/runtime-root
 ENV DISPLAY=:99
 ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV MPLBACKEND=Agg
 
 # ── Step 1: System dependencies ───────────────────────────────────────────────
 RUN apt-get update && apt-get install -y software-properties-common && \
@@ -46,7 +47,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
         libcairo2-dev libfreetype6-dev \
         libfftw3-dev libgsl-dev \
         libpq-dev libopencv-dev \
-        libgdal-dev gdal-bin libproj-dev proj-bin \
+        libgdal-dev gdal-bin libproj-dev proj-bin libgeos-dev \
         libwxbase3.2-0-unofficial libwxbase3.2unofficial-dev \
         libwxgtk3.2-0-unofficial libwxgtk3.2unofficial-dev \
         wx3.2-headers wx-common \
@@ -176,6 +177,7 @@ RUN mamba run -n pygile pip install --no-cache-dir \
     pythreejs pyvista \
     libpysal esda \
     keplergl \
+    WxPython \
     earthengine-api \
     sphinx sphinx_sitemap "sphinxcontrib.bibtex" \
     sphinx_inline_tabs pydata-sphinx-theme \
@@ -276,4 +278,8 @@ RUN mamba clean --all -y && \
     find /opt/conda -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
 
 EXPOSE 8888
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["/start.sh"]
