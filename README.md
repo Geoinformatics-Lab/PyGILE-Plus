@@ -98,12 +98,10 @@ conda activate pygile
 
 ### Basic checks
 
-``` bash
+```bash
 python -c "import grass.script as g; print('GRASS OK')"
 grass --version
 otbcli_BandMath -help
-python -c "import otbApplication; print('OTB OK')"
-python -c "import geoai; print('GeoAI OK')"
 ```
 
 ## GPU verification
