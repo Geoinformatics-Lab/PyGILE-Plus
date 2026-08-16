@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="270">
-      <img src="./image/pygile_plus.png" width="250">
+      <img src="https://raw.githubusercontent.com/Geoinformatics-Lab/PyGILE-Plus/main/image/pygile_plus.png" width="250">
     </td>
     <td>
       <h3>Python GeoInformatics Lab Environment-Plus</h3>
@@ -19,20 +19,24 @@
 
 -   SAGA GIS 9.3.2
 -   GRASS GIS 8.4.2
--   WhiteboxTools
+-   WhiteboxTools 2.4.0
 -   Orfeo ToolBox 9.1.1
 
 ### Python stack
 
--   Core geospatial libraries: GDAL, PROJ, GEOS, Shapely, Fiona,
-    Rasterio, GeoPandas
+-   Core geospatial libraries: GDAL 3.12.2, PROJ 9.7.1, GEOS 3.14.1,
+    Shapely, Fiona, Rasterio, GeoPandas
 -   Scientific computing: NumPy, SciPy, Pandas, Xarray
+-   Terrain and hydrology: RichDEM, pysheds, Landlab, TopoToolbox,
+    xarray-spatial
 -   Machine learning: PyTorch, TensorFlow, scikit-learn, scikit-image
+-   GPU computing: CuPy, CUDA-enabled PyTorch and TensorFlow
 -   Visualization: Matplotlib, Plotly, Folium, Holoviews, Seaborn
 -   Image processing: OpenCV, scikit-image
 -   Web mapping: Leafmap, Geemap, ipyleaflet, localtileserver
 -   Cloud and remote sensing tools: Earth Engine API, STAC tools,
-    Planetary Computer
+    odc-stac, Planetary Computer
+-   Point clouds: laspy, PDAL
 -   Documentation tools: Sphinx, Jupyter Book
 -   Jupyter Lab
 
@@ -40,6 +44,8 @@
 
 -   Headless operation
 -   Preconfigured environment
+-   Version-pinned and reproducible: every package is fixed to an exact
+    version, and a build manifest is written into the image
 -   CLI and Python access to supported tools
 -   Docker and Apptainer workflows
 -   GPU-capable machine learning stack, subject to host driver
@@ -61,6 +67,8 @@ cd PyGILE-Plus/docker
 docker build -t pygile-plus .
 ```
 
+The Dockerfile is self-contained; no additional files are required.
+
 ## Run
 
 ### CPU
@@ -69,7 +77,7 @@ docker build -t pygile-plus .
 docker run -it --name pygile-plus \
   -p 8888:8888 \
   -v $(pwd)/data:/workspace/data \
-  pygile-plus
+  dockagile/pygile-plus
 ```
 
 ### GPU
@@ -79,13 +87,17 @@ docker run -it --name pygile-plus \
   --gpus all \
   -p 8888:8888 \
   -v $(pwd)/data:/workspace/data \
-  pygile-plus
+  dockagile/pygile-plus
 ```
 
 GPU use requires: - NVIDIA GPU - compatible NVIDIA driver - NVIDIA
 Container Toolkit on the host
 
 Jupyter Lab starts automatically at `http://localhost:8888`.
+
+Only `/workspace/data` is mounted in the examples above. Files written
+elsewhere in the container are lost when it is removed. Mount the whole
+`/workspace` directory to persist notebooks and outputs as well.
 
 For more detailed Docker usage, see `docker/README.md`.
 
@@ -101,6 +113,8 @@ conda activate pygile
 ```bash
 python -c "import grass.script as g; print('GRASS OK')"
 grass --version
+saga_cmd --version
+whitebox_tools --version
 otbcli_BandMath -help
 ```
 
@@ -109,16 +123,57 @@ otbcli_BandMath -help
 ``` bash
 python -c "import torch; print(torch.cuda.is_available())"
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+python -c "import cupy; print(cupy.cuda.runtime.getDeviceCount())"
 ```
 
 If GPU is not detected, verify host driver compatibility.
 
-## HPC and Apptainer
+## Reproducibility
+
+Every package is pinned to an exact version, and source tarballs are
+checksum-verified during the build. A manifest recording engine
+versions, compiler, checksums, library linkage, and the full resolved
+package list is written into the image:
 
 ``` bash
-apptainer pull docker://dockagile/pygile-plus
-apptainer run --nv pygile-plus_latest.sif
+docker run --rm dockagile/pygile-plus \
+  cat /opt/manifest/build_manifest.txt
 ```
+
+Also in `/opt/manifest/`: `conda_explicit.txt` (exact conda package URLs
+and build hashes) and `pip_freeze.txt`.
+
+The environment can be verified at any time:
+
+``` bash
+docker run --rm dockagile/pygile-plus pygile-verify
+```
+
+Deterministic numerics are enabled by default (`OMP_NUM_THREADS=1` and
+equivalents) so floating-point results are reproducible across runs.
+Override at run time if throughput matters more than bit-identical
+output.
+
+For citation, record the image digest:
+
+``` bash
+docker inspect --format='{{index .RepoDigests 0}}' \
+  dockagile/pygile-plus
+```
+
+## Known limitations
+
+-   OTB Python bindings (`otbApplication`) target Python 3.8 and are
+    unavailable in this Python 3.11 environment. The OTB CLI is fully
+    functional.
+-   `saga_cmd` returns exit code 134 on teardown despite writing correct
+    output. When scripting SAGA, check for output files rather than
+    return codes.
+-   SAGA links the system GDAL 3.0.4 while the Python stack uses GDAL
+    3.12.2. Raster read and write are bit-identical between the two, so
+    values are unaffected.
+-   PyTorch is present as both a conda build and a CUDA wheel; the wheel
+    takes precedence in `site-packages`.
 
 ## Tool locations
 
@@ -128,12 +183,14 @@ saga_cmd = "/opt/saga/bin/saga_cmd"
 grass_command = "grass"
 otb_bin = "/opt/otb/bin"
 whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
+build_manifest = "/opt/manifest/build_manifest.txt"
 ```
 
 ## Applications
 
 -   Remote sensing analysis and classification
 -   Raster and vector processing
+-   Terrain and hydrological analysis across multiple engines
 -   Spatial statistics and geostatistics
 -   Machine learning on geospatial data
 -   Educational and research workflows
@@ -145,12 +202,18 @@ whitebox_tools = "/opt/conda/envs/pygile/bin/whitebox_tools"
 
 -   Docker
 -   Recommended memory: 8 GB minimum, more for large workloads
--   Recommended storage: about 16 GB or more for the image and data
+-   Recommended storage: about 25 GB or more for the image and data
 -   Network access for initial pull or build
 -   For GPU use: NVIDIA GPU and compatible host setup
 -   For HPC: Apptainer or Singularity with `--nv` support when GPU
     passthrough is needed
 
+## HPC and Apptainer
+
+``` bash
+apptainer pull docker://dockagile/pygile-plus
+apptainer run --nv pygile-plus_latest.sif
+```
 
 ## License information
 
@@ -158,8 +221,6 @@ All included software remains under its respective upstream license.
 Refer to the original project documentation for specific license terms.
 
 ## Reference and citation
-
-Latest release citation will be updated after the v1.1.1 Zenodo archive is published.
 
 Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18512474
 
