@@ -17,7 +17,7 @@
 https://github.com/user-attachments/assets/e7759b71-6145-4d54-b300-119e70dd026d
 
 
-Watch the full video for installation and usage
+Watch the full video for installation in YouTube using the following link:
 
 https://www.youtube.com/watch?v=hnf8vN7IZdc
 
