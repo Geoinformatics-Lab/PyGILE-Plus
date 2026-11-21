@@ -5,8 +5,8 @@ FROM ${BASE_IMAGE}
 ARG BASE_IMAGE
 
 LABEL name="PyGILE-Plus"
-LABEL version="1.1.1"
-LABEL description="Headless geospatial research environment: SAGA, GRASS, WhiteboxTools, OTB, and a Python geospatial and ML stack"
+LABEL version="2.0.0"
+LABEL description="Headless geospatial research environment: SAGA, GRASS, WhiteboxTools, OTB, and a Python geospatial and ML stack, with the PyGILE course for beginners"
 LABEL maintainer="research-team"
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -111,9 +111,10 @@ RUN echo ">>> [10/26] jupyter jupyterlab ipywidgets" && \
     jupyter=1.1.1 jupyterlab=4.6.2 ipywidgets=8.1.8 && \
     mamba clean --all -y
 
-RUN echo ">>> [11/26] plotly bokeh folium contextily mapclassify" && \
+RUN echo ">>> [11/26] plotly bokeh folium contextily mapclassify matplotlib-scalebar" && \
     mamba install -n pygile -c conda-forge -y \
-    plotly=6.9.0 bokeh=3.9.2 folium=0.20.0 contextily=1.7.1 mapclassify=2.10.0 && \
+    plotly=6.9.0 bokeh=3.9.2 folium=0.20.0 contextily=1.7.1 mapclassify=2.10.0 \
+    matplotlib-scalebar=0.9.0 && \
     mamba clean --all -y
 
 RUN echo ">>> [12/26] holoviews hvplot" && \

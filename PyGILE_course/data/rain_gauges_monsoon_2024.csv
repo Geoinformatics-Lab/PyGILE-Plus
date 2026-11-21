@@ -1,0 +1,110 @@
+station,district,province,lat,lon,elevation_m,monsoon_mm
+Baglung,Baglung,Gandaki,28.2636,83.6003,964,2060.6
+Bahrabise,Sindhupalchok,Bagmati,27.7887,85.9,884,2625.1
+Baitadi (Gothalapani),Baitadi,Sudurpashchim,29.5574,80.4132,1352,1180.1
+Bajura (Martadi),Bajura,Sudurpashchim,29.457,81.4804,1598,1853.1
+Bandipur,Tanahun,Gandaki,27.9418,84.4064,991,2313.5
+Bhairahawa Airport,Rupandehi,Lumbini,27.5068,83.4204,108,1833.5
+Bhaktapur,Bhaktapur,Bagmati,27.6767,85.424,1315,1559.4
+Bijuwar Tar,Pyuthan,Lumbini,28.1035,82.852,835,1260.4
+Biratnagar Airport,Morang,Koshi,26.484,87.267,72,2142.4
+Birganj,Parsa,Madhesh,27.0232,84.8782,67,1327.6
+Chainpur (Bajhang),Bajhang,Sudurpashchim,29.5459,81.2011,1405,1152.8
+Chainpur (East),Sankhuwasabha,Koshi,27.2921,87.317,1277,1237.7
+Changu Narayan,Bhaktapur,Bagmati,27.7161,85.4268,1502,1884.8
+Chapakot,Syangja,Gandaki,27.8999,83.8459,617,2377.6
+Charikot,Dolakha,Bagmati,27.6902,85.9802,2132,2686.0
+Chatara,Sunsari,Koshi,26.8204,87.1592,105,2106.8
+Chaurjhari Tar,Rukum West,Karnali,28.654,82.2103,863,1436.3
+Chisapani (Karnali),Kailali,Sudurpashchim,28.6472,81.2854,201,2131.4
+Dadeldhura,Dadeldhura,Sudurpashchim,29.3014,80.5878,1879,1295.7
+Dailekh,Dailekh,Karnali,28.8381,81.7085,1394,1270.8
+Damak,Jhapa,Koshi,26.6623,87.6988,119,2269.6
+Daman,Makwanpur,Bagmati,27.6044,85.092,2265,1804.4
+Damauli,Tanahun,Gandaki,27.9737,84.2651,347,2045.8
+Darchula New,Darchula,Sudurpashchim,29.8429,80.5388,887,2565.8
+Dhangadhi (Attariya),Kailali,Sudurpashchim,28.8127,80.56,184,1841.3
+Dhankuta,Dhankuta,Koshi,26.9832,87.346,1192,892.8
+Dharan Bazar,Sunsari,Koshi,26.7922,87.2978,310,2071.1
+Dhulikhel,Kavrepalanchok,Bagmati,27.6161,85.5655,1543,1442.5
+Dhunche,Rasuwa,Bagmati,28.1053,85.3077,2005,1704.8
+Dhunibesi,Dhading,Bagmati,27.7229,85.1643,991,1413.1
+Diktel,Khotang,Koshi,27.2125,86.7919,1612,1650.2
+Dipayal (Doti),Doti,Sudurpashchim,29.2621,80.9369,563,1168.8
+Dumkauli,Nawalparasi East,Gandaki,27.6807,84.2285,183,1973.7
+Dunai,Dolpa,Karnali,28.9507,82.896,2098,411.0
+Gaida (Kankai),Jhapa,Koshi,26.6569,87.8607,107,2176.0
+Gaur,Rautahat,Madhesh,26.7671,85.313,77,1035.3
+Ghorai (Dang),Dang,Lumbini,28.0372,82.4842,663,1847.5
+Godavari,Lalitpur,Bagmati,27.5929,85.3788,1527,1823.4
+Gorkha (Birenchowk),Gorkha,Gandaki,27.9714,84.5894,724,1982.9
+Gulariya,Bardiya,Lumbini,28.2128,81.3452,126,1064.8
+Hardinath,Dhanusha,Madhesh,26.8,85.9833,93,1612.0
+Humde,Manang,Gandaki,28.6399,84.0881,3401,374.4
+Ilam Tea Estate,Ilam,Koshi,26.9096,87.9231,1208,1248.4
+Jalesor,Mahottari,Madhesh,26.6522,85.8073,68,987.2
+Janakpur Airport,Dhanusha,Madhesh,26.7097,85.9172,76,1198.0
+Jiri,Dolakha,Bagmati,27.6304,86.2321,1877,2153.8
+Jomsom,Mustang,Gandaki,28.784,83.7298,2741,284.1
+Jumla,Jumla,Karnali,29.2747,82.1796,2363,503.6
+Jumla Airport,Jumla,Karnali,29.274,82.1942,2384,538.2
+Kakani,Nuwakot,Bagmati,27.8113,85.2674,2002,2572.9
+Kanyam Tea Estate,Ilam,Koshi,26.8681,88.0783,1570,2521.0
+Karmaiya,Sarlahi,Madhesh,27.133,85.4841,139,1685.9
+Kathmandu Airport,Kathmandu,Bagmati,27.7038,85.3562,1337,1817.0
+Khadbari,Sankhuwasabha,Koshi,27.3911,87.2044,1064,1459.6
+Khairini Tar,Tanahun,Gandaki,28.027,84.0866,515,2550.6
+Khajura (Nepalganj),Banke,Lumbini,28.1137,81.5903,129,1142.5
+Khanchikot,Arghakhanchi,Lumbini,27.9221,83.1298,1801,1496.4
+Khokana,Lalitpur,Bagmati,27.6438,85.2967,1309,1413.6
+Khudi Bazar,Lamjung,Gandaki,28.2822,84.3564,838,2941.2
+Khumaltar,Lalitpur,Bagmati,27.6517,85.3257,1334,1655.0
+Kushma,Parbat,Gandaki,28.2249,83.6769,900,2568.9
+Lahan,Siraha,Madhesh,26.7327,86.4776,110,1198.0
+Lete,Mustang,Gandaki,28.6327,83.6092,2490,915.6
+Libang Gaun,Rolpa,Lumbini,28.3062,82.6323,1314,1350.5
+Lumbini,Rupandehi,Lumbini,27.4703,83.2761,95,1454.4
+Lumle,Kaski,Gandaki,28.2965,83.8179,1738,3949.1
+Mahendra Nagar,Kanchanpur,Sudurpashchim,28.9548,80.2305,197,1887.7
+Mangalsen,Achham,Sudurpashchim,29.1361,81.2501,1310,1409.3
+Manma,Kalikot,Karnali,29.1488,81.6135,1729,1251.4
+Manthali,Ramechhap,Bagmati,27.3947,86.0612,497,1056.3
+Manusmara,Sarlahi,Madhesh,26.928,85.4451,90,1327.6
+Musikot (Rukumkot),Rukum West,Karnali,28.619,82.4625,1412,1898.9
+Nagarkot,Kavrepalanchok,Bagmati,27.6933,85.5209,2147,2077.5
+Nagma,Kalikot,Karnali,29.2006,81.9106,2017,380.1
+Nepalgunj (Reg.Off.),Banke,Lumbini,28.052,81.6228,141,1259.9
+Nepalgunj Airport,Banke,Lumbini,28.1006,81.6682,165,1361.5
+Nuwakot,Nuwakot,Bagmati,27.915,85.1646,966,1973.0
+Okhaldhunga,Okhaldhunga,Koshi,27.3081,86.5042,1731,1950.9
+Oli Gaun (Patkani),Achham,Sudurpashchim,29.1559,81.2831,989,1236.4
+Pakhribas,Dhankuta,Koshi,27.0463,87.2925,1720,1268.9
+Panchkhal,Kavrepalanchok,Bagmati,27.6451,85.6209,857,1423.8
+Parasi,Nawalparasi West,Lumbini,27.5193,83.6622,112,1680.2
+Parwanipur,Bara,Madhesh,27.0789,84.9327,87,1635.6
+Patan new,Baitadi,Sudurpashchim,29.4664,80.5506,1299,1070.2
+Phattepur,Saptari,Madhesh,26.7305,86.9348,101,1596.8
+Phidim (Panchther),Panchthar,Koshi,27.1437,87.7656,1157,1004.2
+Pokhara Airport,Kaski,Gandaki,28.2002,83.9795,827,3246.6
+Pusma Camp,Surkhet,Karnali,28.8755,81.2327,953,1522.7
+Rajbiraj,Saptari,Madhesh,26.5407,86.7425,68,1833.7
+Rampur,Chitwan,Bagmati,27.654,84.3508,189,1786.0
+Rara,Mugu,Karnali,29.5401,82.0818,2989,631.6
+Salleri,Solukhumbu,Koshi,27.5051,86.5862,2383,1862.9
+Salyan Bazar,Salyan,Karnali,28.3821,82.1423,1557,868.4
+Semari,Nawalparasi West,Lumbini,27.4682,83.7861,110,1783.7
+Simara Airport,Bara,Madhesh,27.1642,84.98,137,1590.0
+Simikot,Humla,Karnali,29.9715,81.8161,2993,736.3
+Sindhuli Madhi,Sindhuli,Bagmati,27.2281,85.905,556,2184.7
+Siraha,Siraha,Madhesh,26.6561,86.2117,63,1210.9
+Surkhet Airport,Surkhet,Karnali,28.5879,81.6352,683,1485.3
+Syangja,Syangja,Gandaki,28.0988,83.8722,871,2836.5
+Tamghas,Gulmi,Lumbini,28.0636,83.2435,1547,1816.8
+Tansen,Palpa,Lumbini,27.8637,83.5387,1183,1883.1
+Taplejung,Taplejung,Koshi,27.3586,87.67,1744,1591.9
+Tarahara,Sunsari,Koshi,26.6987,87.2786,120,1717.0
+Taulihawa,Kapilvastu,Lumbini,27.5711,83.0672,106,1986.0
+Terhathum,Tehrathum,Koshi,27.123,87.5362,1525,900.18
+Thakmarpha,Mustang,Gandaki,28.7409,83.6816,2655,305.12
+Tikapur,Kailali,Sudurpashchim,28.5366,81.115,149,1597.9
+Udayapur Gadhi,Udayapur,Koshi,26.913,86.5397,469,1715.2

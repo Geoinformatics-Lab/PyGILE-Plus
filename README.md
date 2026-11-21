@@ -6,7 +6,7 @@
     <td>
       <h3>Python GeoInformatics Lab Environment-Plus</h3>
       <p>
-        A headless Docker environment combining SAGA GIS, GRASS GIS, WhiteboxTools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning — with GPU acceleration support.
+        A step-by-step course in Python and GIS for absolute beginners, and a headless Docker environment combining SAGA GIS, GRASS GIS, WhiteboxTools, and OTB with a complete Python geospatial stack for spatial analysis, remote sensing, and machine learning — with GPU acceleration support.
       </p>
     </td>
   </tr>
@@ -20,6 +20,63 @@ https://github.com/user-attachments/assets/e7759b71-6145-4d54-b300-119e70dd026d
 Watch the full YouTube video for step wise tutorial for installation via the following link:
 
 https://www.youtube.com/watch?v=hnf8vN7IZdc
+
+## Two ways to use PyGILE-Plus
+
+| | Who it is for | Start here |
+| --- | --- | --- |
+| **The PyGILE course** | Absolute beginners: Python and GIS from zero, one small step at a time | [`PyGILE_course/`](PyGILE_course/README.md) |
+| **The landslide susceptibility workflow** | After the course, or for researchers: six notebooks from a DEM to a susceptibility map | [`notebooks/`](notebooks/) |
+
+Both run in the same Docker image, so everything a learner installs for the first lesson is ready for the last notebook. **New in version 2.0:** the PyGILE course.
+
+## The PyGILE course
+
+A step-by-step course for absolute beginners, in [`PyGILE_course/`](PyGILE_course/README.md). Every step has theory, a worked example on real data from Nepal, and practice questions with worked solutions; the lessons are linked in order like a book.
+
+- **Part A · Python (12 lessons)**: from Python as a calculator to tables, plots and good habits
+- **Part B · Vector GIS (12 lessons)**: the map of Nepal, from coordinates to interactive web maps
+- **Part C · Rasters (9 lessons)**: the terrain of the Kathmandu Valley and Melamchi, from a DEM to interpolation and spatial statistics
+- **Part D · Satellite imagery (6 lessons)**: the 2021 Melamchi flood in Sentinel-2 images, from bands to data cubes
+
+Together: 39 lessons and 1,061 practice questions. The data are real: rainfall from Nepal's Department of Hydrology and Meteorology, landslides from NASA and the USGS, boundaries from the Survey Department, Sentinel-2 and the Copernicus DEM.
+
+- Every answer is **marked automatically** as you run it, offline and with no account, and an optional **free AI tutor** gives a personal hint and answers follow-up questions. See [the tutor guide](PyGILE_course/AI_TUTOR.md).
+- The last lesson of each part ends with a project on **your own country**, and [a guide](PyGILE_course/YOUR_OWN_DATA.md) shows how to run all 39 lessons on your own country's data.
+
+### Start the course
+
+1. **Install Docker Desktop** from [docker.com](https://docs.docker.com/get-started/get-docker/) and start it. On Windows, accept WSL 2 when it asks. Keep about 30 GB free: the image is large because it also holds the research tools.
+2. **Get this repository**: `git clone https://github.com/Geoinformatics-Lab/PyGILE-Plus.git`, or click **Code → Download ZIP** above and unzip it.
+3. **Open a terminal in the `PyGILE-Plus` folder** and start the image with that folder inside it. The first time, Docker downloads the image, which takes a while.
+
+   macOS and Linux:
+
+   ``` bash
+   docker run -it --name pygile-plus -p 8888:8888 \
+     -v "$(pwd)":/workspace/PyGILE-Plus \
+     dockagile/pygile-plus
+   ```
+
+   Windows (PowerShell):
+
+   ``` powershell
+   docker run -it --name pygile-plus -p 8888:8888 -v "${PWD}:/workspace/PyGILE-Plus" dockagile/pygile-plus
+   ```
+
+4. **Open http://localhost:8888** in your browser, then `PyGILE-Plus` → `PyGILE_course` → `A_Python` → `A01_Python_as_your_calculator.ipynb`, and run the first cell.
+5. **Next time**, start the same container again with `docker start -ai pygile-plus` and open http://localhost:8888. Your notebooks are saved in your `PyGILE-Plus` folder, and the same container keeps your tutor setup. (If Docker says the name `pygile-plus` is already in use, that container exists: start it with this command, or remove it with `docker rm pygile-plus` and run step 3 again.)
+
+## After the course: the landslide susceptibility workflow
+
+The notebooks in [`notebooks/`](notebooks/) take a learner who has finished Part D through a complete landslide susceptibility study, with the GIS engines of the image:
+
+1. [Configuration and setup](notebooks/01_Configuration_and_Setup.ipynb): paths and parameters for your DEM and outputs
+2. [Watershed delineation](notebooks/02_Watershed_Delineation.ipynb) with WhiteboxTools
+3. [Terrain and hydrological factors](notebooks/03_Terrain_and_Hydrological_Factors.ipynb) for each watershed
+4. [Landform classification](notebooks/04_Landform_Classification.ipynb) with geomorphons
+5. [Inventory preparation](notebooks/05_Inventory_Preparation.ipynb): landslides of the 2015 Gorkha earthquake and the factor stack
+6. [Landslide susceptibility mapping](notebooks/06_LSM_Final.ipynb)
 
 ## What is included
 
@@ -225,6 +282,9 @@ apptainer run --nv pygile-plus_latest.sif
 
 ## License information
 
+PyGILE-Plus, including the PyGILE course, is released under the GNU GPL-2.0 (see [LICENSE](LICENSE)).
+The course's concept diagrams come from the pyGIS project and keep its GPL-3.0 licence, and the course data keep the terms of their sources: see [`PyGILE_course/images/README.md`](PyGILE_course/images/README.md) and [`PyGILE_course/data/README.md`](PyGILE_course/data/README.md).
+
 All included software remains under its respective upstream license.
 Refer to the original project documentation for specific license terms.
 
@@ -232,7 +292,7 @@ Refer to the original project documentation for specific license terms.
 
 Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18512474
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18512474.svg)]( https://doi.org/10.5281/zenodo.18512474)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18512474.svg)](https://doi.org/10.5281/zenodo.18512474)
 
 Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
 
