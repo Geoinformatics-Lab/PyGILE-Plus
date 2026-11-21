@@ -12,6 +12,7 @@ authors:
   - family-names: Nemoto
     given-names: T.
 version: "2.0.0"
+doi: 10.5281/zenodo.18512473
 repository-code: "https://github.com/Geoinformatics-Lab/PyGILE-Plus"
 abstract: >-
   A computing environment, core curriculum and thematic modules for
