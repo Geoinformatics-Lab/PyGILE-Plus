@@ -288,10 +288,10 @@ Refer to the original project documentation for specific license terms.
 
 ## Reference and citation
 
-Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). Geoinformatics-Lab/PyGILE-Plus: PyGILE-Plus v1.1.0 (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18512474
+If you use PyGILE-Plus or the PyGILE course, please cite:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18512474.svg)](https://doi.org/10.5281/zenodo.18512474)
+Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus. Zenodo. https://doi.org/10.5281/zenodo.18512473
 
-Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2025). PyGILE-Plus: Python GeoInformatics Lab Environment-Plus (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16146572
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18512473-blue)](https://doi.org/10.5281/zenodo.18512473)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16146572.svg)](https://doi.org/10.5281/zenodo.16146572)
+Earlier versions: 1.1.1 ([10.5281/zenodo.20084413](https://doi.org/10.5281/zenodo.20084413)), 1.1.0 ([10.5281/zenodo.18512474](https://doi.org/10.5281/zenodo.18512474)) and 1.0.0 ([10.5281/zenodo.16146572](https://doi.org/10.5281/zenodo.16146572)).
