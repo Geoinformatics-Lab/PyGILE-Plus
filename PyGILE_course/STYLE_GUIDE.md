@@ -53,7 +53,7 @@ The blank line after `</summary>` is required, or the code will not render in Ju
 - Use only Python's standard library, NumPy, pandas and Matplotlib in Part A. GeoPandas and rasterio start in Part B.
 - Read data with `pathlib` from the course data folder: `DATA = Path("..") / "data"`.
 - Open text files with `encoding="utf-8"` (`open(..., encoding="utf-8")`, `.read_text(encoding="utf-8")`), as taught in A7. Without it, Windows may read the file in another encoding and garble characters such as `²` or `°`.
-- No `!pip install`, no internet access, no absolute paths.
+- No `!pip install`, no internet access, no absolute paths. One exception: B11 installs `matplotlib-scalebar` with `%pip` if it is missing, because the PyGILE-Plus image on Docker Hub predates it.
 - Notebooks are saved **without outputs**.
 - Before committing, run `python PyGILE_course/tools/check_repo.py` and `python PyGILE_course/tools/qa.py <lesson>`. The automatic tests run both on every pull request.
 - After changing a lesson's questions or solutions, rebuild the tutor's answer key in the `pygile` environment: `python PyGILE_course/tools/build_answer_key.py <lesson>` (paths relative to `PyGILE_course/`). `check_repo.py` fails if the key is out of date. See [AI_TUTOR.md](AI_TUTOR.md#for-teachers).
