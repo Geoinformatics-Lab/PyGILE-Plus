@@ -294,4 +294,10 @@ Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). PyGILE-Plus: Pytho
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18512473-blue)](https://doi.org/10.5281/zenodo.18512473)
 
-Earlier versions: 1.1.1 ([10.5281/zenodo.20084413](https://doi.org/10.5281/zenodo.20084413)), 1.1.0 ([10.5281/zenodo.18512474](https://doi.org/10.5281/zenodo.18512474)) and 1.0.0 ([10.5281/zenodo.16146572](https://doi.org/10.5281/zenodo.16146572)).
+### Version history
+
+| Version | Released | DOI |
+| --- | --- | --- |
+| 1.1.1 | May 2026 | [10.5281/zenodo.20084413](https://doi.org/10.5281/zenodo.20084413) |
+| 1.1.0 | February 2026 | [10.5281/zenodo.18512474](https://doi.org/10.5281/zenodo.18512474) |
+| 1.0.0 | July 2025 | [10.5281/zenodo.16146572](https://doi.org/10.5281/zenodo.16146572) |
