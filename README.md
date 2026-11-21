@@ -21,16 +21,19 @@ Watch the full YouTube video for step wise tutorial for installation via the fol
 
 https://www.youtube.com/watch?v=hnf8vN7IZdc
 
-## Two ways to use PyGILE-Plus
+## How PyGILE-Plus is organised
 
-| | Who it is for | Start here |
+PyGILE-Plus consists of three parts that build on each other:
+
+| | Contents | Location |
 | --- | --- | --- |
-| **The PyGILE course** | Absolute beginners: Python and GIS from zero, one small step at a time | [`PyGILE_course/`](PyGILE_course/README.md) |
-| **The landslide susceptibility workflow** | After the course, or for researchers: six notebooks from a DEM to a susceptibility map | [`notebooks/`](notebooks/) |
+| **1. Computing environment** | One Docker image with a complete Python geospatial stack, SAGA GIS, GRASS GIS, WhiteboxTools and OTB | [`docker/`](docker/README.md) |
+| **2. Core curriculum** | The PyGILE course: Python and GIS from zero, in 39 lessons | [`PyGILE_course/`](PyGILE_course/README.md) |
+| **3. Thematic modules** | Geospatial analysis applied to one field, built on the core curriculum | [`thematic_modules/`](thematic_modules/README.md) |
 
-Both run in the same Docker image, so everything a learner installs for the first lesson is ready for the last notebook. **New in version 2.0:** the PyGILE course.
+All three run in the same Docker image, so the environment a learner sets up for the first lesson serves every thematic module. **New in version 2.0:** the core curriculum, and the first thematic module, Landslide Susceptibility Mapping.
 
-## The PyGILE course
+## Core curriculum: the PyGILE course
 
 A step-by-step course for absolute beginners, in [`PyGILE_course/`](PyGILE_course/README.md). Every step has theory, a worked example on real data from Nepal, and practice questions with worked solutions; the lessons are linked in order like a book.
 
@@ -67,16 +70,11 @@ Together: 39 lessons and 1,061 practice questions. The data are real: rainfall f
 4. **Open http://localhost:8888** in your browser, then `PyGILE-Plus` → `PyGILE_course` → `A_Python` → `A01_Python_as_your_calculator.ipynb`, and run the first cell.
 5. **Next time**, start the same container again with `docker start -ai pygile-plus` and open http://localhost:8888. Your notebooks are saved in your `PyGILE-Plus` folder, and the same container keeps your tutor setup. (If Docker says the name `pygile-plus` is already in use, that container exists: start it with this command, or remove it with `docker rm pygile-plus` and run step 3 again.)
 
-## After the course: the landslide susceptibility workflow
+## Thematic modules
 
-The notebooks in [`notebooks/`](notebooks/) take a learner who has finished Part D through a complete landslide susceptibility study, with the GIS engines of the image:
+After the core curriculum, a thematic module applies the same tools to one field. See [`thematic_modules/`](thematic_modules/README.md).
 
-1. [Configuration and setup](notebooks/01_Configuration_and_Setup.ipynb): paths and parameters for your DEM and outputs
-2. [Watershed delineation](notebooks/02_Watershed_Delineation.ipynb) with WhiteboxTools
-3. [Terrain and hydrological factors](notebooks/03_Terrain_and_Hydrological_Factors.ipynb) for each watershed
-4. [Landform classification](notebooks/04_Landform_Classification.ipynb) with geomorphons
-5. [Inventory preparation](notebooks/05_Inventory_Preparation.ipynb): landslides of the 2015 Gorkha earthquake and the factor stack
-6. [Landslide susceptibility mapping](notebooks/06_LSM_Final.ipynb)
+- **[Landslide Susceptibility Mapping](thematic_modules/landslide_susceptibility/README.md)**: six notebooks from a DEM and the landslides of the 2015 Gorkha earthquake to a susceptibility map, with WhiteboxTools, SAGA and GRASS. Prerequisites: Parts A to C.
 
 ## What is included
 
