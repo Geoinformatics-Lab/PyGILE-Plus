@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use PyGILE-Plus or the PyGILE course in teaching or research, please cite it as below."
+title: "PyGILE-Plus: Python GeoInformatics Lab Environment-Plus"
+type: software
+authors:
+  - family-names: Awasthi
+    given-names: B.
+  - family-names: Ninsawat
+    given-names: S.
+  - family-names: Raghavan
+    given-names: V.
+  - family-names: Nemoto
+    given-names: T.
+version: "2.0.0"
+repository-code: "https://github.com/Geoinformatics-Lab/PyGILE-Plus"
+abstract: >-
+  A step-by-step course in Python and GIS for absolute beginners (39 lessons
+  on real data from Nepal), and a headless Docker environment combining SAGA
+  GIS, GRASS GIS, WhiteboxTools and OTB with a Python geospatial and machine
+  learning stack, with a landslide susceptibility workflow.
+keywords:
+  - geospatial
+  - GIS
+  - remote sensing
+  - Python
+  - Docker
+  - landslide susceptibility
+  - education
+  - Nepal

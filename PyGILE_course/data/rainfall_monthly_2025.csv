@@ -1,0 +1,7 @@
+station,district,province,elevation_m,jan_mm,feb_mm,mar_mm,apr_mm,may_mm,jun_mm,jul_mm,aug_mm,sep_mm,oct_mm,nov_mm,dec_mm
+Pokhara Airport,Kaski,Gandaki,827,0,10,18,125,129,480,536,514,693,145,22,0
+Kathmandu Airport,Kathmandu,Bagmati,1337,0,0,7,46,169,320,241,345,294,198,18,0
+Jomsom,Mustang,Gandaki,2741,0,4,0,34,11,39,29,46,41,144,27,0
+Biratnagar Airport,Morang,Koshi,72,0,20,32,47,274,189,293,297,229,422,66,0
+Jumla,Jumla,Karnali,2363,3,15,86,52,57,90,187,239,83,42,2,0
+Chautara,Sindhupalchok,Bagmati,1552,0,0,32,46,243,274,678,618,476,207,33,0

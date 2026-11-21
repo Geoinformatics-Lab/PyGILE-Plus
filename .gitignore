@@ -1,0 +1,12 @@
+# Files the course notebooks write while you work (never commit these)
+outputs/
+*.aux.xml
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Raw downloads for the course data build scripts
+PyGILE_course/data/_raw/
+PyGILE_course/data/_raw_observed/
