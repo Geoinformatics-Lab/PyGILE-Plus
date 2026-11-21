@@ -98,7 +98,7 @@ Sentinel-2 images of the Melamchi valley in Sindhupalchok, before and after the 
 
 ## After the course
 
-Continue with the **landslide susceptibility workflow** in this repository's [`notebooks/`](../notebooks/) folder: six notebooks that go from a DEM to watersheds, terrain and hydrological factors, landforms, a landslide inventory of the 2015 Gorkha earthquake, and a final susceptibility map. They use SAGA, GRASS and WhiteboxTools, which the same Docker image already contains.
+Continue with a **thematic module** in this repository's [`thematic_modules/`](../thematic_modules/README.md) folder, which applies these foundations to one field. The first is [Landslide Susceptibility Mapping](../thematic_modules/landslide_susceptibility/README.md): from a DEM and the landslides of the 2015 Gorkha earthquake to a susceptibility map, with SAGA, GRASS and WhiteboxTools from the same Docker image.
 
 ## Folders
 

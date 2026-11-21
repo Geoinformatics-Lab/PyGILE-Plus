@@ -14,10 +14,13 @@ authors:
 version: "2.0.0"
 repository-code: "https://github.com/Geoinformatics-Lab/PyGILE-Plus"
 abstract: >-
-  A step-by-step course in Python and GIS for absolute beginners (39 lessons
-  on real data from Nepal), and a headless Docker environment combining SAGA
-  GIS, GRASS GIS, WhiteboxTools and OTB with a Python geospatial and machine
-  learning stack, with a landslide susceptibility workflow.
+  A computing environment, core curriculum and thematic modules for
+  learning and applying geospatial analysis: a headless Docker environment
+  combining SAGA GIS, GRASS GIS, WhiteboxTools and OTB with a Python
+  geospatial and machine learning stack; the PyGILE core curriculum, a
+  step-by-step course in Python and GIS for absolute beginners (39 lessons on
+  real data from Nepal); and thematic modules built on it, starting with
+  Landslide Susceptibility Mapping.
 keywords:
   - geospatial
   - GIS
