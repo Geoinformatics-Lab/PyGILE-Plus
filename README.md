@@ -298,6 +298,7 @@ Awasthi, B., Ninsawat, S., Raghavan, V., & Nemoto, T. (2026). PyGILE-Plus: Pytho
 
 | Version | Released | DOI |
 | --- | --- | --- |
+| 2.0.0 | November 2026 | [10.5281/zenodo.24433621](https://doi.org/10.5281/zenodo.24433621) |
 | 1.1.1 | May 2026 | [10.5281/zenodo.20084413](https://doi.org/10.5281/zenodo.20084413) |
 | 1.1.0 | February 2026 | [10.5281/zenodo.18512474](https://doi.org/10.5281/zenodo.18512474) |
 | 1.0.0 | July 2025 | [10.5281/zenodo.16146572](https://doi.org/10.5281/zenodo.16146572) |
