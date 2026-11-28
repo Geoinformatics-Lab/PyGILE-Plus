@@ -279,8 +279,8 @@ apptainer run --nv pygile-plus_latest.sif
 ```
 ## Support & Community
 
-- **Issues**: Report bugs and suggest features via GitHub Issues
-- **Discussions**: Join community conversations on PyGILE mailing list: [PYGILE](https://lists.geoinfo-lab.org/postorius/lists/pygile.geoinfo-lab.org/)
+- **Issues**: Report bugs and suggest features via GitHub Issues:[PyGILE-Issues](https://github.com/Geoinformatics-Lab/PyGILE-Plus/issues)
+- **Discussions**: Join community conversations on PyGILE mailing list: [PyGILE-Discuss](https://lists.geoinfo-lab.org/postorius/lists/pygile.geoinfo-lab.org/)
 
 ## License information
 
