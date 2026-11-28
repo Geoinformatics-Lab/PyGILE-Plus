@@ -277,6 +277,10 @@ build_manifest = "/opt/manifest/build_manifest.txt"
 apptainer pull docker://dockagile/pygile-plus
 apptainer run --nv pygile-plus_latest.sif
 ```
+## Support & Community
+
+- **Issues**: Report bugs and suggest features via GitHub Issues
+- **Discussions**: Join community conversations on PyGILE mailing list: [PYGILE](https://lists.geoinfo-lab.org/postorius/lists/pygile.geoinfo-lab.org/)
 
 ## License information
 
